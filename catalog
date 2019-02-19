@@ -1,0 +1,22 @@
+PUBLIC "-//DOD-USA//ENTITIES MIL-STD-40051 Notation Definitions REV C 6.0 20151230//EN" "charent/notation.ent"
+
+PUBLIC "-//DOD-USA//ENTITIES MIL-STD-40051 Unicode Character Sets REV C 6.0 20151230//EN" "charent/character.ent"
+
+PUBLIC "-//USA-DOD//ENTITIES MIL-STD-40051 Selection Boilerplate REV C 6.0 20151230//EN" "boilerplate/selectboil.ent"
+
+PUBLIC "-//USA-DOD//ENTITIES MIL-STD-40051 Editable Boilerplate REV C 6.0 20151230//EN" "boilerplate/editboil.ent"
+
+PUBLIC "-//USA-DOD//ENTITIES MIL-STD-40051 PRODUCTION Boilerplate REV C 6.0 20151230//EN" "boilerplate/prodboil.ent"
+
+PUBLIC "-//USA-DOD//ENTITIES MIL-STD-40051 GIM Boilerplate REV C 6.0 20151230//EN" "boilerplate/gimboil.ent"
+
+PUBLIC "-//USA-DOD//ENTITIES MIL-STD-40051 MIM Boilerplate REV C 6.0 20151230//EN" "boilerplate/mimboil.ent"
+
+PUBLIC "-//USA-DOD//ENTITIES MIL-STD-40051 PIM Boilerplate REV C 6.0 20151230//EN" "boilerplate/pimboil.ent"
+
+PUBLIC "-//USA-DOD//ENTITIES MIL-STD-40051 SIM Boilerplate REV C 6.0 20151230//EN" "boilerplate/simboil.ent"
+
+PUBLIC "-//USA-DOD//ENTITIES MIL-STD-40051 DIM Boilerplate REV C 6.0 20151230//EN" "boilerplate/dimboil.ent"
+
+
+PUBLIC "-//USA-DOD//DTD -1/2C TM Assembly REV C 6.0 20151230//EN" "40051c_6_0.dtd"
