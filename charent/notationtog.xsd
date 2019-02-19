@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="notation">
+		<xs:annotation>
+			<xs:documentation>Notations for use in the Schema</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+
+	<xs:element name="audio.class">
+	<xs:simpleType>
+
+          <xs:restriction base="xs:NOTATION">
+             <xs:enumeration value="WMA"/>
+             <xs:enumeration value="WAX"/>
+             <xs:enumeration value="WAV"/>
+             <xs:enumeration value="MID"/>
+             <xs:enumeration value="MIDI"/>
+             <xs:enumeration value="RMI"/>
+             <xs:enumeration value="SMF"/>
+             <xs:enumeration value="KAR"/>
+             <xs:enumeration value="AIF"/>
+             <xs:enumeration value="AIFC"/>
+              <xs:enumeration value="CDDA"/>
+               <xs:enumeration value="AU"/>
+                <xs:enumeration value="SND"/>
+                 <xs:enumeration value="ULW"/>
+                  <xs:enumeration value="CDA"/>
+           </xs:restriction>
+</xs:simpleType>
+</xs:element>
+
+	<xs:notation name="WMA" system="Windows_Media_Audio"/>
+	<xs:notation name="WAX" system="Windows_Media_Audio"/>
+<xs:notation name="WAV" system="Audio"/>
+<xs:notation name="MID" system="MIDI"/>
+<xs:notation name="MIDI" system="MIDI"/>
+<xs:notation name="RMI" system="MIDI"/>
+<xs:notation name="SMF" system="MIDI"/>
+<xs:notation name="KAR" system="MIDI"/>
+<xs:notation name="AIF" system="AIFF"/>
+<xs:notation name="AIFC" system="AIFF"/>
+<xs:notation name="AIFF" system="AIFF"/>
+<xs:notation name="CDDA" system="AIFF"/>
+<xs:notation name="AU" system="AU"/>
+<xs:notation name="SND" system="AU"/>
+<xs:notation name="ULW" system="ULW"/>
+<xs:notation name="CDA" system="CD_Audio"/>
+
+<!-- GRAPHICS -->
+<xs:element name="graphic.class">
+   <xs:simpleType>
+          <xs:restriction base="xs:NOTATION">
+             <xs:enumeration value="BMP"/>
+             <xs:enumeration value="CGM-CHAR"/>
+             <xs:enumeration value="CGM-BINARY"/>
+             <xs:enumeration value="CGM-CLEAR"/>
+             <xs:enumeration value="DITROFF"/>
+             <xs:enumeration value="DVI"/>
+             <xs:enumeration value="EPS"/>
+             <xs:enumeration value="EQN"/>
+             <xs:enumeration value="FAX"/>
+             <xs:enumeration value="GIF"/>
+              <xs:enumeration value="GIF87a"/>
+               <xs:enumeration value="GIF89a"/>
+                <xs:enumeration value="JPG"/>
+                 <xs:enumeration value="JPEG"/>
+                  <xs:enumeration value="IGES"/>
+                  <xs:enumeration value="PCX"/>
+                  <xs:enumeration value="PDF"/>
+                  <xs:enumeration value="PIC"/>
+                  <xs:enumeration value="PNG"/>
+                  <xs:enumeration value="PS"/>
+                  <xs:enumeration value="SGML"/>
+                  <xs:enumeration value="TBL"/>
+                  <xs:enumeration value="TEX"/>
+                  <xs:enumeration value="TIFF"/>
+                  <xs:enumeration value="tif"/>
+                  <xs:enumeration value="TIF"/>
+                  <xs:enumeration value="WMF"/>
+                  <xs:enumeration value="WPG"/>
+<xs:enumeration value="CGM"/>
+<xs:enumeration value="cgm"/>
+<xs:enumeration value="SVG"/>
+<xs:enumeration value="svg"/>
+<xs:enumeration value="linespecific"/>
+           </xs:restriction>
+   </xs:simpleType>
+</xs:element>
+<xs:notation name="BMP" public="+//ISBN 0-7923-9432-1::Graphic Notation//NOTATION Microsoft Windows bitmap//EN"/>
+	<xs:notation name="jpeg" system="JPG"/>
+	<xs:notation name="JPG" system="JPG"/>
+	<xs:notation name="DVI" system="DVI"/>
+	<xs:notation name="DITROFF" system="DITROFF"/>
+	<xs:notation name="CGM-BINARY" public="ISO 8632/3//NOTATION Binary encoding//EN"/>
+	<xs:notation name="CGM-CLEAR" public="ISO 8632/4//NOTATION Clear text encoding//EN"/>
+	<xs:notation name="CGM-CHAR" public="ISO 8632/2//NOTATION Character encoding//EN"/>
+	<xs:notation name="bmp" public="+//ISBN 0-7923-9432-1::Graphic Notation//NOTATION Microsoft Windows bitmap//EN"/>
+	<xs:notation name="cgm" system="cgm"/>
+	<xs:notation name="CGM" system="cgm"/>
+	<xs:notation name="EPS" system="eps"/>
+	<xs:notation name="EQN" system="eqn"/>
+	<xs:notation name="GIF" public="-//CompuServe//NOTATION Graphics Interchange Format 87a//EN" system="viewer.exe"/>
+	<xs:notation name="GIF87a" public="-//CompuServe//NOTATION Graphics Interchange Format 87a//EN" system="viewer.exe"/>
+	<xs:notation name="GIF89a" public="-//CompuServe//NOTATION Graphics Interchange Format 89a//EN"/>
+	<xs:notation name="JPEG" system="JPG"/>
+	<xs:notation name="IGES" public="-//USA-DOD//NOTATION (ASME/ANSI Y14.26M-1987) Initial Graphics Exchange Specification//EN"/>
+	<xs:notation name="PCX" public="+//ISBN 0-7923-9432-1::Graphic Notation//NOTATION ZSoft PCX bitmap//EN"/>
+	<xs:notation name="PDF" system="http://www.adobe.com/products/acrobat/adobepdf.html"/>
+	<xs:notation name="PIC" system="pic"/>
+	<xs:notation name="PNG" system="http://www.w3.org/TR/REC-png"/>
+	<xs:notation name="FAX" public="-//USA-DOD//NOTATION CCITT Group 4 Facsimile Type 1 Untiled Raster//EN"/>
+	<xs:notation name="PS" system="PS"/>
+	<xs:notation name="SGML" public="ISO 8879:1986//NOTATION Standard Generalized Markup Language//EN"/>
+	<xs:notation name="TBL" system="TBL"/>
+	<xs:notation name="TEX" public="+//ISBN 0-201-13448-9::Knuth//NOTATION The TeXbook//EN"/>
+	<xs:notation name="TIFF" system="TIFF"/>
+	<xs:notation name="TIF" system="TIF"/>
+	<xs:notation name="tif" system="tif"/>
+	<xs:notation name="SVG" public="-//W3C//DTD SVG 1.1//EN"/>
+	<xs:notation name="svg" public="-//W3C//DTD SVG 1.1//EN"/>
+	<xs:notation name="WMF" public="+//ISBN 0-7923-9432-1::Graphic Notation//NOTATION Microsoft Windows Metafile//EN"/>
+	<xs:notation name="WPG" system="WPG"/>
+	<xs:notation name="linespecific" system="linespecific"/>
+	
+	
+  <!-- MP3 -->
+    
+    <xs:element name="mp3.class">
+   <xs:simpleType>
+          <xs:restriction base="xs:NOTATION">
+             <xs:enumeration value="MP3"/>
+             <xs:enumeration value="M3U"/>
+             <xs:enumeration value="SWA"/>
+             <xs:enumeration value="M3URL"/>
+           </xs:restriction>
+   </xs:simpleType>
+</xs:element>
+<xs:notation name="MP3" system="MP3"/>
+<xs:notation name="M3U" system="M3U"/>
+<xs:notation name="SWA" system="SWA"/>
+<xs:notation name="M3URL" system="M3URL"/>
+
+ <!-- VIDEO -->
+
+ <xs:element name="video.class">
+   <xs:simpleType>
+          <xs:restriction base="xs:NOTATION">
+             <xs:enumeration value="ASR"/>
+             <xs:enumeration value="ASX"/>
+             <xs:enumeration value="WM"/>
+             <xs:enumeration value="WMP"/>
+             <xs:enumeration value="WMX"/>
+             <xs:enumeration value="WMV"/>
+             <xs:enumeration value="WVX"/>
+             <xs:enumeration value="AVI"/>
+             <xs:enumeration value="MOV"/>
+<xs:enumeration value="QT"/>
+<xs:enumeration value="SMI"/>
+<xs:enumeration value="SML"/>
+<xs:enumeration value="VFW"/>
+<xs:enumeration value="FLI"/>
+           </xs:restriction>
+   </xs:simpleType>
+</xs:element>
+<xs:notation name="ASR" system="ASR"/>
+<xs:notation name="ASX" system="ASX"/>
+<xs:notation name="WM" system="WM"/>
+<xs:notation name="WMX" system="WMX"/>
+<xs:notation name="WMP" system="WMP"/>
+<xs:notation name="WMV" system="WMV"/>
+<xs:notation name="WVX" system="WVX"/>
+<xs:notation name="AVI" system="AVI"/>
+<xs:notation name="MOV" system="MOV"/>
+<xs:notation name="QT" system="QT"/>
+<xs:notation name="SMI" system="SMI"/>
+<xs:notation name="SML" system="SML"/>
+<xs:notation name="VFW" system="VFW"/>
+<xs:notation name="FLI" system="FLI"/>
+<xs:notation name="DV" system="DV"/>
+<xs:notation name="DIF" system="DIF"/>
+
+<!-- MPEG -->
+ <xs:element name="mpeg.class">
+ <xs:simpleType>
+          <xs:restriction base="xs:NOTATION">
+             <xs:enumeration value="MPEG"/>
+             <xs:enumeration value="MPG"/>
+             <xs:enumeration value="MPE"/>
+             <xs:enumeration value="MLV"/>
+             <xs:enumeration value="MP2"/>
+             <xs:enumeration value="MP2V"/>
+             <xs:enumeration value="MPA"/>
+             <xs:enumeration value="MP4"/>
+             <xs:enumeration value="MPG4"/>
+             <xs:enumeration value="SDP"/>
+             <xs:enumeration value="RTSP"/>
+             <xs:enumeration value="RTS"/>
+             <xs:enumeration value="SWF"/>
+           </xs:restriction>
+   </xs:simpleType>
+</xs:element>
+<xs:notation name="MPEG" system="MPEG"/>
+<xs:notation name="MPG" system="MPG"/>
+<xs:notation name="MPE" system="MPE"/>
+<xs:notation name="MLV" system="MLV"/>
+<xs:notation name="MP2" system="MP2"/>
+<xs:notation name="MP2V" system="MP2V"/>
+<xs:notation name="MPA" system="MPA"/>
+<xs:notation name="MP4" system="MP4"/>
+<xs:notation name="MPG4" system="MPG4"/>
+<xs:notation name="SDP" system="SDP"/>
+<xs:notation name="RTSP" system="RTSP"/>
+<xs:notation name="RTS" system="RTS"/>
+<xs:notation name="SWF" system="http://www.macromedia.com/software/flash"/>
+   	
+	
+</xs:schema>

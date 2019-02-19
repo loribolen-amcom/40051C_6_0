@@ -1,0 +1,15 @@
+<!-- iso-amsc.ent (initially distributed with DocBook XML DTD V4.1.1beta1) -->
+
+<!-- Derived from the corresponding ISO 8879 standard entity set
+     and the Unicode character mappings provided by Sebastian Rahtz -->
+
+<!ENTITY rceil  "&#38;#x2309;"> <!-- RIGHT CEILING -->
+<!ENTITY rfloor "&#38;#x230B;"> <!-- RIGHT FLOOR -->
+<!ENTITY rpargt "&#38;#xE291;"> <!--  -->
+<!ENTITY urcorn "&#38;#x231D;"> <!-- TOP RIGHT CORNER -->
+<!ENTITY drcorn "&#38;#x231F;"> <!-- BOTTOM RIGHT CORNER -->
+<!ENTITY lceil  "&#38;#x2308;"> <!-- LEFT CEILING -->
+<!ENTITY lfloor "&#38;#x230A;"> <!-- LEFT FLOOR -->
+<!--     lpargt	Unknown unicode character -->
+<!ENTITY ulcorn "&#38;#x231C;"> <!-- TOP LEFT CORNER -->
+<!ENTITY dlcorn "&#38;#x231E;"> <!-- BOTTOM LEFT CORNER -->

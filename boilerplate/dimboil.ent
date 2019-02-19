@@ -1,0 +1,89 @@
+<!-- DOCUMENTATION
+********************************************************************************
+** -FILE-
+**  DIMBOIL.ENT
+**
+** -TITLE-
+**  Destruction of Army Materiel to Prevent Enemy Use Chapter
+**  Non-Editable Boilerplates
+**
+**  Boilerplates text are for both page-base and frame-base TMs. The information 
+**  was generated from MIL-STD-40051-1 and MIL-STD-40051-2 Appendix H.
+** 
+** !! NO TEXT IS CHANGED IN THIS DOCUMENT !!
+** !! EDITABLE TEXT IS IN "selectboil.ent" AND "editboil.ent"  !! 
+**
+** -FORMAL PUBLIC IDENTIFIER (FPI)-
+**  "-//USA-DOD//ENTITIES MIL-STD-2361 DIM Boilerplate REV C 6.0 20150630//EN"
+********************************************************************************
+-->
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Minimum Scope and International Standards Scope
+**
+** !! When developing a stand alone DESTRUCTION MANUAL, the entity &destruct-ginfowp.scope.internat.std;
+**    shall be used in the <destruct-ginfowp> scope paragraph.!!
+** !! When developing a WEAPON SYSTEM MANUAL, the entity &destruct-ginfowp.scope.internat.std;
+**    shall be used in the "How to Use the Manual".!!
+** 
+** -ENTITY LIST-
+**  destruct-ginfowp.scope.mini
+**  destruct-ginfowp.scope.internat.std
+**  howtouse.intl-agree.pg (see editboil.ent)
+** -SOURCE-
+**  MIL-STD-40051-1C
+**    H.5.2 Scope of manual <scope>.
+**
+**  MIL-STD-40051-2C
+**    H.5.2 Scope of manual <scope>.
+********************************************************************************
+-->
+
+<!ENTITY destruct-ginfowp.scope.mini 'This manual is for the guidance of those whose duty it is to render inoperable or destroy equipment which is in imminent danger of capture by an enemy.'>
+
+<!ENTITY destruct-ginfowp.scope.internat.std 'Certain provisions of this technical manual (identify by chapter, work package, paragraph, or similar manner, if appropriate) are the subject of international standardization agreement &howtouse.intl-agree.pg;. When revision or cancellation of this technical manual is proposed which will modify the international agreement concerned, the technical manual management activity will take appropriate action through international standardization channels, including departmental standardization offices, to change the agreement or make other appropriate accommodations.'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+** Authority to destroy material
+** 
+** -ENTITY LIST-
+**  destruct-ginfowp.authorize
+**  
+**  
+** -SOURCE-
+**  MIL-STD-40051-1 
+**    H.5.3.3 Authority to destroy material.
+**
+**  MIL-STD-40051-2 
+**    H.5.3.3 Authority to destroy material.
+********************************************************************************
+-->
+
+<!ENTITY destruct-ginfowp.authorize '<para>Authorization. Only division or higher commanders have the authority to order destruction of equipment. They may however, delegate this authority to subordinate commanders when the situation demands it.</para>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+** Degree of destruction
+** 
+** -ENTITY LIST-
+**  destruct-ginfowp.degree.destruct
+**  
+**  
+** -SOURCE-
+**  MIL-STD-40051-1 
+**    H.5.3.6 Degree of destruction.
+**
+**  MIL-STD-40051-2 
+**    H.5.3.6 Degree of destruction.
+********************************************************************************
+-->
+
+<!ENTITY destruct-ginfowp.degree.destruct '<randlist><item>Methods of Destruction. Choose methods of destruction which will cause such damage that it will be impossible to restore the equipment to a usable condition within the combat zone. </item><item>Classified Equipment. Classified equipment must be destroyed to such a degree as to prevent duplication by, or revealing means of operation or function to the enemy.</item><item>Associated Classified Documents. Any classified documents, notes, instructions, or other written material pertaining to function, operation, maintenance, or employment, including drawings or parts lists, must be destroyed in a manner to render them useless to the enemy.</item></randlist>'>
+
+

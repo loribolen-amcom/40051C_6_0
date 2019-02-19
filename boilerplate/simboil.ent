@@ -1,0 +1,779 @@
+<!-- DOCUMENTATION
+********************************************************************************
+** -FILE-
+**  SIMBOIL.ENT
+**
+** -TITLE-
+**  Supporting Information Chapter Non-Editable Boilerplates
+**
+**  Boilerplates text are for both page-base and frame-base TMs. The information 
+**  was generated from MIL-STD-40051-1 and MIL-STD-40051-2 Appendix G.
+** 
+** !! NO TEXT IS CHANGED IN THIS DOCUMENT !!
+** !! EDITABLE TEXT IS IN "selectboil.ent" AND "editboil.ent"  !! 
+**
+** -FORMAL PUBLIC IDENTIFIER (FPI)-
+**  "-//USA-DOD//ENTITIES MIL-STD-2361 SIM Boilerplate  REV C 6.0 20150630//EN"
+********************************************************************************
+-->
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Standard MAC (2 Maintenance Level) MAC Introduction 
+** 
+** -ENTITY LIST-
+**  macintrowp.intro-std
+**  mac.2-level (see selectboil.ent)
+**  frame-base (see selectboil.ent)
+**  page-base (see selectboil.ent)
+**  mac.nonav-level (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1
+**    G.5.3.1.3 Introduction <intro>.
+**
+**  MIL-STD-40051-2
+**    G.5.3.1.3 Introduction <intro>.
+********************************************************************************
+-->
+<!--<![%mac.nonav-level;[
+<!ENTITY macintrowp.intro-std '<intro>
+			<para0>
+				<title>Introduction</title>
+				<subpara1>
+					<title>The Army Maintenance System MAC</title>
+					<para>This introduction provides a general explanation of the maintenance classes/levels, functions, and other information contained in the MAC.</para>
+					<para>The MAC (immediately following this introduction) designates overall authority and responsibility for the performance of all maintenance
+tasks on the identified end item or component. The application of the maintenance tasks to the end item or component shall be consistent
+with the capacities and capabilities of the designated maintenance levels, which are shown in the MAC in column (4). Column (4) is divided
+into two secondary columns. These columns indicate the maintenance levels of &apos;Field&apos; and &apos;Sustainment&apos;. Each maintenance level column is further divided into two sub-columns. These sub-columns identify the maintenance classes and areas follows:
+<seqlist>
+							<item>Field level maintenance classes:
+							<seqlist>
+									<item>Crew (operator) maintenance. This is the responsibility of a using organization
+to perform maintenance on its assigned equipment. It normally consists of inspecting, servicing, lubricating, adjusting, and replacing parts,
+minor assemblies, and subassemblies. Items with a "C" ("O" for joint service reporting) in the third position of the SMR code may be replaced
+at the crew level. A code of "C" ("O" for joint service) in the fourth position of the SMR code indicates complete repair is authorized at
+the crew level. </item>
+									<item>Maintainer maintenance. This is maintenance accomplished on
+a component, accessory, assembly, subassembly, plug-in unit, or other portion by field level units. This maintenance is performed either
+on the system or after it is removed. An "F" in the third position of the SMR code indicates replacement of assemblies, subassemblies,
+or other components is authorized at this level. An "F" in the fourth position of the SMR code indicates complete repair of the identified
+item is allowed at the Maintainer level. Items repaired at this level are normally returned to the user after maintenance is performed.</item>
+								</seqlist>
+							</item>
+							<item>Sustainment level maintenance classes:<seqlist>
+									<item>Below depot sustainment. This is maintenance accomplished on
+a component, accessory, assembly, subassembly, plug-in unit, or other
+portion either on the system or after it is removed. The item subject
+to maintenance has normally been forwarded to a maintenance facility
+away from the field level supporting units. An "H" in the third position
+of the SMR code indicates replacement of assemblies, subassemblies,
+or other components is authorized at this level. An "H" appearing
+in the fourth position of the SMR code indicates complete repair is
+possible at this level. Items are normally returned to the supply
+system after maintenance is performed at this level.</item>
+									<item>Depot. This is maintenance accomplished on a component, accessory,
+assembly, subassembly, plug-in unit, or other portion either on the
+system or after it is removed. Assets to be repaired at this level
+are normally returned to an Army Depot or authorized contractor facility.
+The replace function for this level of maintenance is indicated by
+the letter "D" or "K" appearing in the third position of the SMR code.
+A "D" or "K" appearing in the fourth position of the SMR code indicates
+complete repair is possible at the depot sustainment maintenance level.
+Items are returned to the supply system after maintenance is performed
+at this level.</item>
+								</seqlist>
+							</item>
+						</seqlist>
+					</para>
+					<para>The tools and test equipment requirements table (immediately
+following the MAC) lists the tools and test equipment (both special
+tools and common tool sets) required for each maintenance task as
+referenced from the MAC. </para>
+					<para>The remarks table (immediately following the tools and test
+equipment requirements) contains supplemental instructions and explanatory
+notes for a particular maintenance task.</para>
+				</subpara1>
+				<subpara1>
+					<title>Maintenance functions (tasks)</title>
+					<para>Maintenance functions are limited to and defined as follows:
+					<seqlist>
+							<item>Inspect. Step-by-step instructions to determine the serviceability of an item by
+comparing its physical, mechanical, and/or electrical characteristics with established
+standards through examination (e.g., by sight, sound, or feel).</item>
+								<item>Test. Step-by-step instructions to verify serviceability by measuring the mechanical,
+pneumatic, hydraulic, or electrical characteristics of an item and comparing those
+characteristics with prescribed standards, e.g., load testing of lift devices or
+hydrostatic testing of pressure hoses. For software, to verify
+usability/operability/functionality of the software.</item>
+								<item>Service. Step-by-step instructions to be performed periodically to keep an item in
+proper operating condition such as replenishing fuel, lubricants, chemical fluids, or gases.</item>
+								<item>Adjust. Step-by-step instructions to maintain or regulate, within prescribed limits,
+by bringing into proper position, or by setting the operating characteristics to specified parameters.</item>
+								<item>Align. Step-by-step instructions to adjust specified variable elements of an item to
+bring about optimum or desired performance. </item>
+								<item>Calibrate. Step-by-step instructions to determine and cause corrections to be made
+or to be adjusted on instruments of test, measuring, and diagnostic equipment used in
+precision measurement. It consists of comparisons of two instruments, one of which
+is a certified standard of known accuracy, to detect and adjust any discrepancy in the
+accuracy of the instrument being compared.</item>
+								<item>Remove. Step-by-step instructions for taking a component off an asset to facilitate
+other maintenance on a different component or on the same component (except for replace and repair.)</item>
+							
+								<item>Install. Step-by-step instructions for placing, positioning, or otherwise locating a component to make it part of a higher level end item. The install task is authorized by the LPD/MAC and the assigned maintenance level is shown as the third position code of the SMR code.</item>
+							
+								<item>Replace. Step-by-step instructions for taking off an unserviceable component and putting a serviceable component in its place. The replace task is authorized by the LPD/MAC and the assigned maintenance level is shown as the fourth position code of the SMR code.</item>
+								
+						<item>Repair. Step-by-step instructions for restoring an item or software to a completely serviceable or fully mission capable status. The repair task is authorized by the LPD/MAC and the assigned maintenance level is shown as the fourth position code of the SMR code.</item>
+						
+						 <item>Paint. Step-by-step instructions to prepare and apply coats of paint. When used with munitions, the paint is applied so the ammunition can be identified and protected.
+
+<note>
+									<trim.para>The following definitions are applicable to the "repair" maintenance task: </trim.para>
+									<trim.para>Fault location/troubleshooting. The process of investigating and detecting the cause of equipment malfunctioning; the act of isolating a fault within a system or Unit Under Test (UUT). </trim.para>
+									<trim.para>Actions. Welding, grinding, riveting, straightening, facing, machining, and/or resurfacing.</trim.para>
+								</note>
+							</item>
+							<item>Overhaul. Step-by-step instructions to restore an item to a completely serviceable/operational condition as required by maintenance standards in the appropriate technical publications. Overhaul is normally the highest degree of maintenance performed by the Army. Overhaul does not normally return an item to a like new condition.</item>
+							<item> Rebuild. Step-by-step instructions required for the restoration of unserviceable equipment to a like new condition in accordance with original manufacturing standards. Rebuild is the highest degree of materiel maintenance applied to Army equipment. The rebuild operation
+includes the act of returning to zero those age measurements (e.g., hours/miles) considered in classifying Army equipment/components. </item>
+							<item>Lubricate. Step-by-step instructions for applying a material (e.g., oil or grease) to reduce friction and allow a component to operate in a more efficient manner.</item>
+							<item>Mark. Step-by-step instructions for restoring obliterated identification on an asset.</item>
+							<item>Pack. Step-by-step instructions to place an item to a container for either storage or shipment after service and other maintenance operations have been completed.</item>
+							<item>Unpack. Step-by-step instructions for removing an asset from a storage or shipping container in preparation to perform further maintenance (e.g., repair or install).</item>
+							<item>Preserve. Step-by-step instructions for treating systems and equipment whether installed or stored, to ensure a serviceable condition.</item>
+							<item>Prepare for use. Step-by-step instructions required to make an asset ready for other maintenance (e.g., remove preservatives, lubricate, etc.).</item>
+							<item>Assemble. Step-by step instructions to join the component pieces of an asset together to make a complete serviceable asset. </item>
+							<item>Disassemble. Step-by-step breakdown (taking apart) of a spare/functional group coded item to the level of its least component,
+that is assigned an SMR code for the level of maintenance under consideration (i.e., identified as maintenance significant) </item>
+							<item>Clean. Step-by-step instructions on how to remove dirt, corrosion or other contaminants from equipment. Refer to appropriate painting, lubrication, and preservation methods to restore original corrosion prevention and control methods when removed as a result of cleaning and/or when using cleaning to remove corrosion from the item.</item>
+							<item>Non destructive inspection. Step-by-step instructions on preparation and accomplishment inspections which do not destroy or damage the equipment.</item>
+							<item>Radio interference suppression. Step-by-step instructions to ensure installed equipment, either communication or other electronics, does not interfere with installed communication equipment. </item>
+							<item>Place in service. Step-by-step instructions required to place an item into service that are not covered in the service upon receipt
+work package. </item>
+							<item>Towing. Step-by-step instructions to connect one vehicle to another for the purpose of having one vehicle moved through the
+motive power of the other vehicle. </item>
+							<item>Jacking. Step-by-step instructions to mechanically raise or lift a vehicle to facilitate maintenance on the vehicle. </item>
+							<item>Parking. Step-by-step instructions to safely place a vehicle in a lot, ramp area or other designated location. </item>
+							<item>Mooring. Step-by-step instructions to secure a vehicle by chains,
+ropes or other means to protect the vehicle from environmental conditions or secure for transportation. </item>
+							<item>Covering. Step-by-step instructions to place a protective wrapping
+over a vehicle to protect it from environmental conditions or to hide (e.g., camouflage) it. </item>
+							<item>Hoisting. Step-by-step instructions to allow a vehicle to be raised by cables or ropes through attaching points. </item>
+							<item>Sling loading. Step-by-step instructions to place a sling around a vehicle to allow it to be raised.</item> 
+							<item>External power. Step-by-step instructions on how to apply electrical power from any authorized power source (e.g., external generator or facility power). </item> 
+							<item>Preparation for storage. Step-by-step instructions for preparing the equipment for placement into administrative, short term, and/or long-term storage.</item>
+							<item>Preparation for shipment. Step-by-step instructions for preparing the equipment to be shipped or transported.</item>
+							<item>Arm. Step-by-step instructions on activating munitions prior to use.</item>
+							<item>Load. Step-by-step instructions for one of three tasks:
+							<seqlist>
+								<item>For transportation, the act of placing assets onto a transportation medium (e.g., pallet, truck, container).</item>
+								<item>For weapons/weapons systems, the act of placing munitions into the weapon/weapons system.</item>
+								<item>For software, the act of putting the software on a workstation or other viewing hardware.</item>
+								</seqlist> </item>
+								 <item>Unload. Step-by-step instructions for one of three tasks:
+								 <seqlist>
+								 <item>For transportation, the act of removing assets from a transportation medium (e.g., pallet, truck, container).</item>
+								 	<item>For weapons/weapons systems, the act of removing munitions from the weapon/weapons system.</item>
+									<item>For software, the act of removing the software from a workstation or other viewing hardware.</item>
+								 	</seqlist> </item>
+								 	 <item>Install peripheral device. Step-by-step instructions for installing peripheral devices such as printers, scanners, modems, etc.</item>
+									<item>Uninstall peripheral device. Step-by-step instructions for uninstalling peripheral devices such as printers, scanners, modems, etc.</item>
+									<item>Upgrade/patch. Step-by-step instructions for performing an upgrade to software or installing a patch to software.</item>
+									<item>Configure. Step-by-step instructions for configuring software for different uses/purposes and/or different users.</item>
+									<item>Debug. Step-by-step instructions for debugging software/correcting errors in the software).</item>
+						</seqlist>
+					</para>
+				</subpara1>
+				<subpara1>
+					<title>Explanation of Columns in the MAC</title>
+					<para>Column (1) Group Number. Column (1) lists Functional Group Code
+(FGC) numbers, the purpose of which is to identify maintenance significant
+components, assemblies, subassemblies, and modules with the Next Higher
+Assembly (NHA). Column (2) Component/Assembly.</para>
+					<para> Column (2) contains the item names of components, assemblies,
+subassemblies, and modules for which maintenance is authorized. </para>
+					<para>Column (3) Maintenance Function. Column (3) lists the functions to be performed on the item listed in column (2). (For a detailed explanation of these functions, refer to maintenance functions (tasks) outlined previously.)</para>
+					<para>Column (4) Maintenance Level. Column (4) specifies each level/class
+of maintenance authorized to perform each function listed in column
+(3), by indicating work time required (expressed as man-hours in whole
+hours or decimals) in the appropriate sub column. This work time figure
+represents the active time required to perform that maintenance task
+at the indicated level of maintenance. If the number or complexity
+of the tasks within the listed maintenance task varies at different
+maintenance levels, appropriate work time figures are to be shown for each level. </para>
+					<para>The work time figure represents the average time required to
+perform the prescribed task (assembly, subassembly, component, module,
+end item, or system) on the item under typical operating conditions
+for that maintenance level. This time includes preparation time (including
+any necessary disassembly/assembly time), troubleshooting/fault location
+time, and quality assurance time in addition to the time required
+to perform the specific tasks identified for the maintenance tasks
+authorized in the MAC. The symbol designations for the various maintenance levels are as follows:
+<randlist>
+							<item>Field:<randlist>
+									<item>C Crew maintenance</item>
+									<item>F Maintainer maintenance</item>
+								</randlist>
+							</item>
+							<item>Sustainment<randlist>
+									<item>L Special Repair Authority (SRA)</item>
+									<item>H Below depot sustainment</item>
+									<item>D Depot maintenance</item>
+								</randlist>
+								<note>
+									<trim.para>The "L" maintenance level is not included in column (4)
+of the MAC. Functions to this level of maintenance are identified
+by work time figure in the "H" column of column (4), and an associated
+reference code is used in the REMARKS column (6). This code is keyed
+to the remarks and the SRA complete repair application is explained
+there.</trim.para>
+								</note>
+							</item>
+						</randlist>
+					</para>
+					<para>Column (5) Tools and Equipment Reference Code. Column (5) specifies, by a number code, those common tool sets, kits, or outfits (not individual tools), common Test, Measurement and Diagnostic Equipment (TMDE), common tools that are not part of a set, kit, or outfit, special tools, special TMDE, and special support equipment required to perform the designated function. Codes are keyed to the entries in the tools and test
+equipment table.</para>
+					<para>Column (6) Remarks Code. When applicable, this column contains a letter code, in alphabetical order, which is keyed to the remarks
+table entries.</para>
+				</subpara1>
+				<subpara1>
+					<title>Explanation of Columns in the Tools and Test Equipment Requirements</title>
+					<para>
+						<randlist>
+							<item>Column (1) Tool or Test Equipment Reference Code. The tool
+or test equipment reference code correlates with a code used in column (5) of the MAC. </item>
+							<item>Column (2) Maintenance Level. The lowest level of maintenance authorized to use the tool or test equipment. </item>
+							<item>Column (3) Nomenclature. Name or identification of the tool or test equipment. </item>
+							<item>Column (4) National Stock Number (NSN). The NSN of the tool or test equipment. </item>
+							<item>Column (5) Tool Number. The manufacturer&apos;s part number. </item>
+						</randlist>
+					</para>
+				</subpara1>
+				<subpara1>
+					<title>Explanation of Columns in the Remarks </title>
+					<para>
+						<randlist>
+						<item>Column (1) Remarks Code. The code recorded in column (6) of the MAC. </item>
+						<item>Column (2) Remarks. This column lists information pertinent to the maintenance task being performed as indicated in the MAC. </item>
+						</randlist>
+					</para>
+				</subpara1>
+			</para0>
+		</intro>'>]]>
+-->
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Aviation MAC Introduction. 
+**  Aviation MAC for Two-Level Introduction. 
+**
+** -ENTITY LIST-
+**  macintrowp.intro-av
+**  frame-base (see selectboil.ent)
+**  page-base (see selectboil.ent)
+**  mac.av-level (see selectboil.ent)
+**  mac.2-level (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1
+**    G.5.3.2.3.A Introduction <intro>.
+**
+**  MIL-STD-40051-2
+**    G.5.3.2.3.A Introduction <intro>.
+********************************************************************************
+-->
+<!--<![%mac.av-level;[
+<!ENTITY macintrowp.intro-av '<intro>
+			<para0>
+				<title>Introduction</title>
+				<subpara1>
+					<title>Aviation Maintenance Allocation Chart</title>
+					<para>The MAC (immediately following the introduction) designates
+overall authority and responsibility for the performance of maintenance
+tasks on the identified end item or component. The application of
+the maintenance tasks to the end item or component shall be consistent
+ with the capacities and capabilities of the designated maintenance
+ level which are shown on the MAC as: <seqlist>
+							<item>Field - includes two columns:<seqlist>
+									<item>"O" which corresponds to Aviation Maintenance Company (AMC) and </item>
+									<item>"F" which corresponds to Aviation Support Battalion (ASB)</item>
+								</seqlist>
+							</item>
+							<item>Sustainment - includes two columns: 
+						<seqlist>
+							<item>"L" which corresponds to Theater Aviation Sustainment Maintenance  Group (TASMG) and other organizations that have National Maintenance  Program certification and </item>
+							<item>"D" which corresponds to Depot</item>
+								</seqlist>
+							</item>
+						</seqlist>
+					</para>
+					<para>The maintenance to be performed is described as follows: <seqlist>
+							<item>Field maintenance activities:<seqlist>
+									<item>Aviation Maintenance Company (AMC). The aviation maintenance
+ company is the lowest level of aviation field maintenance. The AMC provides direct support to aircraft operations, performing functions
+ of aircraft servicing (daily, preflight, post-flight inspections, refuel, arming), Battle Damage Assessment and Repair (BDAR), and
+ repair or replacement actions as specified in the MAC.</item>
+									<item>Aviation Support Company (ASC) in the Aviation Support Battalion (ASB). The ASB performs the following types of maintenance: 
+									<seqlist>
+											<item> Off equipment repair of LRUs or other components within the limits prescribed in the MAC.</item>
+											<item>Inspections beyond the capability of the AMC.</item>
+											<item>BDAR as required. </item>
+											<item>Provide support to AMC personnel during peak workload periods as determined by local policy.</item>
+										</seqlist>
+									</item>
+								</seqlist>
+							</item>
+							<item>Sustainment maintenance<seqlist>
+									<item> Theater Aviation Sustainment Maintenance Group (TASMG) (deployed). The AVCRAD/TASMG performs the following:
+									<seqlist>
+											<item> Provides support to CONUS forces</item>
+											<item>Provides support to OCONUS deployed forces (as the Theater Aviation Support Maintenance Group (TASMG).</item>
+											<item>Expands aviation maintenance capabilities of CONUS depots</item>
+											<item>Classifies and inspects aviation stocks and components.</item>
+											<item>Performs maintenance actions beyond the scope of the AMC or ASB within the limits prescribed in the MAC.</item>
+											<item> Augments ASB and AMC maintenance tasks.</item>
+										</seqlist>
+									</item>
+								</seqlist>
+							</item>
+		<item>Depot. This is maintenance accomplished on a component, accessory, assembly, subassembly, plug-in unit, or other portion either on the system or after it is removed. Assets to be repaired at this class are normally returned to an Army Depot or authorized contractor facility. The replace function for this class of maintenance is indicated by the letter "D" or "K" appearing in the third position of the Source, Maintenance, and Recoverability (SMR) code. A "D" or "K" appearing in the fourth position of the SMR code indicates complete repair is possible at the depot sustainment maintenance level. Items are returned to the supply system after maintenance is performed at this level/class.</item>
+						</seqlist>
+					</para>
+				</subpara1>
+				<subpara1>
+					<title>Use of the MAC</title>
+					<note>
+						<trim.para>Approved item names are used throughout this MAC. Generic terms/ nomenclature (if any) are expressed in parentheses and are not to be considered as official terminology. </trim.para>
+					</note>
+					<para>The MAC assigns maintenance tasks to the lowest level of maintenance. </para>
+					<subpara2>
+						<title>Maintenance functions (tasks)</title>
+						<para></para>
+						<para>Maintenance tasks are limited to and defined as follows:
+						<seqlist>
+								<item>Inspect. Step-by-step instructions to determine the serviceability of an item by
+comparing its physical, mechanical, and/or electrical characteristics with established
+standards through examination (e.g., by sight, sound, or feel).</item>
+								<item>Test. Step-by-step instructions to verify serviceability by measuring the mechanical,
+pneumatic, hydraulic, or electrical characteristics of an item and comparing those
+characteristics with prescribed standards, e.g., load testing of lift devices or
+hydrostatic testing of pressure hoses. For software, to verify
+usability/operability/functionality of the software.</item>
+								<item>Service. Step-by-step instructions to be performed periodically to keep an item in
+proper operating condition such as replenishing fuel, lubricants, chemical fluids, or gases.</item>
+								<item>Adjust. Step-by-step instructions to maintain or regulate, within prescribed limits,
+by bringing into proper position, or by setting the operating characteristics to specified parameters.</item>
+								<item>Align. Step-by-step instructions to adjust specified variable elements of an item to
+bring about optimum or desired performance. </item>
+								<item>Calibrate. Step-by-step instructions to determine and cause corrections to be made
+or to be adjusted on instruments of test, measuring, and diagnostic equipment used in
+precision measurement. It consists of comparisons of two instruments, one of which
+is a certified standard of known accuracy, to detect and adjust any discrepancy in the
+accuracy of the instrument being compared.</item>
+								<item>Remove. Step-by-step instructions for taking a component off an asset to facilitate
+other maintenance on a different component or on the same component (except for replace and repair.)</item>
+								<item>Install. Step-by-step instructions for placing, positioning, or otherwise locating a
+component to make it part of a higher level end item. The install task is authorized by the LPD/MAC and the assigned maintenance level is shown as the third position code of the SMR code.</item>
+								<item>Replace. Step-by-step instructions for taking off an unserviceable component and
+putting a serviceable component in its place. The replace task is authorized by the LPD/MAC and the assigned maintenance level is shown as the fourth position code of the SMR code.</item>
+						<item>Repair. Step-by-step instructions for restoring an item or software to a completely serviceable or fully mission capable status. The repair task is authorized by the LPD/MAC and the assigned maintenance level is shown as the fourth position code of the SMR code.</item>
+						 <item>Paint. Step-by-step instructions to prepare and apply coats of paint. When
+used with munitions, the paint is applied so the ammunition can be identified and protected.
+ <note>
+										<trim.para>The following definitions are applicable to the "repair"
+maintenance task: </trim.para>
+										<trim.para> Fault location/troubleshooting. The process of investigating
+and detecting the cause of equipment malfunctioning; the act of isolating a fault within a system or Unit Under Test (UUT). </trim.para>
+<trim.para>Actions. Welding, grinding, riveting, straightening, facing, machining, and/or resurfacing.</trim.para>
+									</note>
+								</item>
+								<item>Overhaul. Step-by-step instructions to restore an item to a completely serviceable/operational condition as required by maintenance standards in the appropriate technical publications. Overhaul is normally the highest degree of maintenance performed by the Army. Overhaul does not normally return an item to a like new condition.</item>
+								<item> Rebuild. Step-by-step instructions required for the restoration of unserviceable equipment to a like new condition in accordance with original manufacturing standards. Rebuild is the highest degree of materiel maintenance applied to Army equipment. The rebuild operation includes the act of returning to zero those age measurements (e.g., hours/miles) considered in classifying Army equipment/components.</item>
+								<item>Lubricate. Step-by-step instructions for applying a material (e.g., oil or grease) to reduce friction and allow a component to operate in a more efficient manner.</item>
+								<item>Mark. Step-by-step instructions for restoring obliterated identification on an asset.</item>
+								<item>Pack. Step-by-step instructions to place an item into a container for either storage or shipment after service and other maintenance operations have been completed.</item>
+								<item>Unpack. Step-by-step instructions for removing an asset from a storage or shipping container in preparation to perform further maintenance (e.g., repair or install).</item>
+								<item>Preserve. Step-by-step instructions for treating systems and equipment whether installed or stored, to ensure a serviceable condition.</item>
+								<item>Prepare for use. Step-by-step instructions required to make an asset ready for other maintenance (e.g., remove preservatives, lubricate, etc).</item>
+								<item>Assemble. Step-by-step instructions to join the component pieces of an asset together to make a complete serviceable asset.</item>
+								<item>Disassemble. Step-by-step instructions to break down (take apart) a spare/functional group coded item to the level of its least component, that is assigned an SMR code for the level of maintenance under consideration (i.e., identified as maintenance significant)</item>
+								<item>Clean. Step-by-step instructions on how to remove dirt, corrosion or other contaminants from equipment. Refer to appropriate painting, lubrication, and preservation methods to restore original corrosion prevention and control methods when removed as a result of cleaning and/or when using cleaning to remove corrosion from the item.</item>
+								<item>Non destructive inspection. Step-by-step instructions on preparation and accomplishment of inspections which do not destroy or damage the equipment. </item>
+								<item>Radio interference suppression. Step-by-step instructions to ensure installed equipment, either communication or other electronics, does not interfere with installed communication equipment. </item>
+								<item>Place in service. Step-by-step instructions required to place an item into service that are not covered in the service upon receipt work package. </item>
+								<item>Towing. The step-by-step instructions to connect one vehicle to another for the purpose of having one vehicle moved through the motive power of the other vehicle. </item>
+								<item>Jacking. The step-by-step instructions to mechanically raise or lift a vehicle to facilitate maintenance on the vehicle. </item>
+								<item>Parking. Step-by-step instructions to safely place a vehicle in a lot, ramp area or other designated location. </item>
+								<item>Mooring. Step-by-step instructions to secure a vehicle by chains, ropes or other means to protect the vehicle from environmental conditions or secure for transportation. </item>
+								<item>Covering. Step-by-step instructions to place a protective wrapping over a vehicle to protect it from environmental conditions or to hide (e.g., camouflage) it. </item>
+								<item>Hoisting. Step-by-step instructions to allow a vehicle to be raised by cables or ropes through attaching points. </item>
+								<item>Sling loading. Step-by-step instructions to place a sling around a vehicle to allow it to be raised. </item>
+								<item>External power. Step-by-step instructions on how to apply electrical power from any authorized power source (e.g., external generator or facility power). </item>
+								<item>Preparation for storage. Step-by-step instructions for preparing the equipment for placement into administrative, short term, and/or long-term storage.</item>
+								<item>Preparation for shipment. Step-by-step instructions for preparing the equipment to be shipped or transported.</item>
+								<item>Transport. Step-by-step instructions and guidance for transporting/shipping the equipment.</item>
+								<item>Arm. Detailed instructions on activating munitions prior to use.</item>
+						<item> Load. Step-by-step instructions for one of three tasks:
+						<seqlist>
+										<item>For transportation, the act of placing assets onto a transportation medium (e.g., pallet, truck, container).</item>
+										<item>For weapons/weapons systems, the act of placing munitions into the weapon/weapons system. </item>
+										<item>For software, the act of putting the software on a workstation or other viewing hardware.</item>
+									</seqlist>
+								</item>
+								<item>Unload. Step-by-step instructions for one of three tasks:
+								<seqlist>
+										<item>For transportation, the act of removing assets from a transportation medium (e.g., pallet, truck, container). </item>
+										<item>For weapons/weapons systems, the act of removing munitions from the weapon/weapons system. </item>
+										<item>For software, the act of removing the software from a workstation or other viewing hardware.</item>
+									</seqlist></item>
+									<item>Install peripheral device. Step-by-step instructions for installing peripheral devices such as printers, scanners, modems, etc.</item>
+									<item>Uninstall peripheral device. Step-by-step instructions for uninstalling peripheral devices such as printers, scanners, modems, etc.</item>
+									<item>Upgrade/patch. Step-by-step instructions for performing an upgrade to software or installing a patch to software.</item>
+									<item>Configure. Step-by-step instructions for configuring software for different uses/purposes and/or different users.</item>
+									<item>Debug. Step-by-step instructions for debugging software/correcting errors in the software).</item>
+							</seqlist>
+						</para>
+					</subpara2>
+				</subpara1>
+				<subpara1>
+					<title>Explanation of Columns in the MAC</title>
+					<para>Column (1) Group Number. Column (1) lists Functional Group Code (FGC) numbers, the purpose of which is to identify maintenance significant components, assemblies, subassemblies, and modules with the Next Higher Assembly (NHA). Column (2) Component/Assembly.</para>
+					<para> Column (2) contains the item names of components, assemblies, subassemblies, and modules for which maintenance is authorized. </para>
+					<para>Column (3) Maintenance Function. Column (3) lists the functions to be performed on the item listed in column (2). (For a detailed explanation of these functions, refer to maintenance functions (tasks) outlined above.)</para>
+					<para>Column (4) Maintenance Level. Column (4) specifies each level/class of maintenance authorized to perform each function listed in column (3), by indicating work time required (expressed as man-hours in whole hours or decimals) in the appropriate sub column. This work time figure
+represents the active time required to perform that maintenance task at the indicated level of maintenance. If the number or complexity
+of the tasks within the listed maintenance task varies at different maintenance levels, appropriate work time figures are to be shown
+for each level. </para>
+					<para>The man-hours represents the average time required to perform the prescribed task (assembly, subassembly, component, module, end item, or system) on the item under
+typical operating conditions for that maintenance level. This time includes preparation time (including any necessary disassembly/assembly time), troubleshooting/fault
+location time, and quality assurance time in addition to the time required to perform the specific tasks identified for the maintenance tasks authorized in the MAC. The symbol
+designations for the maintenance levels/classes are as follows:<randlist>
+							<item>Field:<randlist>
+									<item>O Aviation Maintenance Company</item>
+									<item>F Aviation Support Battalion</item>
+								</randlist>
+							</item>
+							<item>Sustainment<randlist>
+									<item>L Theater Aviation Support Maintenance Group</item>
+									<item>D Depot</item>
+								</randlist>
+							</item>
+						</randlist>
+					</para>
+					<para>Column (5) Tools and Equipment Reference Code. Column (5) specifies, by a number code, those common tool sets, kits, or outfits (not individual tools), common Test, Measurement and Diagnostic Equipment (TMDE), common tools that are not part of a set, kit, or outfit, and special tools, special TMDE, and special support equipment required to perform the designated function.</para>
+					<para>Column (6) Remarks Code. When applicable, this column contains a letter code, in alphabetical order, which is keyed to the remarks.</para>
+				</subpara1>
+				<subpara1>
+					<title>Explanation of Columns in the Tools and Test Equipment Requirements</title>
+					<para>
+						<randlist>
+							<item>Column (1) - Tool or Test Equipment Reference Code. The tool or test equipment reference code correlates with a code used in
+column (5) of the MAC. </item>
+							<item>Column (2) - Maintenance Level. The lowest level of maintenance authorized to use the tool or test equipment. </item>
+							<item>Column (3) - Nomenclature. Name or identification of the tool or test equipment. </item>
+							<item>Column (4) - National Stock Number (NSN). The NSN of the tool or test equipment. </item>
+							<item>Column (5) - Tool Number. The manufacturer&apos;s part number. </item>
+						</randlist>
+					</para>
+				</subpara1>
+				<subpara1>
+					<title>Explanation of Columns in the Remarks </title>
+					<para>
+						<randlist>
+							<item>Column (1) - Remarks Code. The code recorded in remarks code column of the MAC. </item>
+							<item>Column (2) - Remarks. This column lists information pertinent to the maintenance task being performed as indicated in the MAC. </item>
+						</randlist>
+					</para>
+				</subpara1>
+			</para0>
+		</intro>'>
+]]>-->
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Supporting Information UOC List
+**
+**  When UOC is necessary, use the narrative and enter the corresponding UOC 
+**  codes and descriptions. 
+**
+** -ENTITY USED IN ELEMENT-
+**  COEI and BII Work Package Introduction <coeibiiwp><intro>
+**  AAL Work Package Introduction <aalwp><intro>
+**
+** -ENTITY LIST-
+**  intro.uoc
+**  intro.uoc-list (see editboil.ent)
+**  uoc-list (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**   G.5.4.3 Introduction for COEI and BII lists work package <intro>.
+**   G.5.5.3 Introduction (for AAL work package) <intro>.
+**
+**  MIL-STD-40051-2B
+**   G.5.4.3 Introduction for COEI and BII lists work package <intro>.
+**   G.5.5.3 Introduction (for AAL work package) <intro>.
+********************************************************************************
+-->
+<!--<!ENTITY intro.uoc '
+<![%uoc-list;[These codes identified below:&intro.uoc-list;]]>
+'>
+-->
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+** COEI and BII Lists Work Package Introduction
+**
+** -ENTITY LIST-
+**  coeibiiwp.intro.marines
+**  coeibiiwp.intro
+**  coeibiiwp.intro.marines.b
+**  intro.uoc
+**  frame-base (see selectboil.ent)
+**  page-base (see selectboil.ent)
+**  short.end.item.name (see editboil.ent)
+**  end.item.name (see editboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**   G.5.4.3 Introduction for COEI and BII lists work package <intro>.
+**
+**  MIL-STD-40051-2B
+**   G.5.4.3 Introduction for COEI and BII lists work package <intro>.
+********************************************************************************
+-->
+<!--<!ENTITY coeibiiwp.intro '<intro frame="no">
+<para0 hcp="no" esd="no">
+<title>INTRODUCTION</title>
+<subpara1 hcp="no" esd="no">
+<title>Scope</title>
+<para hcp="no" esd="no">This work package lists COEI and BII for the &short.end.item.name; to help you inventory items for safe and efficient operation of the equipment.</para></subpara1>
+<subpara1 hcp="no" esd="no">
+<title>General</title>
+<para hcp="no" esd="no">The COEI and BII information is divided into the following lists: </para>
+<para hcp="no" esd="no">Components of End Item (COEI). This list is for information purposes only and is not
+authority to requisition replacements. These items are part of the &end.item.name;. As part of the end item, these items must be with the end item whenever it is issued or transferred between property accounts. Items of COEI are removed and separately packaged for transportation or shipment only when necessary. Illustrations
+are furnished to help you find and identify the items.
+</para>
+<para hcp="no" esd="no">Basic Issue Items (BII). These essential items are required to place the &end.item.name; in operation, operate it, and to do emergency repairs. Although shipped separately packaged, BII must be with the &end.item.name; during operation and when it is transferred between property accounts. Listing these items is your
+authority to request/requisition them for replacement based on authorization of the end item by the TOE/MTOE. Illustrations are furnished to help you find and identify the items.
+</para>
+</subpara1>
+<subpara1 hcp="no" esd="no">
+<title>Explanation of <![%frame-base;[Entries]]><![%page-base;[Columns]]> in the COEI List and BII List </title>
+<para hcp="no" esd="no"><![%page-base;[Column (1) ]]><![%coeibiiwp.method-a;[Illus Number. Gives you the number of the item illustrated.
+]]><![%coeibiiwp.method-b;[Item Number. Gives you the reference number of the item listed.]]></para>
+<para hcp="no" esd="no"><![%page-base;[Column (2) ]]>National Stock Number (NSN)<![%coeibiiwp.method-b;[ and Illustration]]>. Identifies the stock number of the item to be used for requisitioning purposes<![%coeibiiwp.method-b;[ and provides an illustration of the item.]]></para>
+<para hcp="no" esd="no"><![%page-base;[Column (3) ]]>Description, Part Number/(CAGEC). Identifies the Federal item name (in all capital letters) followed by a minimum description when needed. The stowage location of COEI and BII is also included in this entry. The last line below the description is the part number and the Commercial and Government Entity Code (CAGEC) (in parentheses).</para>
+<para hcp="no" esd="no"><![%page-base;[Column (4) ]]>Usable on Code. When applicable, gives you a code if the item you need is not the same for different models of equipment.
+&intro.uoc;</para>
+<para hcp="no" esd="no"><![%page-base;[Column (5) ]]>U/I. Unit of Issue (U/I) indicates the physical measurement or count of the item as issued per the National Stock Number <![%frame-base;[entry]]><![%page-base;[shown in Column (2)]]>.</para>
+<para hcp="no" esd="no"><![%page-base;[Column (6) ]]>Qty Rqr. Indicates the quantity required.</para>
+</subpara1></para0></intro>'>
+
+<!ENTITY coeibiiwp.intro.marines '<intro frame="no">
+<para0 hcp="no" esd="no">
+<title>SUPPLY SYSTEM RESPONSIBILITY (SSR) LIST <brk>INTRODUCTION</brk></title>
+<subpara1 hcp="no" esd="no">
+<title>Scope</title>
+<para hcp="no" esd="no">This work package lists SSR for the &short.end.item.name; to help you inventory items for safe and efficient operation of the equipment.</para></subpara1>
+<subpara1 hcp="no" esd="no">
+<title>General</title>
+<para hcp="no" esd="no">Supply System Responsibility. This list is for information purposes only and is not authority to requisition replacements. These items are part of the &short.end.item.name;. As part of the end item, these items must be with the end item whenever it is issued or transferred between property accounts. Illustrations are furnished to help you find and identify the items.
+</para>
+</subpara1>
+<subpara1 hcp="no" esd="no">
+<title>Explanation of <![%frame-base;[Entries]]><![%page-base;[Columns]]> in the SSR List</title>
+<para hcp="no" esd="no"><![%page-base;[Column (1) ]]>Illus Number. Gives you the number of the item illustrated.</para>
+<para hcp="no" esd="no"><![%page-base;[Column (2) ]]>National Stock Number (NSN)<![%coeibiiwp.method-b;[ and Illustration]]>. Identifies the stock number of the item to be used for requisitioning purposes<![%coeibiiwp.method-b;[ and provides an illustration of the item.]]></para>
+<para hcp="no" esd="no"><![%page-base;[Column (3) ]]>Description, Part Number/Commercial and Government Entity Code (CAGEC).Identifies the Federal item name (in all capital letters) followed by a minimum description when needed. The stowage location of SSR is also included in this entry. The last line below the description is the CAGEC (in parentheses) and the part number.
+Usable On Code. When applicable, gives you a code if the item you need is not the same for different models of equipment. (Add the following only as applicable. Replace Xs with appropriate codes and model numbers.) These codes are identified below: </para>
+<para hcp="no" esd="no"><![%page-base;[Column (4) ]]>Usable on Code. When applicable, gives you a code if the item you need is not the same for different models of equipment.
+&intro.uoc; </para>
+<para hcp="no" esd="no">&intro.uoc-list.explain;.</para>
+<para hcp="no" esd="no"><![%page-base;[Column (5) ]]>U/I. Unit of Issue (U/I) indicates the physical measurement or count of the item as issued per the National Stock Number <![%frame-base;[entry]]><![%page-base;[shown in Column (2)]]>.</para>
+<para hcp="no" esd="no"><![%page-base;[Column (6) ]]>Qty Rqr. Indicates the quantity required.</para>
+</subpara1></para0></intro>'>
+
+<!ENTITY coeibiiwp.intro.marines.b '<intro frame="no">
+<para0 hcp="no" esd="no">
+<title>INTRODUCTION</title>
+<subpara1 hcp="no" esd="no">
+<title>Scope</title>
+<para hcp="no" esd="no">This work package lists SSR for the &short.end.item.name; to help you inventory items for safe and efficient operation of the equipment.</para></subpara1>
+<subpara1 hcp="no" esd="no">
+<title>General</title>
+<para hcp="no" esd="no">Suply System Responsibility. This list is for information purposes only and is not authority to requisition replacements. These items are part of the (enter name of end item). As part of the end item, these items must be with the end item whenever it is issued or transferred between property accounts. Illustrations are furnished to help you find and identify the items.
+</para>
+</subpara1>
+<subpara1 hcp="no" esd="no">
+<title>Explanation of <![%frame-base;[Entries]]><![%page-base;[Columns]]> in the SSR List</title>
+<para hcp="no" esd="no"><![%page-base;[Column (1) ]]>Item Number. Gives you the reference number of the item listed.</para>
+<para hcp="no" esd="no"><![%page-base;[Column (2) ]]>National Stock Number (NSN)<![%coeibiiwp.method-b;[ and Illustration]]>. Identifies the stock number of the item to be used for requisitioning purposes and provides an illustration of the item.</para>
+<para hcp="no" esd="no"><![%page-base;[Column (3) ]]>Description, Part Number/Commercial and Government Entity Code (CAGEC).Identifies the Federal item name (in all capital letters) followed by a minimum description when needed. The stowage location of SSR is also included in this entry. The last line below the description is the CAGEC (in parentheses) and the part number.</para>
+<para hcp="no" esd="no"><![%page-base;[Column (4) ]]>Usable on Code. When applicable, gives you a code if the item you need is not the same for different models of equipment. These codes are identified below:
+&intro.uoc; </para>
+<para hcp="no" esd="no">&intro.uoc-list.explain;</para>
+<para hcp="no" esd="no"><![%page-base;[Column (5) ]]>U/I. Unit of Issue (U/I) indicates the physical measurement or count of the item as issued per the National Stock Number <![%frame-base;[entry]]><![%page-base;[shown in Column (2)]]>.</para>
+<para hcp="no" esd="no"><![%page-base;[Column (6) ]]>Qty Rqr. Indicates the quantity required.</para>
+</subpara1></para0></intro>'>-->
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  AAL Work Package Introduction 
+**
+** -ENTITY LIST-
+**  aalwp.intro
+**  aalwp.intro.marines
+**  intro.uoc
+**  frame-base (see selectboil.ent)
+**  page-base (see selectboil.ent)
+**  short.end.item.name (see editboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**   G.5.5.3 Introduction <intro>.
+**    
+**  MIL-STD-40051-2B
+**   G.5.5.3 Introduction <intro>.
+********************************************************************************
+-->
+<!--
+<!ENTITY aalwp.intro '<intro frame="no">
+<para0 hcp="no" esd="no">
+<title>ADDITIONAL AUTHORIZATION LIST (AAL)<brk/>INTRODUCTION</title>
+<subpara1 hcp="no" esd="no">
+<title>Scope</title>
+<para hcp="no" esd="no">This work package lists additional items you are authorized for the support of the &short.end.item.name;.</para>
+</subpara1>
+<subpara1 hcp="no" esd="no">
+<title>General</title>
+<para hcp="no" esd="no">This list identifies items that do not have to accompany the &short.end.item.name; and that do not have to be turned in with it. These items are all authorized to you by CTA, MTOE, TDA, or JTA.</para></subpara1>
+<subpara1 hcp="no" esd="no">
+<title>Explanation of <![%frame-base;[Entries]]><![%page-base;[Columns]]> in the AAL</title>
+<para hcp="no" esd="no"><![%page-base;[Column (1) ]]>National Stock Number (NSN). Identifies the stock number of the item to be used for requisitioning purposes. </para>
+<para hcp="no" esd="no"><![%page-base;[Column (2) ]]>Description, Part Number/(CAGEC). Identifies the Federal item name (in all capital letters) followed by a minimum description when needed. The last line below the description is the part number and the Commercial and Government Entity Code (CAGEC) (in parentheses).</para>
+<para hcp="no" esd="no"><![%page-base;[Column (3) ]]>Usable On Code. When applicable, gives you a code if the item you need is not the same for different models of equipment.
+&intro.uoc;</para>
+<para></para>
+<para hcp="no" esd="no"><![%page-base;[Column (4) ]]>U/I. Unit of Issue (U/I) indicates the physical measurement or count of the item as issued per the National Stock Number<![%page-base;[ shown in Column (1)]]>.</para>
+<para hcp="no" esd="no"><![%page-base;[Column (5) ]]>Qty Recm. Indicates the quantity recommended.</para>
+</subpara1></para0></intro>'>-->
+<!--
+<!ENTITY aalwp.intro.marines '<intro frame="no">
+<para0 hcp="no" esd="no">
+<title>USING UNIT RESPONSIBILITY ITEMS (UURI) LIST<brk/>INTRODUCTION</title>
+<subpara1 hcp="no" esd="no">
+<title>Scope</title>
+<para hcp="no" esd="no">This work package lists using unit responsibility items you are authorized for the support of the &short.end.item.name;.</para>
+</subpara1>
+<subpara1 hcp="no" esd="no">
+<title>General</title>
+<para hcp="no" esd="no">This list identifies items that are to be requisitioned by the using unit.</para></subpara1>
+<subpara1 hcp="no" esd="no">
+<title>Explanation of <![%frame-base;[Entries]]><![%page-base;[Columns]]> in the UURI</title>
+<para hcp="no" esd="no"><![%page-base;[Column (1) ]]>National Stock Number (NSN). Identifies the stock number of the item to be used for requisitioning purposes. </para>
+<para hcp="no" esd="no"><![%page-base;[Column (2) ]]>Description, Part Number/(CAGEC). Identifies the Federal item name (in all capital letters) followed by a minimum description when needed. The last line below the description is the part number and the Commercial and Government Entity Code (CAGEC) (in parentheses).</para>
+<para hcp="no" esd="no"><![%page-base;[Column (3) ]]>Usable On Code. When applicable, gives you a code if the item you need is not the same for different models of equipment.
+&intro.uoc;</para>
+<para hcp="no" esd="no"><![%page-base;[Column (4) ]]>U/I. Unit of Issue (U/I) indicates the physical measurement or count of the item as issued per the National Stock Number.</para>
+<para hcp="no" esd="no"><![%page-base;[Column (5) ]]>Qty Recm. Indicates the quantity recommended.</para>
+</subpara1></para0></intro>'>-->
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Expendable And Durable Items List Work Package Introduction 
+**
+** -ENTITY LIST-
+**  explistwp.explist.intro
+**  explistwp.intro.level (see editboil.ent)
+**  frame-base (see selectboil.ent)
+**  page-base (see selectboil.ent)
+**  end.item.name (see editboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**   G.5.6.3 Introduction for expendable and durable items list work package
+**           <intro>.
+**
+**  MIL-STD-40051-2C
+**   G.5.6.3 Introduction for expendable and durable items list work package
+**           <intro>.
+********************************************************************************
+
+<!ENTITY explistwp.explist.intro '<intro frame="no">
+<para0 hcp="no" esd="no">
+<title>EXPENDABLE AND DURABLE ITEMS LIST<brk/>INTRODUCTION</title>
+<subpara1 hcp="no" esd="no">
+<title>Scope</title>
+<para hcp="no" esd="no">This work package lists expendable and durable items that you will need to operate and/or maintain the &short.end.item.name;. This list is for information only and is not authority to requisition the listed items. These items are authorized to you by <extref docno="CTA 50-970" pretext=", Expendable/Durable Items (Except Medical, Class V Repair Parts, and Heraldic Items)"/>, <extref docno="CTA 50-909" pretext=", Field and Garrison Furnishings and Equipment"/> or <extref docno="CTA 8-100" pretext=", Army Medical Department Expendable/Durable Items"/>.</para></subpara1>
+<subpara1 hcp="no" esd="no">
+<title>Explanation of <![%frame-base;[Entries]]><![%page-base;[Columns]]> in the Expendable/Durable Items List. </title>
+<para hcp="no" esd="no"><![%page-base;[Column (1) ]]>Item No. This number is assigned to the entry in the list and is referenced in the narrative instructions to identify the item (e.g., Use brake fluid (<![%frame-base;[Expendable/Durable Items List]]><![%page-base;[WP 0098]]>, item 5)).</para>
+<para hcp="no" esd="no"><![%page-base;[Column (2) ]]>Level. This entry identifies the lowest level of maintenance that requires the listed item: &explistwp.intro.level;</para>
+<para hcp="no" esd="no"><![%page-base;[Column (3) ]]>National Stock Number (NSN). This is the NSN assigned to the item which you can use to requisition it.</para>
+<para hcp="no" esd="no"><![%page-base;[Column (4) ]]>Item Name, Description, Part Number/(CAGEC). This column provides the other information you need to identify the item. The last line below the description is the part number and the Commercial and Government Entity Code (CAGEC) (in parentheses).</para>
+<para hcp="no" esd="no"><![%page-base;[Column (5) ]]>U/I. Unit of Issue (U/I) code shows the physical measurement or count of an item, such as gallon, dozen, gross, etc.</para></subpara1></para0></intro>'>
+-->
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Tools Identification List Work Package Introduction 
+**
+** -ENTITY LIST-
+**  toolidwp.intro
+**  toolidwp.intro.dmwr-nmwr
+**  toolidwp.toolid.std-header
+**  toolidwp.common (see editboil.ent)
+**  toolidwp.dmwr-nmwr (see editboil.ent)
+**  frame-base (see selectboil.ent)
+**  page-base (see selectboil.ent)
+**  short.end.item.name (see editboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**   G.5.7.3 Introduction for tool identification list work package <intro>.
+**
+**  MIL-STD-40051-2C
+**   G.5.7.3 Introduction for tool identification list work package <intro>.
+********************************************************************************
+-->
+<!--<!ENTITY toolidwp.intro '<intro frame="no">
+<para0 hcp="no" esd="no">
+<title>TOOL IDENTIFICATION LIST <brk/>INTRODUCTION</title>
+<subpara1 hcp="no" esd="no">
+<title>Scope</title>
+<para hcp="no" esd="no">This work package lists <![%toolidwp.common; [special tools and equipment]]><![%toolidwp.dmwr-nmwr; [common tools and supplements and special tools/fixtures]]> needed to maintain the &short.end.item.name;.</para>
+</subpara1>
+<subpara1 hcp="no" esd="no">
+<title>Explanation of <![%page-base;[Columns]]><![%frame-base;[Entries]]> the Tool Identification List</title>
+<para hcp="no" esd="no"><![%page-base;[Column (1) ]]>Item No. This number is assigned to the entry in the list and is referenced in the initial setup to identify the item (e.g., Extractor (<![%page-base;[WP 0090]]><![%frame-base;[Tool Identification list]]>, item 32)).</para>
+<para hcp="no" esd="no"><![%page-base;[Column (2) ]]>Item Name. This <![%page-base;[column]]><![%frame-base;[entry]]> lists the item by noun nomenclature and other descriptive features (e.g., Gage, belt tension).</para>
+<para hcp="no" esd="no"><![%page-base;[Column (3) ]]>National Stock Number (NSN). This is the National Stock Number (NSN) assigned to the item; use it to requisition the item. </para>
+<para hcp="no" esd="no"><![%page-base;[Column (4) ]]>Part Number/(CAGEC). Indicates the primary number used by the manufacturer (individual, company, firm, corporation, or Government activity) which controls the design and characteristics of the item by means of its engineering drawings, specifications, standards, and inspection requirements to identify an item or range of items. The manufacturer&rsquo;s Commercial and Government Entity Code (CAGEC) is also included. </para>
+<para hcp="no" esd="no"><![%page-base;[Column (5) ]]>Reference. This <![%page-base;[column]]><![%frame-base;[entry]]> identifies the authorizing supply catalog, components list or RPSTL for items listed in this work package.</para></subpara1></para0></intro>'>-->
+
+
+<!--<!ENTITY toolidwp.intro.dmwr-nmwr '<intro frame="no">
+<para0 hcp="no" esd="no">
+<title>TOOL IDENTIFICATION LIST <brk/>INTRODUCTION</title>
+<subpara1 hcp="no" esd="no">
+<title>Scope</title>
+<para hcp="no" esd="no">This work package lists all common and special tools and equipment not listed in the
+lower level manuals for this system and that are needed to maintain the &short.end.item.name;.</para>
+</subpara1>
+<subpara1 hcp="no" esd="no">
+<title>Explanation of <![%page-base;[Columns]]><![%frame-base;[Entries]]> the Tool Identification List</title>
+<para hcp="no" esd="no"><![%page-base;[Column (1) ]]>Item No. This number is assigned to the entry in the list and is referenced in the initial setup to identify the item (e.g., Extractor (<![%page-base;[WP 0090]]><![%frame-base;[Tool Identification list]]>, item 32)).</para>
+<para hcp="no" esd="no"><![%page-base;[Column (2) ]]>Item Name. This <![%page-base;[column]]><![%frame-base;[entry]]> lists the item by noun nomenclature and other descriptive features (e.g., Gage, belt tension).</para>
+<para hcp="no" esd="no"><![%page-base;[Column (3) ]]>National Stock Number (NSN). This is the National Stock Number (NSN) assigned to the item; use it to requisition the item. </para>
+<para hcp="no" esd="no"><![%page-base;[Column (4) ]]>Part Number/(CAGEC). Indicates the primary number used by the manufacturer (individual, company, firm, corporation, or Government activity) which controls the design and characteristics of the item by means of its engineering drawings, specifications, standards, and inspection requirements to identify an item or range of items. The manufacturer&rsquo;s Commercial and Government Entity Code (CAGEC) is also included. </para>
+</subpara1></para0></intro>'>-->

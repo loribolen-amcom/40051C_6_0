@@ -1,0 +1,49 @@
+<!-- iso-amsb.ent (initially distributed with DocBook XML DTD V4.1.1beta1) -->
+
+<!-- Derived from the corresponding ISO 8879 standard entity set
+     and the Unicode character mappings provided by Sebastian Rahtz.
+     With additional derivations from
+     ftp://ftp.unicode.org/Public/MAPPINGS/VENDORS/MISC/SGML.TXT -->
+
+<!ENTITY amalg  "&#38;#x2210;"> <!-- N-ARY COPRODUCT -->
+<!ENTITY Barwed "&#38;#x2306;"> <!-- PERSPECTIVE -->
+<!ENTITY barwed "&#38;#x22BC;"> <!-- NAND -->
+<!ENTITY Cap    "&#38;#x22D2;"> <!-- DOUBLE INTERSECTION -->
+<!ENTITY Cup    "&#38;#x22D3;"> <!-- DOUBLE UNION -->
+<!ENTITY cuvee  "&#38;#x22CE;"> <!-- CURLY LOGICAL OR -->
+<!ENTITY cuwed  "&#38;#x22CF;"> <!-- CURLY LOGICAL AND -->
+<!ENTITY diam   "&#38;#x22C4;"> <!-- DIAMOND OPERATOR -->
+<!ENTITY divonx "&#38;#x22C7;"> <!-- DIVISION TIMES -->
+<!ENTITY intcal "&#38;#x22BA;"> <!-- INTERCALATE -->
+<!ENTITY lthree "&#38;#x22CB;"> <!-- LEFT SEMIDIRECT PRODUCT -->
+<!ENTITY ltimes "&#38;#x22C9;"> <!-- LEFT NORMAL FACTOR SEMIDIRECT PRODUCT -->
+<!ENTITY minusb "&#38;#x229F;"> <!-- SQUARED MINUS -->
+<!ENTITY oast   "&#38;#x229B;"> <!-- CIRCLED ASTERISK OPERATOR -->
+<!ENTITY ocir   "&#38;#x229A;"> <!-- CIRCLED RING OPERATOR -->
+<!ENTITY odash  "&#38;#x229D;"> <!-- CIRCLED DASH -->
+<!ENTITY odot   "&#38;#x2299;"> <!-- CIRCLED DOT OPERATOR -->
+<!ENTITY ominus "&#38;#x2296;"> <!-- CIRCLED MINUS -->
+<!ENTITY oplus  "&#38;#x2295;"> <!-- CIRCLED PLUS -->
+<!ENTITY osol   "&#38;#x2298;"> <!-- CIRCLED DIVISION SLASH -->
+<!ENTITY otimes "&#38;#x2297;"> <!-- CIRCLED TIMES -->
+<!ENTITY plusb  "&#38;#x229E;"> <!-- SQUARED PLUS -->
+<!ENTITY plusdo "&#38;#x2214;"> <!-- DOT PLUS -->
+<!ENTITY rthree "&#38;#x22CC;"> <!-- RIGHT SEMIDIRECT PRODUCT -->
+<!ENTITY rtimes "&#38;#x22CA;"> <!-- RIGHT NORMAL FACTOR SEMIDIRECT PRODUCT -->
+<!ENTITY sdot   "&#38;#x22C5;"> <!-- DOT OPERATOR -->
+<!ENTITY sdotb  "&#38;#x22A1;"> <!-- SQUARED DOT OPERATOR -->
+<!ENTITY setmn  "&#38;#x2216;"> <!-- SET MINUS -->
+<!ENTITY sqcap  "&#38;#x2293;"> <!-- SQUARE CAP -->
+<!ENTITY sqcup  "&#38;#x2294;"> <!-- SQUARE CUP -->
+<!ENTITY ssetmn "&#38;#x2216;"> <!-- SET MINUS -->
+<!ENTITY sstarf "&#38;#x22C6;"> <!-- STAR OPERATOR -->
+<!ENTITY timesb "&#38;#x22A0;"> <!-- SQUARED TIMES -->
+<!ENTITY top    "&#38;#x22A4;"> <!-- DOWN TACK -->
+<!ENTITY uplus  "&#38;#x228E;"> <!-- MULTISET UNION -->
+<!ENTITY wreath "&#38;#x2240;"> <!-- WREATH PRODUCT -->
+<!ENTITY xcirc  "&#38;#x25CB;"> <!-- WHITE CIRCLE -->
+<!ENTITY xdtri  "&#38;#x25BD;"> <!-- WHITE DOWN-POINTING TRIANGLE -->
+<!ENTITY xutri  "&#38;#x25B3;"> <!-- WHITE UP-POINTING TRIANGLE -->
+<!ENTITY coprod "&#38;#x2210;"> <!-- N-ARY COPRODUCT -->
+<!ENTITY prod   "&#38;#x220F;"> <!-- N-ARY PRODUCT -->
+<!ENTITY sum    "&#38;#x2211;"> <!-- N-ARY SUMMATION -->

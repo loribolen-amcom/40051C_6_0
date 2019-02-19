@@ -1,0 +1,1063 @@
+<!-- DOCUMENTATION
+********************************************************************************
+** -FILE-
+**  PIMBOIL.ENT
+**
+**
+** -TITLE-
+**  Parts Information Chapter Non-Editable Boilerplates
+**
+**  Boilerplates text are for both page-base and frame-base TMs. The information 
+**  was generated from MIL-STD-40051-1 and MIL-STD-40051-2 Appendix F.
+** 
+** !! NO TEXT IS CHANGED IN THIS DOCUMENT !!
+** !! EDITABLE TEXT IS IN "editboil.ent"  !! 
+**
+** -FORMAL PUBLIC IDENTIFIER (FPI)-
+**  "-//USA-DOD//ENTITIES MIL-STD-2361 PIM Boilerplate REV C 6.0 20150630//EN"
+********************************************************************************
+-->
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  RPSTL Introduction
+**
+**  The RPSTL introduction mandatory wording. Requires user specific entries that
+**  are located in the "editboil.ent". 
+**
+** -ENTITY LIST-
+**  introwp.intro
+**  introwp-cross-reference-indexes
+**  introwp.intro.lowest-maint (see editboil.ent)
+**  introwp.intro.item (see editboil.ent)
+**  introwp.intro.repair-act-des (see editboil.ent) 
+**  intro.uoc-list (see editboil.ent)
+**  introwp.intro.fab-tm (see editboil.ent)
+**  introwp.intro.assoc-pubs (see editboil.ent)
+**  introwp.intro.higher-maint-tm (see editboil.ent)
+**  introwp.intro.uncommon-abbr  (see editboil.ent)
+**  introwp.intro.index-explain.nsn 
+**  introwp.intro.index-explain.pn 
+**  introwp.intro.index-explain.refdes
+**  introwp.intro.index-format.nsn 
+**  introwp.intro.index-format.pn 
+**  introwp.intro.index-format.refdes
+**  introwp.intro.locate-repair-parts.refdes
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**    F.5.3.5.3 Introduction <intro> 
+**  MIL-STD-40051-2C
+**    F.5.3.5.3 Introduction <intro> 
+********************************************************************************
+-->
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  RPSTL Index Explanation
+**
+**  Specifies the explanations the index entries/columns purpose. After editing the 
+**  Selectable Entity, the correct phrase is for each index used in the TM.
+**
+** -ENTITY LIST-
+**  introwp.intro.index-explain.nsn 
+**  introwp.intro.index-explain.pn 
+**  introwp.intro.index-explain.refdes
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**    F.5.3.5.3 Introduction <intro> 
+**
+**  MIL-STD-40051-2C
+**    F.5.3.5.3 Introduction <intro> 
+********************************************************************************
+-->
+
+<!ENTITY introwp.intro.index-explain.nsn "The National Stock Number Index work package refers you to the figure and item number. ">
+
+<!ENTITY introwp.intro.index-explain.pn "The Part Number Index work package refers you to the figure and item number. ">
+
+<!ENTITY introwp.intro.index-explain.refdes "The Reference Designator Index work package refers you to the figure and item number. ">
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  NSN Index Format Explanation
+**
+**  Specifies the formatting for NSN the index. Used only when the Selectable
+**  Entity corresponds to the index is set to "INCLUDE".
+**
+** -ENTITY LIST-
+**  introwp.intro.index-format.nsn
+**
+** -SOURCE-
+**  MIL-STD-40051-1
+**    F.5.3.3.3 Introduction <intro> 
+**  MIL-STD-40051-2
+**    F.5.3.5.3 Introduction <intro> 
+********************************************************************************
+-->
+<!ENTITY introwp.intro.index-format.nsn '<item>National Stock Number (NSN) Index Work Package. NSN&rsquo;s in this index are listed in National Item Identification Number (NIIN) sequence.
+<randlist bullet="yes">
+<item>STOCK NUMBER <![%frame-base;[Entry]]><![%page-base;[Column]]>. This <![%frame-base;[entry]]><![%page-base;[column]]> lists the NSN in National item identification number (NIIN) sequence. The NIIN consists of the last nine digits of the NSN. When using this <![%frame-base;[entry]]><![%page-base;[column]]> to locate an item, ignore the first four digits of the NSN. However, the complete NSN should be used when ordering items by stock number.</item>
+<item>For example, if the NSN is 5385-01-574-1476, the NIIN is 01-574-1476.</item>
+<item>FIG. <![%frame-base;[Entry]]><![%page-base;[Column]]>. This <![%frame-base;[entry]]><![%page-base;[column]]> lists the number of the figure where the item is identified/located. The figures are in numerical order in the repair parts list and special tools list work packages.</item>
+<item>ITEM <![%frame-base;[Entry]]><![%page-base;[Column]]>. The item number identifies the item associated with the figure listed in the adjacent FIG. <![%frame-base;[entry]]><![%page-base;[column]]>. This item is also identified by the NSN listed on the same line.</item></randlist></item>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Part Number Index Format Explanation
+**
+**  Specifies the formatting for Part Number the index. Used only when the 
+**  Selectable entity corresponds to the index is set to "INCLUDE".
+**
+** -ENTITY LIST-
+**  introwp.intro.index-format.pn
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**    F.5.3.5.3 Introduction <intro> 
+**  MIL-STD-40051-2C
+**    F.5.3.5.3 Introduction <intro> 
+********************************************************************************
+-->
+<!ENTITY introwp.intro.index-format.pn '<item>Part Number (P/N) Index Work Package. P/Ns in this index are listed in ascending alphanumeric sequence (vertical arrangement of letter and number combinations which places the first letter or digit of each group in order A through Z, followed by the numbers 0 through 9 and each following letter or digit in like order.)
+<randlist bullet="yes">
+<item>PART NUMBER <![%frame-base;[Entry]]><![%page-base;[Column]]>. Indicates the P/N assigned to the item.</item>
+<item>FIG. <![%frame-base;[Entry]]><![%page-base;[Column]]>. This <![%frame-base;[entry]]><![%page-base;[column]]> lists the number of the figure where the item is identified/located in the repair parts list and special tools list work packages.</item>
+<item>ITEM <![%frame-base;[Entry]]><![%page-base;[Column]]>. The item number is the number assigned to the item as it appears in the figure referenced in the adjacent figure number <![%frame-base;[entry]]><![%page-base;[column]]>.</item></randlist></item>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Reference Designator Index Format Explanation
+**
+** Specifies the formatting for Reference Designator the index. Used only when 
+** the Selectable entity corresponds to the index is set to "INCLUDE".
+**
+** -ENTITY LIST-
+**  introwp.intro.index-format.refdes
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**    F.5.3.5.3 Introduction <intro> 
+**  MIL-STD-40051-2C
+**    F.5.3.5.3 Introduction <intro> 
+********************************************************************************
+-->
+<!ENTITY introwp.intro.index-format.refdes '<item>Reference Designator Index Work Package. Reference designators in this index are listed in ascending alphanumeric sequence (vertical arrangement of letter and number combination which places the first letter or digit of each group in order &ldquo;A&rdquo; through &ldquo;Z&rdquo;, followed by the numbers &ldquo;0&rdquo; through &ldquo;9&rdquo; and each following letter or digit in like order.)
+<randlist bullet="yes">
+<item>REFERENCE DESIGNATOR <![%frame-base;[Entry]]><![%page-base;[Column]]>. Indicates the reference designator assigned to the item.</item>
+<item>FIG. <![%frame-base;[Entry]]><![%page-base;[Column]]>. This <![%frame-base;[entry]]><![%page-base;[column]]> lists the number of the figure where the item is identified/located in the repair parts list or special tools list work package.</item>
+<item>ITEM <![%frame-base;[Entry]]><![%page-base;[Column]]>. The item number is the number assigned to the item as it appears in the figure referenced in the adjacent figure number <![%frame-base;[entry]]><![%page-base;[column]]>.</item></randlist></item>'>
+
+
+<!-- DOCUMENTATION 
+********************************************************************************
+** -TITLE-
+**  Reference Designator How to Locate
+**
+**  When reference designator index is used, details how to use the index. 
+**
+** -ENTITY LIST-
+**  introwp.intro.locate-repair-parts.refdes
+**
+** -SOURCE-
+**  MIL-STD-40051-1
+**    F.5.3.5.3 Introduction <intro> 
+**  MIL-STD-40051-2
+**    F.5.3.5.3 Introduction <intro> 
+********************************************************************************
+-->
+<!ENTITY introwp.intro.locate-repair-parts.refdes '<item>When Reference Designator Is Known.
+<randlist bullet="yes"><item>First. If you know the reference designator, look in the REFERENCE DESIGNATOR <![%frame-base;[entry]]><![%page-base;[column]]> of the reference designator index work package. Note the figure and item number.</item>
+<item>Second. Turn to the figure and locate the item number. Verify that the item is the one you are looking for.</item></randlist></item>'>
+
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  RPSTL introduction.
+**
+**  The RPSTL introduction mandatory wording. Requires user specific entries that
+**  is located in the "editboil.ent". 
+**
+** -ENTITY LIST-
+**  introwp.intro
+**  introwp-cross-reference-indexes
+**
+** -SOURCE-
+**  MIL-STD-40051-1
+**    F.5.3.5.3 Introduction <intro> 
+**  MIL-STD-40051-2
+**    F.5.3.5.3 Introduction <intro> 
+********************************************************************************
+-->  
+<!ENTITY introwp.intro-av '<title>INTRODUCTION</title>
+<para0>
+<title>SCOPE</title>
+<para>This parts information (PI) lists and authorizes spares and repair parts; special tools; special test, measurement, and diagnostic
+equipment (TMDE); and other special support equipment required for performance of (enter maintenance level) maintenance of the (enter
+item name). It authorizes the requisitioning, issue, and disposition of spares, repair parts, and special tools as indicated by the source,
+maintenance, and recoverability (SMR) codes.</para>
+</para0>
+<para0>
+<title>GENERAL</title>
+<para>In addition to the Introduction work package, this RPSTL is divided into the following work packages.
+<seqlist>
+<item>Repair Parts List Work Packages. Work packages containing lists of spare and repair parts authorized for use in the performance
+of maintenance at the levels determined by the MAC/SMR code. These work packages also include parts which must be removed for replacement
+of the authorized parts. Parts lists are composed of functional groups in ascending alphanumeric sequence, with the parts in each group listed
+in ascending figure and item number sequence. Sending units, brackets, filters, and bolts are listed with the component they mount on. Bulk
+materials are listed by item name in the Bulk Items work package which follows (select the work package the bulk items follow: the last Parts
+List work package, the Special Tools Repair Parts work package, or Kits) work package. (choose one of the following) Repair parts kits
+are listed separately in their own functional group and work package OR Repair parts kits are listed at the end of the individual work
+packages. Repair parts for reparable special tools are also listed in a separate work package. Items listed are shown on the associated
+illustrations."</item>
+<item>(Include the text in items 2 through 4 and 6 only if the described work package is included in the TM.) Special Tools Repair Parts Work
+Package. This work package lists any spare parts required for the special tools, TMDE, or other support equipment listed in the Special
+Tools Work Package that are not listed in any other publication. </item>
+<item>Kits work package.  This work package lists all repair kits and their component parts.</item>
+<item>Bulk Items Work Package.  This work package lists all items identified as &apos;bulk&apos; in the parts lists. Due to the nature of bulk items, this work package does not include a figure.</item>
+<item>Special Tools List Work Packages. This work package lists those special tools, special TMDE, and special support equipment authorized
+by this RPSTL (as indicated by Basis of Issue (BOI) information in the DESCRIPTION AND USABLE ON CODE (UOC) column (6)). Tools that are components of common tool sets and/or Class VII are not listed.</item>
+<item>Cross-Reference Indexes Work Packages. There are (enter applicable number) cross-reference indexes work packages in this RPSTL. The National Stock Number (NSN) Index work package refers you to the Figure and item number for each NSN listed in the RPSTL. The Part Number Index work package refers you to the Figure and item number for each part number listed in the RPSTL. (If reference designator is used enter: “The Reference Designator Index work package refers you to the Figure and item number of each reference designator listed in the RPSTL).</item></seqlist></para>
+</para0>
+<para0>
+<title>EXPLANATION OF COLUMNS IN THE REPAIR PARTS LIST AND SPECIAL TOOLS LIST WORK PACKAGES</title>
+<para> ITEM NO. (<![%frame-base;[Entry]]><![%page-base;[Column]]>  1). Indicates the number used to identify items called out in the
+illustration.</para>
+<para> SMR CODE (<![%frame-base;[Entry]]><![%page-base;[Column]]> 2). The SMR code containing supply/requisitioning information,
+maintenance level authorization criteria, and disposition instruction in accordance with AR 700-82, as shown in the following breakout. This entry may be subdivided into 4 subentries, one for each service.
+<table>
+<title>SMR Code Explanation.</title>
+<tgroup cols="4">
+<colspec colname="col1"/>
+<colspec colname="col2"/>
+<colspec colname="col3"/>
+<colspec colname="col4"/>
+<thead>
+<row>
+<entry>Source Code</entry>
+<entry nameend="col3" namest="col2">Maintenance Code</entry>
+<entry>Recoverability Code</entry></row>
+</thead>
+<tbody>
+<row>
+<entry>XX</entry>
+<entry nameend="col3" namest="col2">XX</entry>
+<entry>X</entry>
+</row>
+<row><entry>1st two positions: How to get an item.</entry>
+<entry>3rd position: Who can install, replace, or use the item.</entry>
+<entry>4th position: Who can do complete repair on the item</entry>
+<entry>5th position: Who determines disposition action on unserviceable items</entry>
+</row>
+</tbody>
+</tgroup>
+</table> 
+</para>
+<note>
+<trim.para>Complete Repair:  Maintenance capacity, capability, and authority to perform all corrective maintenance tasks of the "Repair"
+function in a use/user environment in order to restore serviceability to a failed item.</trim.para>
+</note>
+<para>Source Code. The source code tells you how you get an item needed for maintenance, repair, or overhaul of an end item/equipment. Explanations
+of source codes follow: 
+<table>
+<title>Source Code Explanation.</title>
+					<tgroup cols="2">
+						<colspec colname="col1" colwidth="33*"/>
+						<colspec colname="col2" colwidth="67*"/>
+						<thead>
+<row><entry>Source Code</entry>
+<entry>Application/Explanation</entry>
+</row>
+</thead>
+<tbody>
+<row><entry>PA<brk/>PB<brk/>PC<brk/>PD<brk/>PE<brk/>PF<brk/>PG<brk/>PH<brk/>PR<brk/>PZ</entry>
+<entry> Stock items; use the applicable NSN to requisition/request items with these source codes. They are authorized to the level indicated by the code entered in the third position of the SMR code. 
+<note>
+<trim.para>Items coded PC are subject to deterioration. Items coded PR or PZ are obsolete and may not be able to be ordered like other P coded items.</trim.para>
+</note></entry></row>
+<row>
+<entry>KD<brk/>KF<brk/>KB</entry>
+<entry>Items with these codes are not to be requested/requisitioned individually. They are part of a kit that is authorized to the maintenance level
+indicated in the third position of the SMR code. The complete kit must be requisitioned and applied.</entry></row>
+<row>
+<entry>MO Made at AMC level</entry>
+<entry morerows="4">Items with these codes are not to be requisitioned/requested individually. They must be made
+from bulk material which is identified by the P/N in the DESCRIPTION AND USABLE ON CODE (UOC) entry and listed in the bulk material group
+work package of the PI. If the item is authorized to you by the third position code of the SMR code, but the source code indicates it is
+made at higher level, order the item from the higher level of maintenance.</entry>
+</row>
+<row><entry>MF Made at ASB level</entry></row>
+<row><entry>ML Made at TASMG</entry></row>
+<row><entry>MD Made at depot </entry></row>
+<row><entry>MG-Navy only</entry></row>
+
+<row><entry>AO-Assembled at AMC level </entry>
+<entry morerows="4">Items with these codes are not to be requested/requisitioned individually. The parts that
+make up the assembled item must be requisitioned or fabricated and assembled at the level of maintenance indicated by the source code.
+If the third position of the SMR code authorizes you to replace the item, but the source code indicates the item is assembled at a higher
+level, order the item from the higher level of maintenance.</entry>
+</row>
+<row><entry>AF-Assembled at ASB level</entry>
+</row><row><entry>AL-Assembled at TASMG </entry></row>
+<row><entry>AD Assembled by depot</entry></row>
+<row><entry>AG Navy only</entry></row>
+<row><entry>XA</entry>
+<entry>Do not  requisition an "XA" coded item.
+Order the next higher assembly. (Refer to NOTE below.)</entry></row>
+<row><entry>XB</entry>
+<entry>If an item is not available from salvage, order it using the CAGEC and P/N.</entry></row>
+<row><entry> XC</entry>
+<entry>Installation drawings, diagrams, instruction sheets, field service drawings; identified by manufacturer&apos;s P/N.</entry></row>
+<row>
+<entry>XD</entry>
+<entry> Item is not stocked. Order an XD coded item through local purchase or normal supply channels using the CAGEC and
+P/N given, if no NSN is available. 
+<note>
+<trim.para>Cannibalization or controlled exchange, when authorized, may be used as a source of supply for items with the above source
+codes except for those items source coded "XA" or those aircraft support items restricted by requirements of AR 750 1.</trim.para>
+</note></entry></row></tbody>
+</tgroup>
+</table>
+</para>
+<para>Maintenance Code. Maintenance codes tell you the level(s) of maintenance authorized to use and repair support items. The maintenance
+codes are entered in the third and fourth positions of the SMR code as follows:   </para>
+<para>Third Position. The maintenance code entered in the third position tells you the lowest maintenance level authorized to remove, replace,
+and use an item. The maintenance code entered in the third position will indicate authorization to the following levels of maintenance:
+<table>
+<tgroup cols="2">
+<colspec colname="col1" colwidth="33*"/>
+<colspec colname="col2" colwidth="67*"/>
+<thead><row><entry>Maintenance  Code</entry>
+<entry>Application/Explanation</entry></row></thead>
+<tbody><row><entry>O</entry>
+<entry>AMC maintenance can remove, replace, and use the item</entry></row>
+<row><entry>F</entry>
+<entry>AASB maintenance can remove, replace, and use the item.</entry></row>
+<row><entry>L</entry>
+<entry>TASMG can remove, replace, and use the item.</entry></row>
+<row>
+<entry>G </entry>
+<entry>Afloat and ashore intermediate maintenance can remove, replace, and use the item (Navy only)</entry></row>
+<row>
+<entry>K </entry>
+<entry>Contractor facility can remove, replace, and use the item</entry></row>
+<row><entry>Z</entry>
+<entry>Item is not authorized to be removed, replace, or used at any maintenance level </entry>
+</row>
+<row><entry>D</entry>
+<entry>Depot can remove, replace, and use the item.</entry></row></tbody>
+</tgroup>
+</table>
+</para>
+<para>Fourth Position. The maintenance code entered in the fourth position tells you whether or not the item is to be repaired and identifies
+the lowest maintenance level with the capability to do complete repair (perform all authorized repair functions).
+<table>
+<tgroup cols="2">
+<colspec colname="col1" colwidth="33*"/>
+<colspec colname="col2" colwidth="67*"/>
+<thead><row><entry>Maintenance  Code</entry>
+<entry>Application/Explanation</entry></row></thead>
+<tbody>
+<row><entry>O</entry>
+<entry>AMC is the lowest level that can do complete repair of the item.</entry></row>
+<row><entry>F</entry>
+<entry>ASB is the lowest level that can do complete repair of the item.</entry></row>
+<row><entry>L</entry>
+<entry>TASMG is the lowest level that can do complete repair of the item.</entry></row>
+<row><entry>D</entry>
+<entry>Depot is the lowest level that can do complete repair of the item.</entry></row><row><entry>G</entry>
+<entry>Both afloat and ashore intermediate levels are capable of complete repair of item.
+(Navy only)</entry></row>
+<row><entry>K</entry>
+<entry>Complete repair is done at contractor facility</entry></row>
+<row><entry>Z</entry>
+<entry> Nonreparable. No repair is authorized.</entry></row>
+<row><entry>B</entry>
+<entry>No repair is authorized. No parts or special tools are authorized for maintenance of "B" coded item. However, the item
+may be reconditioned by adjusting, lubricating, etc., at the user level.</entry></row></tbody>
+</tgroup>
+</table>
+</para>
+<para>Recoverability Code. Recoverability codes are assigned to items to indicate the disposition action on unserviceable items. The recoverability
+code is shown in the fifth position of the SMR code as follows: 
+<table>
+<tgroup cols="2">
+<colspec colname="col1" colwidth="33*"/>
+<colspec colname="col2" colwidth="67*"/>
+<thead><row><entry>Recoverability Code</entry>
+<entry>Application/Explanation</entry></row></thead>
+<tbody><row>
+<entry>Z </entry>
+<entry>Nonreparable item. When unserviceable, condemn and dispose of the item at the level of maintenance shown in the third position of the SMR code.
+</entry></row>
+<row>
+<entry>O</entry>
+<entry>Reparable item. When uneconomically reparable, condemn and dispose of the item at the AMClevel.</entry></row>
+<row>
+<entry>F</entry>
+<entry>Reparable item. When uneconomically reparable, condemn and dispose of the item at the ASB level.</entry></row>
+<row>
+<entry>L</entry>
+<entry>Reparable item. When uneconomically reparable, condemn and dispose of the item at the TASMG level.</entry></row>
+<row><entry>D</entry>
+<entry>Reparable item. When beyond lower level repair capability, return to depot. Condemnation and disposal of item are not authorized
+below depot level.</entry></row>
+<row><entry>L</entry>
+<entry>Reparable item. Condemnation and disposal not authorized below Specialized Repair Activity (SRA)/TASMG.</entry></row>
+<row><entry>A</entry>
+<entry>Item requires special handling or condemnation procedures because of specific reasons (such as precious metal content, high dollar value, critical
+material, or hazardous material). Refer to appropriate manuals/directives for specific instructions.</entry></row>
+<row><entry>G</entry>
+<entry>Field level reparable item. Condemn and dispose at either afloat or ashore intermediate levels. (Navy only)</entry></row>
+<row><entry>K</entry>
+<entry>Reparable item. Condemnation and disposal to be performedat contractor facility.</entry>
+</row>
+</tbody>
+</tgroup>
+</table></para>
+<para>NSN (<![%frame-base;[Entry]]><![%page-base;[Column]]> 3). The NSN for the item is listed in this <![%frame-base;[entry]]><![%page-base;[column]]>. </para>
+<para>CAGEC (<![%frame-base;[Entry]]><![%page-base;[Column]]> 4). The Commercial and Government Entity Code (CAGEC) is a five digit code that is used to identify the manufacturer, distributor, or Government agency/activity that supplies the item. </para>
+<para>PART NUMBER (<![%frame-base;[Entry]]><![%page-base;[Column]]> 5). Indicates the primary number used by the manufacturer (individual, company, firm, corporation, or Government activity), which controls the design and characteristics of the item by means of its engineering drawings, specifications, standards, and inspection requirements to identify an item or range of items.</para>
+<note>
+<trim.para>When you use an NSN to requisition an item, the item you receive may have a different part number from the number listed.</trim.para>
+</note>
+<para>DESCRIPTION AND USABLE ON CODE (UOC) (<![%frame-base;[Entry]]><![%page-base;[Column]]> 6). This column includes the following information:
+<seqlist>
+<item>The federal item name, and when required, a minimum description to identify the item.</item>
+<item>P/Ns of bulk materials are referenced in this column in the line entry to be manufactured or fabricated.</item>
+<item>Hardness Critical Item (HCI). Items that require special handling or procedures to ensure protection against electromagnetic pulse (EMP)
+damage are marked with the letters &apos;HCI.&apos;</item>
+<item>The statement END OF FIGURE appears just below the last item description in column (6) for a given Figure in both the repair parts list and special tools list work packages. </item>
+<item>Refer to Usable on Code details presented later in this work package under SPECIAL INFORMATION.</item>
+<item>Dot indentions indicate the relationship of the part (or parts) to its next higher assembly (NHA) in the tabular listing. The NHA for this part (or parts) is listed right before the part (or parts) that it is the NHA for. If the item has no dot indentions, it is connected directly to the item identified in the functional group code title for that specific tabular listing.</item>
+<item>The statement END OF FIGURE appears just below the last item description in column (6) for a given Figure in both the repair parts list and special tools list work packages.</item>
+</seqlist>
+</para>
+<para>QTY (<![%frame-base;[Entry]]><![%page-base;[Column]]> 7). The QTY (quantity per figure) <![%frame-base;[entry]]><![%page-base;[column]]> indicates the quantity of the item used in the breakout shown on the illustration/figure, which is prepared for a functional group, subfunctional group, or an assembly. A "V" appearing in this entry instead of a quantity indicates that the quantity is variable and quantity may change from application to application. </para>
+<para><emphasis emph="italic"> (MC) Include for Marine Corps manuals only. </emphasis></para>
+<para>USMC QTY per Equip (<![%frame-base;[Entry]]><![%page-base;[Column]]> 8). This <![%frame-base;[entry]]><![%page-base;[column]]> accommodates the Marine Corps quantity per equipment requirement.  </para>
+</para0>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  RPSTL introduction.
+**
+**  The RPSTL introduction mandatory wording. Requires user specific entries that
+**  is located in the "editboil.ent". 
+**
+** -ENTITY LIST-
+**  introwp.intro
+**  introwp-cross-reference-indexes
+**
+** -SOURCE-
+**  MIL-STD-40051-1
+**    F.5.3.5.3 Introduction <intro> 
+**  MIL-STD-40051-2
+**    F.5.3.5.3 Introduction <intro> 
+********************************************************************************
+--> 
+
+<!ENTITY introwp-cross-reference-indexes '<para0>
+<title>EXPLANATION OF CROSS REFERENCE INDEXES WORK PACKAGES FORMAT AND COLUMNS</title>
+<para>
+<seqlist>
+<item>National Stock Number (NSN) Index Work Package. NSNs in this index are listed in National Item Identification Number (NIIN)
+sequence.
+<randlist>
+<item>STOCK NUMBER Column. This column lists the NSN in NIIN sequence. The NIIN consists of the last nine digits of the NSN. When using this
+column to locate an item, ignore the first four digits of the NSN. However, the complete NSN should be used when ordering items by stock
+number.</item>
+<item> For example, if the NSN is 5385-01-574-1476, the NIIN is 01-574-1476.</item>
+<item> FIG. Column. This column lists the number of the Figure where the item is identified/located. The figures are in numerical order
+in the repair parts list and special tools list work packages.</item>
+<item>ITEM Column. This column identifies the item associated with the Figure listed in the adjacent FIG. column. This item is also identified
+by the NSN listed on the same line.</item>
+</randlist></item>
+<item>Part Number (P/N) Index Work Package. Part numbers in this index are listed in ascending numeric/alphanumeric sequence (vertical arrangement
+of letter and number combinations which places the first letter or digit of each group in order A through Z, followed by the numbers
+0 through 9 and each following letter or digit in like order).
+<randlist>
+<item> PART NUMBER Column. This column indicates the P/N assigned to the item. </item>
+<item>FIG. Column. This column lists the number of the Figure where the item is identified/located in the repair parts list and special
+tools list work packages.</item>
+<item>ITEM Column. The item number is the number assigned to the item as it appears in the Figure referenced in the adjacent figure number
+column. </item>
+<item>Include item 3 as applicable.</item>
+</randlist></item>
+<item>Reference Designator Index Work Package. Reference designators in this index are listed in ascending alphanumeric sequence (vertical
+arrangement of letter and number combination which places the first letter or digit of each group in order "A" through "Z," followed by
+the numbers "0" through "9" and each following letter or digit in like order).
+<randlist>
+<item>REFERENCE DESIGNATOR Column. This column indicates the reference designator assigned to the item. </item>
+<item>FIG. Column. This column lists the number of the Figure where the item is identified/located in the repair parts list or special
+tools list work package. </item>
+<item>ITEM Column. The item number is the number assigned to the item as it appears in the Figure referenced in the adjacent Figure number
+column.</item>
+</randlist></item></seqlist></para>
+</para0>
+<para0>
+<title>SPECIAL INFORMATION</title>
+<para>UOC. The UOC appears in the lower left corner of the Description Column heading. Usable on codes are shown as "UOC:..." in the Description
+Column (justified left) on the first line under the applicable item/nomenclature. Uncoded items are applicable to all models. Examples of the UOCs used
+in the RPSTL are: 
+<table>
+<tgroup cols="2">
+<colspec colname="col1" colwidth="33*"/>
+<colspec colname="col2" colwidth="67*"/>
+<thead>
+<row>
+<entry>Code</entry>
+<entry>Used On</entry>
+</row></thead>
+<tbody>
+<row>
+<entry>PAA </entry>
+<entry>Model M114</entry>
+</row>
+<row>
+<entry>PAB</entry>
+<entry>Model M114A</entry></row>
+<row><entry>PAC</entry>
+<entry> Model M114B</entry></row>
+</tbody>
+</tgroup>
+</table></para> 
+<para><emphasis emph="italic"> Include appropriate UOC content, as applicable.</emphasis></para>
+<para> Fabrication Instructions. Bulk materials required to manufacture items are listed in the bulk material work package of this RPSTL.
+Part numbers for bulk material are also referenced in the Description Column of the line item entry for the item to be manufactured/fabricated.
+Detailed fabrication instructions for items source coded to be manufactured or fabricated are found in (enter applicable TM number or work package
+sequence number).</para>
+<para> Index Numbers. Items which have the word BULK in the figure column will have an index number shown in the item number column.
+This index number is a cross reference between the NSN/Part Number (P/N) Index work packages and the bulk material list in the bulk items
+work package.</para>
+<para><emphasis emph="italic"> For a combined narrative RPSTL manual associated publications shall not be included.</emphasis> </para>
+<para>Associated Publications. The publication(s) listed below pertain to the (enter item name): 
+<table>
+<tgroup cols="2">
+<colspec colname="col1" colwidth="33*"/>
+<colspec colname="col2" colwidth="67*"/>
+<thead>
+<row><entry>Publication</entry>
+<entry>Short Title</entry></row></thead>
+<tbody>
+<row><entry></entry></row>
+</tbody>
+</tgroup>
+</table>
+</para>
+<para><emphasis emph="italic">The following paragraph shall appear only in the field maintenance RPSTL special instructions.</emphasis></para>
+<para>Illustrations List. The illustrations in this RPSTL contain field authorized items. Illustrations published in (enter applicable
+TM number for the higher maintenance level RPSTL, e.g., for field, below depot sustainment, etc.) that contain field authorized items
+also appear in this RPSTL. The tabular list in the repair parts list work package contains only those parts coded "F" in the third position
+of the SMR code, therefore, there may be a break in the item number sequence.</para>
+</para0><para0>
+<title>HOW TO LOCATE REPAIR PARTS </title>
+<para>
+<seqlist>
+<item>When NSNs or Part Numbers Are Not Known. 
+<randlist>
+<item>First. Using the table of contents, determine the assembly group to which the item belongs.
+This is necessary since figures are prepared for assembly groups and subassembly groups, and lists are divided into the same groups. </item>
+
+<item>Second. Find the figure covering the functional group or the subfunctional group to which the item belongs. </item>
+<item>Third. Identify the item on the figure and note the number(s). </item>
+<item>Fourth. Look in the repair parts list work packages for the figure and item numbers. The NSNs and part numbers
+are on the same line as the associated item numbers.</item>
+</randlist> 
+</item>
+<item>When NSN Is Known. 
+<randlist><item>First. If you have the NSN, look in the STOCK NUMBER column of the NSN index work package. The NSN is arranged in
+NIIN sequence. Note the Figure and item number next to the NSN. </item>
+<item>Second. Turn to the figure and locate the item number. Verify that the item is the one for which you are looking</item></randlist></item>
+<item>When Part Number Is Known. 
+<randlist>
+<item> First. If you have the part number and not the NSN, look in the PART NUMBER column of the part number index work package. Identify the Figure and item number. </item>
+<item>Second. Look up the item on the figure in the applicable repair parts list work package.</item>
+<item><emphasis emph="italic">Include item 4 only if the RPSTL has a reference designator index work package. </emphasis></item>
+</randlist>
+</item>
+<item>When Reference Designator Is Known. 
+<randlist><item>First. If you know the reference designator, look in the REFERENCE DESIGNATOR column of the reference
+designator index work package. Note the Figure and item number. </item>
+<item>Second. Turn to the figure and locate the item number. Verify that the item is the one for which you are looking.</item></randlist>
+</item>
+</seqlist>
+</para>
+</para0>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  RPSTL introduction.
+**
+**  The RPSTL introduction mandatory wording. Requires user specific entries that
+**  is located in the "editboil.ent". 
+**
+** -ENTITY LIST-
+**  introwp.intro
+**  introwp-cross-reference-indexes
+**
+** -SOURCE-
+**  MIL-STD-40051-1
+**    F.5.3.5.3 Introduction <intro> 
+**  MIL-STD-40051-2
+**    F.5.3.5.3 Introduction <intro> 
+********************************************************************************
+--> 
+
+<!ENTITY introwp-intro-non-aviation ' <title>INTRODUCTION</title>
+<para0>
+<title>SCOPE</title>
+<para>This RPSTL lists the authorized spares and repair parts; special tools; special test, measurement, and diagnostic equipment (TMDE); and other special support equipment required for performance of (enter maintenance level) maintenance of the (enter item name). It authorizes the requisitioning, issue, and disposition of spares, repair parts, and special tools as indicated by the source, maintenance, and recoverability (SMR) codes. </para>
+</para0>
+<para0>
+<title>GENERAL</title>
+<para>In addition to the Introduction work package, this RPSTL is divided into the following work packages. <seqlist>
+<item>Repair Parts List Work Packages. Work packages containing lists of spare and repair parts authorized for use in the performance of maintenance at the levels determined by the MAC/SMR code. These work packages also include parts which must be removed for replacement of the authorized parts. Parts lists are composed of functional groups in ascending alphanumeric sequence, with the parts in each group listed in ascending figure and item number sequence. Sending units, brackets, filters, and bolts are listed with the component they mount on. Bulk materials are listed by item name in the Bulk Items work package which follows (select the work package the bulk items follow: the last Parts List work package, the Special Tools Repair Parts work package, or Kits) work package. (choose one of the following) "Repair parts kits are listed separately in their own functional group and work package OR Repair parts kits are listed at the end of the individual work packages. Repair parts for reparable special tools are also listed in a separate work package. Items listed are shown on the associated illustrations."</item>
+<item>(Include the text in items 2 through 4 only if the described work package is included in the TM.) "Special Tools Repair Parts Work Package. This work package lists any spare parts required for the special tools, TMDE, or other support equipment listed in the Special Tools Work Package that are not listed in any other publication.</item>
+<item>Kits work package. This work package lists all repair kits and their component parts.</item>
+<item>Bulk Items Work Package. This work package lists all items identified as &apos;bulk&apos; in the parts lists. Due to the nature of bulk items, this work package does not include a figure.</item>
+<item>Special Tools List Work Packages. This work package lists those special tools, special TMDE, and special support equipment authorized by this RPSTL (as indicated by Basis of Issue (BOI) information in the DESCRIPTION AND USABLE ON CODE (UOC) column). Tools that are components of common tool sets and/or Class VII are not listed.</item>
+<item>Cross-Reference Indexes Work Packages. There are (enter applicable number) cross-reference indexes work packages in this RPSTL: the National Stock Number (NSN) Index work package and or, the Part Number (P/N) Index work package (If reference designator is used enter:, and the Reference Designator Index work package). The National Stock Number Index work package refers you to the figure and item number for each NSN listed in the RPSTL. The Part Number Index work package refers you to the figure and item number for each part number listed in the RPSTL." (If reference designator is used enter: "The Reference Designator Index work package refers you to the figure and item number of each reference designator listed in the RPSTL). 
+</item>
+</seqlist></para>
+</para0>
+
+<para0>
+<title>EXPLANATION OF COLUMNS IN THE REPAIR PARTS LIST AND SPECIAL TOOLS LIST WORK PACKAGES </title>
+<para>ITEM NO. (<![%frame-base;[Entry]]><![%page-base;[Column]]> 1). Indicates the number used to identify items called out in the illustration.</para>
+<para>SMR CODE (<![%frame-base;[Entry]]><![%page-base;[Column]]> 2). The SMR code containing supply/requisitioning information, maintenance level authorization criteria, and disposition instruction, as shown in the following breakout. This entry may be subdivided into 4 subentries, one for each service. <table>
+<title>SMR Code Explanation.</title>
+<tgroup cols="4">
+<colspec colname="col1"/>
+<colspec colname="col2"/>
+<colspec colname="col3"/>
+<colspec colname="col4"/>
+<thead>
+<row>
+<entry>Source Code</entry>
+<entry nameend="col3" namest="col2">Maintenance Code</entry>
+<entry>Recoverability Code</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>XX</entry>
+<entry nameend="col3" namest="col2">XX</entry>
+<entry>X</entry>
+</row>
+<row>
+<entry>1st two positions: How to get an item.</entry>
+<entry>3rd position: Who can install, replace, or use the item.</entry>
+<entry>4th position: Who can do complete repair on the item </entry>
+<entry>5th position: Who determines disposition action on unserviceable items.
+</entry>
+</row>
+<row>
+<entry namest="col1" nameend="col4">
+<note>
+<trim.para>Complete Repair: Maintenance capacity, capability, and authority to perform all corrective maintenance tasks of the "Repair" function in a use/user environment in order to restore serviceability to a failed item.</trim.para>
+</note></entry>
+</row>
+</tbody>
+</tgroup>
+</table></para>
+<para>Source Code. The source code tells you how you get an item needed for maintenance, repair, or overhaul of an end item/equipment. Explanations of source codes follow: 
+<table>
+<title>Source Code Explanation.</title>
+<tgroup cols="2">
+<colspec colname="col1" colwidth="33*"/>
+<colspec colname="col2" colwidth="67*"/>
+<thead>
+<row>
+<entry>Source Code</entry>
+<entry>Application/Explanation</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>PA<brk/>PB<brk/>PC<brk/>PD<brk/>PE<brk/>PF<brk/>PG<brk/>PH<brk/>PR<brk/>PZ</entry>
+<entry>Stock items; use the applicable NSN to requisition/request items with these source codes. They are authorized to the level indicated by the code entered in the third position of the SMR code. <note>
+<trim.para>Items coded PC are subject to deterioration. Items coded PR or PZ are obsolete and may
+not be able to be ordered like other P coded items.</trim.para>
+</note></entry>
+</row>
+<row>
+<entry>KD<brk/>KF<brk/>KB</entry>
+<entry>Items with these codes are not to be requested/requisitioned individually. They are part of a kit that is authorized to the maintenance level indicated in the third position of the SMR code. The complete kit must be requisitioned and applied.</entry>
+</row>
+<row>
+<entry>MF Made at Field level</entry>
+<entry morerows="4">Items with these codes are not to be requisitioned/requested individually. They must be made from bulk material which is identified by the P/N in the DESCRIPTION AND USABLE ON CODE (UOC) entry and listed in the bulk material group work package of the RPTSL. If the item is authorized to you by the third position code of the SMR code, but the source code indicates it is made at higher level, order the item from the higher level of maintenance.</entry>
+</row>
+<row>
+<entry>MH Made at below depot sustainment level</entry>
+</row>
+<row>
+<entry>ML Made at SRA</entry>
+</row>
+<row>
+<entry>MD Made at depot</entry>
+</row>
+<row>
+<entry>MG-Navy only</entry>
+</row>
+<row>
+<entry>AF Assembled by maintainer level </entry>
+<entry morerows="4">Items with these codes are not to be requested/requisitioned individually. The parts that make up the assembled item must be requisitioned or fabricated and assembled at the level of maintenance indicated by the source code. If the third position of the SMR code authorizes you to replace the item, but the source code indicates the item is assembled at a higher level, order the item from the higher level of maintenance.</entry>
+</row>
+<row>
+<entry>AH Assembled by below depot sustainment level</entry>
+</row>
+<row>
+<entry>AL Assembled by SRA </entry>
+</row>
+<row>
+<entry>AD Assembled by depot</entry>
+</row>
+<row>
+<entry>AG - navy only</entry>
+</row>
+<row>
+<entry>XA</entry>
+<entry>Do not requisition an "XA" coded item. Order the next higher assembly. (Refer to NOTE below.)</entry>
+</row>
+<row>
+<entry>XB</entry>
+<entry>If an item is not available from salvage, order it using the CAGEC and P/N.</entry>
+</row>
+<row>
+<entry>XC</entry>
+<entry>Installation drawings, diagrams, instruction sheets, field service drawings; identified by manufacturer&apos;s P/N.</entry>
+</row>
+<row>
+<entry>XD</entry>
+<entry>Item is not stocked. Order an XD coded item through local purchase or normal supply channels using the CAGEC and P/N given, if no NSN is available. 
+</entry>
+</row>
+<row>
+<entry namest="col1" nameend="col2">
+<note>
+<trim.para>Cannibalization or controlled exchange, when authorized, may be used as a source of supply for items with the above source codes except for those items source coded "XA" or those aircraft support items restricted by requirements of AR 750 1.</trim.para>
+</note></entry>
+</row>
+</tbody>
+</tgroup>
+</table></para>
+<para>Maintenance Code. Maintenance codes tell you the level(s) of maintenance authorized to use and repair support items. The maintenance codes are entered in the third and fourth positions of the SMR code as follows: </para>
+<para>Third Position. The maintenance code entered in the third position tells you the lowest
+maintenance class authorized to remove, replace, and use an item. The maintenance
+code entered in the third position will indicate authorization to the following classes of
+maintenance: 
+
+<table>
+<tgroup cols="2">
+<colspec colname="col1" colwidth="33*"/>
+<colspec colname="col2" colwidth="67*"/>
+<thead>
+<row>
+<entry>Maintenance Code</entry>
+<entry>Application/Explanation</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>C</entry>
+<entry>Crew</entry>
+</row>
+<row>
+<entry>F</entry>
+<entry>Maintainer maintenance can remove, replace, and use the item.</entry>
+</row>
+<row>
+<entry>H</entry>
+<entry>Below Depot Sustainment maintenance can remove, replace, and use the item.</entry>
+</row>
+<row>
+<entry>L</entry>
+<entry>Specialized repair activity can remove, replace, and use the item.</entry>
+</row>
+<row>
+<entry>G </entry>
+<entry>Afloat and ashore intermediate maintenance can remove, replace, and use the item</entry>
+</row>
+<row>
+<entry>K </entry>
+<entry>Contractor facility can remove, replace, and use the item</entry>
+</row>
+<row>
+<entry>Z</entry>
+<entry>Item is not authorized to be removed, replace, or used at any maintenance level (Navy only)</entry>
+</row>
+<row>
+<entry>D</entry>
+<entry>Depot can remove, replace, and use the item.</entry>
+</row>
+<row>
+<entry namest="col1" nameend="col2"><note> <trim.para>Army will use C in the third position. However, for joint service
+publications, other services may use O.</trim.para></note> </entry>
+</row>
+</tbody>
+</tgroup>
+</table></para>
+<para>Fourth Position. The maintenance code entered in the fourth position tells you whether or not the item is to be repaired and identifies the lowest maintenance level with the capability to do complete repair (perform all authorized repair functions).
+<table>
+<tgroup cols="2">
+<colspec colname="col1" colwidth="33*"/>
+<colspec colname="col2" colwidth="67*"/>
+<thead>
+<row>
+<entry>Maintenance Code</entry>
+<entry>Application/Explanation</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>C</entry>
+<entry>Crew (operator) is the lowest class that can do complete repair.</entry>
+</row>
+<row>
+<entry>F</entry>
+<entry>Maintainer is the lowest level that can do complete repair of the item.</entry>
+</row>
+<row>
+<entry>H</entry>
+<entry>Below Depot Sustainment is the lowest level that can do complete repair of the item.</entry>
+</row>
+<row>
+<entry>L</entry>
+<entry>Specialized repair activity (enter specialized repair activity designator) is the lowest level that can do complete repair of the item.</entry>
+</row>
+<row>
+<entry>D</entry>
+<entry>Depot is the lowest level that can do complete repair of the item.</entry>
+</row>
+<row>
+<entry>G</entry>
+<entry>Both afloat and ashore intermediate levels are capable of complete repair of item. (Navy only)</entry>
+</row>
+<row>
+<entry>K</entry>
+<entry>Complete repair is done at contractor facility</entry>
+</row>
+<row>
+<entry>Z</entry>
+<entry>Nonreparable. No repair is authorized.</entry>
+</row>
+<row>
+<entry>B</entry>
+<entry>No repair is authorized. No parts or special tools are authorized for maintenance of "B" coded item. However, the item may be reconditioned by adjusting, lubricating, etc., at the user level.</entry>
+</row>
+</tbody>
+</tgroup>
+</table></para>
+<para>Recoverability Code. Recoverability codes are assigned to items to indicate the disposition action on unserviceable items. The recoverability code is shown in the fifth position of the SMR code as follows:
+ <table>
+<tgroup cols="2">
+<colspec colname="col1" colwidth="33*"/>
+<colspec colname="col2" colwidth="67*"/>
+<thead>
+<row>
+<entry>Recoverability Code</entry>
+<entry>Application/Explanation</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>C</entry>
+<entry>Reparable item. When uneconomically reparable,
+condemn and dispose of the item at the crew/operator
+level.</entry>
+</row>
+<row>
+<entry>Z</entry>
+<entry>Nonreparable item. When unserviceable, condemn and dispose of the item at the level of maintenance shown in the third position of the SMR code.</entry>
+</row>
+<row>
+<entry>F</entry>
+<entry>Reparable item. When uneconomically reparable, condemn and dispose of the item at the field level.</entry>
+</row>
+<row>
+<entry>H</entry>
+<entry>Reparable item. When uneconomically reparable, condemn and dispose of the item at the below depot sustainment level.</entry>
+</row>
+<row>
+<entry>D</entry>
+<entry>Reparable item. When beyond lower level repair capability, return to depot. Condemnation and disposal of item are not authorized below depot level.</entry>
+</row>
+<row>
+<entry>L</entry>
+<entry>Reparable item. Condemnation and disposal not authorized below Specialized Repair Activity (SRA)/TASMG.</entry>
+</row>
+<row>
+<entry>A</entry>
+<entry>Item requires special handling or condemnation procedures because of specific reasons (such as precious metal content, high dollar value, critical material, or hazardous material). Refer to appropriate manuals/directives for specific instructions.</entry>
+</row>
+<row>
+<entry>G</entry>
+<entry>Field level reparable item. Condemn and dispose at either afloat or ashore intermediate levels. (Navy only)</entry>
+</row>
+<row>
+<entry>K</entry>
+<entry>Reparable item. Condemnation and disposal to be performed at contractor facility.</entry>
+</row>
+</tbody>
+</tgroup>
+</table></para>
+<para>NSN (<![%frame-base;[Entry]]><![%page-base;[Column]]> 3). The NSN(s) for the item is listed in this column. </para>
+<para>CAGEC (<![%frame-base;[Entry]]><![%page-base;[Column]]> 4). The Commercial and Government Entity Code (CAGEC) is a five digit code which is used to identify the manufacturer, distributor, or Government agency/activity that supplies the item.</para>
+<para>PART NUMBER (Column 5). Indicates the primary number used by the manufacturer (individual, company, firm, corporation, or Government activity), which controls the design and characteristics of the item by means of its engineering drawings, specifications, standards, and inspection requirements to identify an item or range of items. </para>
+<note>
+<trim.para>When you use an NSN to requisition an item, the item you receive may have a different part number from the number listed.</trim.para>
+</note>
+<para>DESCRIPTION AND USABLE ON CODE (UOC) (Column 6). This column includes the following information:
+<seqlist>
+<item>The federal item name, and when required, a minimum description to identify the item.</item>
+<item>Part numbers of any bulk materials required if the item is to be locally manufactured
+or fabricated.</item>
+<item>Hardness Critical Item (HCI). Items that require special handling or procedures to ensure protection against electromagnetic pulse (EMP) damage are marked with the letters &apos;HCI.&apos;</item>
+<item>Refer to Usable on Code details presented later in this work package under SPECIAL
+INFORMATION.</item>
+<item>Dot indentions indicate the relationship of the part (or parts) to its next higher
+assembly (NHA) in the tabular listing. The NHA for this part (or parts) is listed right
+before the part (or parts) that it is the NHA for. If the item has no dot indentions, it is
+connected directly to the item identified in the functional group code title for that
+specific tabular listing will not have a dot indention.</item>
+<item>The statement END OF FIGURE appears below the last item description in column
+(6) for each Figure in the repair parts list, special tools repair parts, kits, bulk items, and
+special tools list work packages </item>
+</seqlist></para>
+<para>QTY (Column 7). The QTY (quantity per figure) column indicates the quantity of the item used in the breakout shown on the illustration/figure. A "V" appearing in this column instead of a quantity indicates that the quantity is variable and quantity may change from application to application. (MC) Include for Marine Corps manuals only. USMC QTY per Equip (Column 8). This column indicates the total quantity of the item used on the equipment.</para>
+</para0>
+<para0>
+<title> EXPLANATION OF CROSS REFERENCE INDEXES WORK PACKAGES FORMAT AND COLUMN</title>
+<para><seqlist>
+<item>National Stock Number (NSN) Index Work Package. NSNs in this index are listed in National Item Identification Number (NIIN) sequence.<randlist>
+<item>STOCK NUMBER Column. This column lists the NSN in NIIN sequence. The NIIN consists of the last nine digits of the NSN. When using this column to locate an item, ignore the first four digits of the NSN. However, the complete NSN should be used when ordering items by stock number.</item>
+<item>For example, if the NSN is 5385-01-574-1476, the NIIN is 01-574-1476.</item>
+<item>FIG. Column. This column lists the number of the figure where the item is identified/located. The figures are in numerical order in the repair parts list and special tools list work packages.</item>
+<item>ITEM Column. The item number identifies the item associated with the Figure listed in the adjacent FIG. column. This item is also identified by the NSN listed on the same line.</item>
+</randlist></item>
+<item>Part Number (P/N) Index Work Package. Part numbers which are all numbers are
+listed first in ascending numeric sequence. Part numbers containing letters and numbers
+are listed in ascending alphanumeric sequence by part number after all the part numbers
+containing numbers only.<randlist>
+<item>PART NUMBER Column. Indicates the P/N assigned to the item.</item>
+<item>FIG. Column. This column lists the number of the figure where the item is identified/located in the repair parts list and special tools list work packages.</item>
+<item>ITEM Column. The item number is the number assigned to the item as it appears in the Figure referenced in the adjacent Figure number column.</item>
+</randlist></item>
+<item>Reference Designator Index Work Package. Reference designators in this index are listed in ascending alphanumeric sequence (vertical arrangement of letter and number combination which places the first letter or digit of each group in order "A" through "Z," followed by the numbers "0" through "9" and each following letter or digit in like order).<randlist>
+<item>REFERENCE DESIGNATOR Column. This column indicates the reference designator assigned to the item. </item>
+<item>FIG. Column. This column lists the number of the Figure where the item is identified/located in the repair parts list or special tools list work package. </item>
+<item>ITEM Column. The item number is the number assigned to the item as it appears in the Figure referenced in the adjacent Figure number column.</item>
+</randlist> </item>
+</seqlist></para>
+</para0>
+<para0>
+<title>SPECIAL INFORMATION </title>
+<para>UOC. The UOC appears in the lower left corner of the Description Column heading. Usable on codes are shown as "UOC:.." in the Description Column (justified left) on the first line under the applicable item/nomenclature. Uncoded items are applicable to all models. Examples of the UOCs used in the RPSTL are: 
+<table>
+<tgroup cols="2">
+<colspec colname="col1" colwidth="33*"/>
+<colspec colname="col2" colwidth="67*"/>
+<thead>
+<row>
+<entry>Code</entry>
+<entry>Used On</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>PAA </entry>
+<entry>Model M114</entry>
+</row>
+<row>
+<entry>PAB</entry>
+<entry>Model M114A</entry>
+</row>
+<row>
+<entry>PAC</entry>
+<entry> Model M114B</entry>
+</row>
+</tbody>
+</tgroup>
+</table> Include appropriate UOC content, as applicable.</para>
+<para>Fabrication Instructions. Bulk materials required to manufacture items are listed in the bulk material functional group of this RPSTL. Part numbers for bulk material are also referenced in the Description Column of the line item entry for the item to be manufactured/fabricated. Detailed fabrication instructions for items source coded to be manufactured or fabricated are found in (enter applicable TM number or work package sequence number).</para>
+<para>Index Numbers. Items which have the word BULK in the figure column will have an index number shown in the item number column. This index number is a cross reference between the NSN/Part Number (P/N) Index work packages and the bulk material list in the bulk items work package. For a combined narrative RPSTL manual associated publications shall not be included. </para>
+<para>Associated Publications. The publication(s) listed below pertain to the (enter item name): 
+<table>
+<tgroup cols="2">
+<colspec colname="col1" colwidth="33*"/>
+<colspec colname="col2" colwidth="67*"/>
+<thead>
+<row>
+<entry>Publication</entry>
+<entry>Short Title</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry></entry>
+</row>
+</tbody>
+</tgroup>
+</table> <![%page-base;[The following paragraph shall appear only in the field maintenance RPSTL special instructions.]]></para>
+<para><![%page-base;[Illustrations List. The illustrations in this RPSTL contain field authorized items. Illustrations published in (enter applicable TM number for the higher maintenance level RPSTL, e.g., for field, below depot sustainment, etc.) that contain field authorized items also appear in this RPSTL. The tabular list in the repair parts list work package contains only those parts coded "F" in the third position of the SMR code, therefore, there may be a break in the item number sequence.]]> </para>
+</para0>
+<para0>
+<title>HOW TO LOCATE REPAIR PARTS</title>
+<para>
+<seqlist>
+<item>When NSNs or Part Numbers Are Not Known. First. Using the table of contents, determine the assembly group to which the item belongs. This is necessary since figures are prepared for assembly groups and subassembly groups, and lists are divided into the same groups. Second. Find the figure covering the functional group or the subfunctional group to which the item belongs. Third. Identify the item on the figure and note the number(s). Fourth. Look in the repair parts list work packages for the figure and item numbers. The NSNs and part numbers are on the same line as the associated item numbers.</item>
+<item>When NSN Is Known. 
+<randlist><item>
+First. If you have the NSN, look in the STOCK NUMBER column of the NSN index work package. The NSN is arranged in NIIN sequence. Note the figure and item number next to the NSN. </item><item>Second. Turn to the figure and locate the item number. Verify that the item is the one for which you are looking for.</item></randlist></item>
+<item>When P/N Is Known. <randlist>
+<item>First. If you have the part number and not the NSN, look in the PART NUMBER column of the part number index work package. Identify the figure and item number.</item> 
+<item>Second. Look up the item on the figure in the applicable repair parts list work package." Include item 4 only if the RPSTL has a reference designator index work package.</item>
+</randlist>
+</item>
+<item>When Reference Designator Is Known. 
+<randlist>
+<item>First. If you know the reference designator, look in the REFERENCE DESIGNATOR column of the reference designator index work package. Note the figure and item number. </item>
+<item>Second. Turn to the figure and locate the item number. Verify that the item is the one for which you are looking.</item>
+</randlist>
+</item>
+</seqlist></para>
+</para0>
+<para0>
+<title>ABBREVIATIONS</title>
+<para>
+<table>
+<tgroup cols="2">
+<colspec colname="col1" colwidth="33*"/>
+<colspec colname="col2" colwidth="67*"/>
+<thead>
+<row>
+<entry>Abbreviation</entry>
+<entry>Explanation</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Include all abbreviations used in the RPSTL. </entry>
+<entry> </entry>
+</row>
+</tbody>
+</tgroup>
+</table></para>
+</para0>'>

@@ -1,0 +1,874 @@
+<!-- DOCUMENTATION
+********************************************************************************
+** -FILE-
+**  GIMBOIL.ENT
+**
+** -TITLE-
+**  General Information Chapter Non-Editable Boilerplates
+**
+**  Boilerplates text are for both page-base and frame-base TMs. The information 
+**  was generated from MIL-STD-40051-1 and MIL-STD-40051-2 .
+** 
+** !! NO TEXT IS CHANGED IN THIS DOCUMENT !!
+** !! EDITABLE TEXT IS IN "selectboil.ent" AND "editboil.ent"  !! 
+**
+** -FORMAL PUBLIC IDENTIFIER (FPI)-
+**  "-//USA-DOD//ENTITIES MIL-STD-2361 GIM Boilerplate REV C 6.0 20150630//EN"
+********************************************************************************
+-->
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Army - Maintenance forms, records and reports (MFRR) statement 
+**
+**  Verbatim statement for TMs including Army data. Used in both 
+**  "ginfowp.mfrr-multiservice" and "ginfowp.mfrr-oneservice". When conventional 
+**  and chemical ammunition TM is developed, set the selectable entity "ammo-tm" 
+**  to "INCLUDE", otherwise set to "IGNORE".
+**
+** -ENTITY LIST-
+**   ginfowp.mfrr-army 
+**   ammo-tm (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**    B.5.2.4 Maintenance forms, records, and reports <mfrr>.
+**      a. (A) Army Only TM.
+**      d. (A) Army conventional and chemical ammunition.
+**      
+**  MIL-STD-40051-2C
+**    B.5.2.4 Maintenance forms, records, and reports <mfrr>.
+**      a. (A) Army Only TM.
+**      d. (A) Army conventional and chemical ammunition.
+********************************************************************************
+-->
+<!ENTITY ginfowp.mfrr-army 'Department of the Army forms and procedures used for equipment maintenance will be those prescribed by (as applicable) <extref docno="DA PAM 750-8" posttext=", The Army Maintenance Management System (TAMMS) Users Manual"/>; <extref docno="DA PAM 738-751" posttext=", Functional Users Manual for the Army Maintenance Management Systems - Aviation (TAMMS-A)"/>; or <extref docno="AR 700-138" posttext=", Army Logistics Readiness and Sustainability"/>.<![%ammo-tm;[ Accidents involving injury to personnel or damage to material will be reported on <extref docno="DA Form 285" posttext=", U.S. Army Accident Report"/> in accordance with <extref docno="AR 385-40"/>. Explosives and ammunition malfunctions will be reported in accordance with <extref docno="AR 75-1"/>.]]>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  USMC - Maintenance forms, records and reports (MFRR) statement 
+**
+**  Verbatim statement for TMs including USMC data. Used in both 
+**  "ginfowp.mfrr-multiservice" and "ginfowp.mfrr-oneservice". 
+**
+** -ENTITY LIST-
+**  ginfowp.mfrr-usmc 
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**    B.5.2.4 Maintenance forms, records, and reports <mfrr>.
+**      b. (MC) Marines Only TM.
+**
+**  MIL-STD-40051-2C
+**    B.5.2.4 Maintenance forms, records, and reports <mfrr>.
+**      b. (MC) Marines Only TM.
+********************************************************************************
+-->
+<!ENTITY ginfowp.mfrr-usmc 'Maintenance forms and records used by Marine Corps personnel are prescribed by <extref docno="TM 4700-15/1"/>.'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Multi-Service Maintenance forms, records and reports (MFRR) statement 
+**
+**  MFRR for TM with more than one service is used. Set the selectable entities 
+**  for the services included in the TM.
+**
+** -ENTITY LIST-
+**  ginfowp.mfrr-multiservice 
+**  ginfowp.mfrr-army
+**  ginfowp.mfrr-usmc
+**  army-tm (see selectboil.ent)
+**  usmc-tm (see selectboil.ent)
+**  usaf-tm (see selectboil.ent)
+**  usn-tm (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**    B.5.2.4 Maintenance forms, records, and reports <mfrr>.
+**      c. Multi-Service TM 
+**
+**  MIL-STD-40051-2C
+**    B.5.2.4 Maintenance forms, records, and reports <mfrr>.
+**      c.  Multi-Service TM
+********************************************************************************
+-->
+<!ENTITY ginfowp.mfrr-multiservice '<title>MAINTENANCE FORMS, RECORDS, AND REPORTS
+</title>
+<![%army-tm;[<mfrr.para service="army">&ginfowp.mfrr-army;</mfrr.para>]]>
+<![%usmc-tm;[<mfrr.para service="marines">&ginfowp.mfrr-usmc;</mfrr.para>]]>
+<![%usaf-tm;[<mfrr.para service="af">Maintenance forms and records used by Air Force personnel are prescribed in <extref docno="AFI 21-101"> and the applicable <extref docno="TO 00-20" posttext=" Series Technical Orders"/>.</mfrr.para>]]>
+<![%usn-tm;[<mfrr.para service="navy">Navy users should refer to their service peculiar directives to determine applicable maintenance forms and records to be used.</mfrr.para>]]>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Single-Service Maintenance forms, records and reports (MFRR) statement
+**
+**  MFRR for TM with only one service. Set the selectable entities for the 
+**  TM service used.
+**
+** -ENTITY LIST-
+**  ginfowp.mfrr-oneservice 
+**  ginfowp.mfrr-army
+**  ginfowp.mfrr-usmc
+**  army-tm (see selectboil.ent)
+**  usmc-tm (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**    B.5.2.4 Maintenance forms, records, and reports <mfrr>.
+**
+**  MIL-STD-40051-2C
+**    B.5.2.4 Maintenance forms, records, and reports <mfrr>.
+********************************************************************************
+-->
+<!ENTITY ginfowp.mfrr-oneservice '<para><![%army-tm;[&ginfowp.mfrr-army;]]>
+<![%usmc-tm;[&ginfowp.mfrr-usmc;]]></para>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Reporting equipment improvement recommendations (EIR) statement
+**
+**  Verbatim statement for reporting equipment improvement recommendations 
+**  statement. When the TM includes USMC, set the selectable entity "usmc-tm" 
+**  to "INCLUDE", otherwise set to "IGNORE".
+**
+** -ENTITY LIST-
+**  ginfowp.eir
+**  short.end.item.name (see editboil.ent)
+**  usmc-tm (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**    B.5.2.5 Reporting equipment improvement recommendations <eir>.
+**    B.5.2.5.1 (MC) Additional reporting equipment improvement recommendations 
+**              Marine Corps TMs.
+**
+**  MIL-STD-40051-2C
+**    B.5.2.5 Reporting equipment improvement recommendations <eir>.
+**    B.5.2.5.1 (MC) Additional reporting equipment improvement recommendations 
+**              Marine Corps TMs.
+********************************************************************************
+-->
+<!ENTITY ginfowp.eir '<para>If your (insert equipment short item name) needs improvement, let us know. Send us an
+EIR. You, the user, are the only one who can tell us what you do not like about your
+equipment. Let us know why you do not like the design or performance.</para>
+<para>All AMCOM (Aviation and Missile Command) Deficiency Reports (DRs), (Warranty,
+EIR, and PQDRs) must be submitted through the Joint Deficiency Reporting System
+(JDRS) at <internet><homepage uri="https://jdrs.mil/"/></internet></para>
+<para>All non-Aviation/Missile EIRs and PQDRs must be submitted through the Product
+Data Reporting and Evaluation Program (PDREP) Web site. The PDREP site is:
+<internet><homepage uri="https://www.pdrep.csd.disa.mil/"/></internet></para>
+<para>“If you do not have internet access, you may submit your information using an SF 368
+(Product Quality Deficiency Report). You can send your SF 368 using email, regular
+mail, or fax using the addresses/fax numbers specified in (DA PAM 750-8, The Army
+Maintenance Management System (TAMMS) Users Manual OR DA PAM 738-751,
+Functional Users Manual for the Army Maintenance Management Systems - Aviation
+(TAMMS-A) for aviation systems). We will send you a reply.</para>
+<![%usmc-tm;[For Marine Corps users: Quality
+deficiency reports (QDR) shall be submitted on <extref docno="SF 368"/>
+in accordance with <extref docno="MCO 4855.10"/>. A reply will be
+furnished to you.]]>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** Comment - 11-30-2007 SDH. HR page-base and frame-base was changed to hr.owntm ** replacing page-base and hr.in.ietm replacing frame-base to support
+** MIL-STD-40051 -1/-1 Change 2.
+**
+** -TITLE-
+**  Hand receipt (HR) manual statement
+**
+**  Verbatim statement for HR manual reference. The selectable entities 
+**  "hr.own.tm" and "hr.in.ietm" is set the TM type being used. 
+**
+** -ENTITY LIST-
+**   ginfowp.handreceipt 
+**   hr.own.tm (see selectboil.ent)
+**   hr.in.ietm (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**    B.5.2.6.1 Hand receipt (HR) manuals (Field) <handreceipt>.
+**
+**  MIL-STD-40051-2C
+**    B.5.2.6 Hand receipt (HR) manuals (Field) <handreceipt>.
+********************************************************************************
+-->
+<!ENTITY ginfowp.handreceipt '<title>HAND RECEIPT (HR) MANUALS</title>
+<para hcp="no" esd="no"><![%hr.own.tm;[This manual has a companion document with a TM number followed by &ldquo;-HR&rdquo; (which stands for Hand Receipt). TM X-XXXX-XXX-10-HR consists of preprinted hand receipts that list end item related equipment (e.g., Components of End Item (COEI),
+Basic Issue Items (BIIs), and Additional Authorization List (AAL)) that must be accounted for. As an aid to property accountability, additional HR manuals may be requisitioned through normal publication channels.]]>
+<![%hr.in.ietm;[This IETM contains hand receipts that list end item related equipment (e.g., Components of End Item (COEI), Basic Issue Items (BIIs), and Additional Authorization List (AAL)) that must be accounted for. ]]></para>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Corrosion prevention and control (CPC) statement
+**
+**  Verbatim statement for CPC reference. 
+**
+** -ENTITY LIST-
+**  ENTITY ginfowp.cpcdata 
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**    B.5.2.7 Corrosion prevention and control <cpcdata>.
+**
+**  MIL-STD-40051-2C
+**    B.5.2.7 Corrosion prevention and control <cpcdata>.
+********************************************************************************
+-->
+<!ENTITY ginfowp.cpcdata '<title>CORROSION PREVENTION AND CONTROL (CPC)</title>
+<para>Corrosion prevention and control of Army materiel is a continuing concern. It is important that any corrosion problems with this item be reported so that the problem can be corrected and improvements can be made to prevent the problem in future items. The term corrosion means the deterioration of a material or its properties due to a reaction of that material with its chemical environment. An example is the rusting of iron.</para>
+<para>Corrosion damage in metals can be seen, depending on the metal, as tarnishing, pitting, fogging, surface residue, and/or cracking. Plastics, composites, and rubbers can also degrade (also considered to be corrosion based on the above definition of corrosion). Degradation is caused by thermal (heat), oxidation (oxygen), solvation (solvents), or photolytic (light, typically ultraviolet) processes. </para>
+<para>The most common exposures are excessive heat or light. Damage from these processes will appear as cracking, softening, swelling, and/or breaking. The US Army has defined the following nine (9) forms of corrosion used to evaluate the deterioration of metals. These shall be used when evaluating and documenting corrosion.
+<randlist bullet="no"><item>UNIFORM (or general attack): Affects a large area of exposed metal surface, like rust on
+steel or tarnish on silver. It gradually reduces the thickness of the metal until it fails.</item>
+<item>CREVICE: Occurs in crevices created by rubber seals, gaskets, bolt heads, lap joints, dirt
+or other surface deposits. It will develop anywhere moisture or other corrosive agents are
+trapped and unable to drain or evaporate.</item>
+<item>SELECTIVE LEACHING: One element, usually the anodic element of an alloy,
+corrodes away, leaving the cathodic element. This can create holes in metal.</item>
+<item>INTERGRANULAR: Metal deterioration caused by corrosion on the bonds between or
+across the grain boundaries of the metal. The metal will appear to be peeling off in
+sheets, flaking, or being pushed apart by layers. A particular type of intergranular
+corrosion is exfoliation.</item>
+<item>PITTING: This can result from conditions similar to those for crevice corrosion. Pits
+can develop on various materials due to their composition. Rifle boxes are big victims of
+pitting.</item>
+<item>EROSION: Results when a moving fluid (liquid or gas) flows across a metal surface,
+particularly when solid particles are present in the fluid. Corrosion actually occurs on the
+surface of the metal, but the moving fluid washes away the corrosion and exposes a new
+metal surface, which also corrodes.</item>
+<item>FRETTING: Occurs as a result of small, repetitive movements (e.g., vibration) between
+two surfaces in contact with each other. It’s usually identified by a black powder
+corrosion product or pits on the surface.</item>
+<item>GALVANIC: Occurs when two different types of metal come in contact with each other,
+like steel bolts on aluminum, for example. This is a common problem on aircraft because
+of their mix of metals.</item>
+<item>STRESS: Term used to describe corrosion cracking and corrosion fatigue.
+Where an item is not ready/available due to one of these forms of corrosion, it shall be
+recorded as a corrosion failure in the inspection record and the appropriate code (170) for
+corrosion shall be used when requesting/performing maintenance.</item>
+</randlist>
+</para>
+<para hcp="no" esd="no"><extref docno="SF Form 368" posttext=", Product Quality Deficiency Report"/> should be submitted to the address specified in <extref docno="DA PAM 750-8" posttext=", The Army Maintenance Management System (TAMMS) Users Manual"/>.</para>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Warranty information reference statement
+**
+**  When the TM covers equipment that is under warranty and a Warranty Technical 
+**  Bulletin (WTB) is published, the applicable WTB shall be referenced. When a 
+**  WTB is not published, the following statement shall be included. This entity 
+**  is used for page and frame based TMs.
+**
+** -ENTITY LIST-
+**  ginfowp.wrntyref
+**  ginfowp.wrntyref-time (see editboil.ent)
+**  short.end.item.name (see editboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**    B.5.2.11 Warranty information <wrntyref>.
+**
+**  MIL-STD-40051-2C
+**    B.5.2.11 Warranty information <wrntyref>.
+********************************************************************************
+-->
+<!ENTITY ginfowp.wrntyref '<title>WARRANTY INFORMATION</title>
+<para hcp="no" esd="no">The &short.end.item.name; is warranted for &ginfowp.wrntyref-time;. The warranty starts on the date found in block 23 of <extref docno="DA Form 2408-9" posttext=", Equipment Control Record"/>. Report all defects to your supervisor, who will take appropriate action.</para>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Quality of material information statement
+**
+**  States where to find the requirement for material quality.
+**
+** -ENTITY LIST- 
+**   ENTITY ginfowp.qual.mat.info
+**   ENTITY ginfowp.qual.mat.info-tm  (see editboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**    B.5.2.15 Quality of material (Unit/AVUM and above only) <qual.mat.info>.
+**
+**  MIL-STD-40051-2C
+**    B.5.2.15 Quality of material (Unit/AVUM and above only) <qual.mat.info>.
+********************************************************************************
+-->
+<!ENTITY ginfowp.qual.mat.info '<para hcp="no" esd="no">Material used for replacement, repair, or modification must meet the requirements of &ginfowp.qual.mat.info-tm;. If quality of material requirements are not stated in this &ginfowp.qual.mat.info-tm;, the material must meet the requirements of the drawings, standards, specifications, or approved engineering change proposals applicable to the subject equipment.</para>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Nuclear Hardness statement
+**
+**  If equipment covered in the TM has nuclear survivability requirements (i.e., 
+**  overpressure and burst, thermal radiation, electromagnetic pulse, or transient 
+**  radiation effects on electronics), it shall be so stated.
+**
+** -ENTITY LIST-
+**  ginfowp.hcp
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**    B.5.2.17 Nuclear hardness <hcp>.
+**
+**  MIL-STD-40051-2C
+**    B.5.2.17 Nuclear hardness <hcp>.
+********************************************************************************
+-->
+<!ENTITY ginfowp.hcp '<title>NUCLEAR HARDNESS</title>
+<para hcp="no" esd="no">All hardness critical process (HCP) procedures in this manual are marked with the acronym HCP as follows:
+<seqlist>
+<item>When an entire task, including all paragraphs and procedures, is considered hardness critical, only the task title will be marked by the acronym HCP. This will be placed before the title.</item>
+<item>When only certain processes and steps within the work package are hardness critical, only the applicable processes and steps will be marked by placement of the acronym HCP between each applicable step number and the text.</item></seqlist></para>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+** Item unique idenitification (IUID) statement
+**
+** Statement stating if this manual contains components or parts that are marked with IUID Markings.
+**
+** -ENTITY LIST-
+**   ginfowp.iuid
+**   
+** MIL-STD-40051-1C
+**   B.5.2.19 Engineering Change Proposals (ECPs) (DMWR/NMWR only) <ecp>.
+**
+** MIL-STD-40051-2C
+**   B.5.2.19 Engineering Change Proposals (ECPs) (DMWR/NMWR only) <ecp>.
+********************************************************************************
+-->
+<!ENTITY ginfowp.iuid '<title>ITEM UNIQUE IDENTIFICATION</title>
+<para hcp="no" esd="no">This equipment and/or its components/parts are marked with item unique identification
+(IUID) markings such as data plates, decals, or etchings. These markings must be scanned during performance of procedures to remove and replace the items marked or when turning in items or receiving them from supply or another unit. For information on location of the IUID marking for the end item, refer to the decal/data plate guide contained in the operator manual for the equipment.</para>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+** Engineering Change Proposals (ECP) statement
+**
+** Statement where to sending ECPs.
+**
+** -ENTITY LIST-
+**   ginfowp.ecp
+**   ginfowp.ecp-address (see editboil.ent)
+**
+** MIL-STD-40051-1C
+**   B.5.2.20 Engineering Change Proposals (ECPs) (DMWR/NMWR only) <ecp>.
+**
+** MIL-STD-40051-2C
+**   B.5.2.20 Engineering Change Proposals (ECPs) (DMWR/NMWR only) <ecp>.
+********************************************************************************
+-->
+<!ENTITY ginfowp.ecp '<title>ENGINEERING CHANGE PROPOSALS</title>
+<para hcp="no" esd="no">Engineering Change Proposals (ECPs) will be submitted in accordance with <extref docno="AR 70-1"/> directly to &ginfowp.ecp-address;. A reply will be furnished to you.</para>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+
+** -TITLE-
+**  Modification list statement
+**
+**  States when and where to apply MWOs.
+**
+** -ENTITY LIST-
+**  ginfowp.modification
+**  nmwr (see selectboil.ent)
+**  dmwr (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**    B.5.2.21 Modifications list (DMWR/NMWR only) <modification>.
+**
+**  MIL-STD-40051-2C
+**    B.5.2.21 Modifications list (DMWR/NMWR only) <modification>.
+********************************************************************************
+-->
+<!ENTITY ginfowp.modification '<title>MODIFICATIONS</title>
+<para hcp="no" esd="no">All Modification Work Orders (MWOs), all minor alteration procedures (MAP) specified in the contract/work directive, and all ECPs listed in the <![%dmwr;[DMWR]]><![%nmwr;[NMWR]]> must be applied during the overhaul of the item. </para>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Deviations and Exceptions statement
+**
+**  States reference to how deviations and exceptions are processed.
+**
+** -ENTITY LIST-
+**  ginfowp.deviation
+**  nmwr (see selectboil.ent)
+**  dmwr (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**    B.5.2.22 Deviations And Exceptions <deviation>.
+**
+**  MIL-STD-40051-2C
+**    B.5.2.22 Deviations and exceptions (DMWR/NMWR only) <deviation>.
+********************************************************************************
+-->
+<!ENTITY ginfowp.deviation '<title>DEVIATIONS AND EXCEPTIONS</title>
+<para hcp="no" esd="no">Requests for deviations or exceptions to this <![%dmwr;[Depot Maintenance Work Requirement (DMWR)]]><![%nmwr;[National Maintenance Work Requirement (NMWR)]]> will be processed in accordance with <extref docno="ISO 9000 Series" pretext="International Standards Organization"/>, standards or equivalent.</para>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Mobilization Requirements statement
+**
+**  States reference to the mobilization WP.
+**
+** -ENTITY LIST-
+**   ginfowp.mobreq
+**   ginfowp.mobreq-wp (see editboil.ent)
+**   short.end.item.name (see editboil.ent)
+**   nmwr (see selectboil.ent)
+**   dmwr (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1
+**    B.5.2.22 Mobilization requirements (DMWR/NMWR only) <mobreq>.
+**
+**  MIL-STD-40051-2
+**    B.5.2.22 Mobilization requirements (DMWR/NMWR only) <mobreq>.
+********************************************************************************
+-->
+<!ENTITY ginfowp.mobreq '<title>MOBILIZATION REQUIREMENTS</title>
+<para hcp="no" esd="no">All requirements of this <![%dmwr;[DMWR]]><![%nmwr;[NMWR]]> will be exempted or revised in the event of mobilization. Only those procedures necessary to return the &short.end.item.name; to a serviceable condition will be performed. The exemptions and revisions are explained in supporting information work package &ginfowp.mobreq-wp;.</para>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+** Critical safety items (CSI/(FSCAP))
+**
+** Definition of critical safety items 
+**
+** -ENTITY LIST-
+**  ginfowp.csi.fscap
+**  frame-base (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**    B.5.2.24 Critical safety items (CSI) (Flight Safety Critical Aircraft Parts (FSCAP))(aircraft only) <csireq>..
+**
+**  MIL-STD-40051-2C
+**    B.5.2.24 Critical safety items (CSI) (Flight Safety Critical Aircraft Parts (FSCAP))(aircraft only) <csireq>.
+********************************************************************************
+-->
+<!ENTITY ginfowp.csi.fscap '<title>CRITICAL SAFETY ITEMS (CSI) (FLIGHT SAFETY CRITICAL AIRCRAFT
+PARTS (FSCAP)) PROGRAM</title>
+<para>Parts, assemblies, or installations identified under the CSI program require special handling during maintenance or overhaul (M&amp;O). Throughout the M&amp;O procedures, warnings are included emphasizing critical instructions to be followed. These warnings are identified as CSI warnings.</para>
+<para hcp="no" esd="no">A critical safety item is defined as:
+<randlist><item>A part, assembly, installation or production system with one or more
+critical or critical safety characteristics that, if missing or not conforming
+to the design data, quality requirements or overhaul and maintenance
+documentation, would result in an unsafe condition that could cause loss
+or serious damage to the end item or major components, loss of control,
+uncommanded engine shutdown or serious injury or death to personnel.
+Unsafe conditions relate to hazard severity categories I and II of MILSTD-
+882 and include items determined to be "life-limited," "fracture
+critical," "fatigue-sensitive," etc. The determining factor in Aviation CSI
+is the consequence of failure, not the probability that the failure or
+consequence would occur.
+</item></randlist></para>
+<para>All CSIs shall be handled and managed as prescribed in DOD 4140.1R and DA PAM 95-9.
+</para>
+<para>Throughout the maintenance tasks, "CRITICAL SAFETY ITEM" alerts will precede the procedural step that
+includes a CSI, emphasizing that this part or parts require(s) special handling during maintenance.
+</para>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Cost Considerations Statement
+**
+**  Defines how to determine Depot cost facts consideration in repairing equipment.
+** -ENTITY LIST-
+**  ginfowp.cost 
+**  nmwr (see selectboil.ent)
+**  dmwr (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**    B.5.2.25 Cost considerations (DMWR/NMWR only) <cost>.
+**
+**  MIL-STD-40051-1C
+**    B.5.2.25 Cost considerations (DMWR/NMWR only) <cost>.
+********************************************************************************
+-->
+<!ENTITY ginfowp.cost '<title>COST CONSIDERATIONS</title><para hcp="no" esd="no">This work requirement shall be the basis for establishing the extent of overhaul while taking into consideration cost facts. A determination shall be made on all subassemblies/assemblies to replace worn or damaged components which are available in supply, if acquisition cost is less than cost to repair and restore to the <![%dmwr;[DMWR]]><![%nmwr;[NMWR]]> standard. The cost to repair/restore any individual item with an established Maintenance Expenditure Limit (MEL) to the <![%dmwr;[DMWR]]><![%nmwr;[NMWR]]> standard shall not exceed the MEL, unless a waiver has been approved in accordance with <extref docno="AR 750-1"/>. This requirement does not apply to items exempted from MEL in accordance with <extref docno="AR 750-1"/>.</para>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Common Tools And Equipment Statement
+**
+**  References to locate common tools and equipment.
+**
+** -ENTITY LIST-
+**  ginfowp.supdata-tools 
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**    B.5.2.26.1 Common tools and equipment.
+**
+**  MIL-STD-40051-2C 
+**    B.5.2.26.1 Common tools and equipment.
+********************************************************************************
+-->
+<!ENTITY ginfowp.supdata-tools '<title>COMMON TOOLS AND EQUIPMENT</title>
+<para hcp="no" esd="no">For authorized common tools and equipment, refer to the Modified Table of Organization and Equipment (MTOE), <extref docno="CTA 50-970" posttext=", Expendable/Durable Items (Except: Medical, Class V, Repair Parts, and Heraldic Items)"/>, <extref docno="CTA 50-909" posttext=", Field and Garrison Furnishings and Equipment"/> or <extref docno="CTA 8-100" posttext=", Army Medical Department Expendable/Durable Items"/>, as applicable to your unit.</para>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Parts Information Work Package Reference 
+**
+** -ENTITY LIST-
+**  ginfowp.supdata-partlist.wp 
+**  ginfowp.supdata-partlist.wpref (see editboil.ent)
+**  frame-base (see selectboil.ent)
+**  page-base (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**    B.5.2.26.3 Repair parts.
+**
+**  MIL-STD-40051-2C
+**    B.5.2.26.3 Repair parts.
+********************************************************************************
+-->
+<!ENTITY ginfowp.supdata-partlist.wp '<para hcp="no" esd="no">Repair parts are listed and illustrated in parts information work package &ginfowp.supdata-partlist.wpref; of this <![%page-base;[manual]]><![%frame-base;[IETM]]>.</para>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Parts Information TM (Page ONLY)
+**
+** -ENTITY LIST-
+**  ginfowp.supdata-partlist.tm
+**  ginfowp.supdata-partlist.tmref (see editboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-2C
+**    B.5.2.26.3 Repair parts.
+********************************************************************************
+-->
+<!ENTITY ginfowp.supdata-partlist.tm '<para hcp="no" esd="no">Repair parts are listed and illustrated in the parts information work packages beginning
+with &ginfowp.supdata-partlist.tmref; of this manual.</para>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Preventive Maintenance Service and Phase Maintenance Checklist -
+**  Reporting Errors and Recommending Improvements
+**
+** -ENTITY USED IN ENTITY-
+**  pms-ginfowp
+**  pm-ginfowp
+**
+** -ENTITY LIST-
+**  pms_or_pmi.eir
+**  pms_or_pmi.eir.address (see editboil.ent)
+**  pms_or_pmi.eir.fax (see editboil.ent)
+**  pms_or_pmi.eir.email (see editboil.ent)
+**  pms_or_pmi-tm (see selectboil.ent)
+**  
+** -SOURCE-
+
+**  MIL-STD-40051-2C
+**    B.5.5.4 General information <pms-geninfo>.
+********************************************************************************
+-->
+<![%pms_or_pmi-tm;[
+<!ENTITY pms_or_pmi.eir '<title>REPORTING ERRORS AND RECOMMENDING IMPROVEMENTS</title>
+<para hcp="no" esd="no">You can help improve this TM. If you find any mistakes or if you know of a way to improve the procedures, please let us know. Mail the DA Form 2028 directly to: &pms_or_pmi.eir.address;. You may also send in your recommended changes via electronic mail, by fax, or by the World Wide Web. Our fax number is &pms_or_pmi.eir.fax;. Our e-mail address is &pms_or_pmi.eir.email;. Instructions for sending an electronic DA Form 2028 may be found at the back of the applicable technical manual. For World Wide Web use <internet show.address="yes"><homepage protocol="https" uri="amcom2028.redstone.army.mil"/></internet>. A reply will be furnished to you.
+</para>'>
+]]>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Preventive Maintenance Service Scope and General Information
+**
+** -ENTITY LIST-
+**  pms-ginfowp
+**  pms-ginfowp.inspect-interval (see editboil.ent) 
+**  pms-ginfowp.aircraft (see editboil.ent)
+**  pms-ginfowp.inspect-hrs (see editboil.ent)
+**  pms-ginfowp.inspect-days (see editboil.ent) 
+**  pms-ginfowp.inspect-dayofweek (see editboil.ent) 
+**  pms-ginfowp.inspect-weeks (see editboil.ent)
+**  pms-ginfowp.warning-equip (see editboil.ent)
+**  pms-ginfowp.warning-tm (see editboil.ent)
+**  pms-ginfowp.spec.tm-maint (see editboil.ent)
+**  pms-ginfowp.manhours (see editboil.ent)
+**  pms-ginfowp.odc (see editboil.ent)
+**  pms-ginfowp.hazmat (see editboil.ent)
+**  pms_or_pmi.eir
+**  pms_or_pmi-tm (see selectboil.ent)
+**  
+** -SOURCE-
+**  MIL-STD-40051-1C 
+**    B.5.5.3 Maintenance activities <scope>.
+**    B.5.5.4 General information <pms-geninfo>.
+**
+**  MIL-STD-40051-2C
+**    B.5.5.3 Maintenance activities <scope>.
+**    B.5.5.4 General information <pms-geninfo>.
+********************************************************************************
+-->
+<![%pms_or_pmi-tm;[
+<!ENTITY pms-ginfowp '<scope frame="no">
+<title>SCOPE</title>
+<para hcp="no" esd="no">The Preventive Maintenance Services Inspection Checklist work package contains complete requirements for a &pms-ginfowp.inspect-interval; for the &pms-ginfowp.aircraft;. It does not contain instructions for repair, adjustment, or other means of rectifying conditions, nor does it contain instruction for troubleshooting to find causes for malfunctioning. Specific tolerances, limits, etc., can be found in the applicable maintenance manuals. Use of the alphabetical index in the applicable manuals will facilitate locating the required information.</para>
+</scope>
+<pms-geninfo frame="no">
+<pms-para>
+<title>INSPECTION REQUIREMENTS</title>
+<para hcp="no" esd="no">The inspection requirements contained in this work package are stated in such a manner as to establish when certain equipment is to be inspected and what conditions are desired/undesired. Compliance with the provisions outlined herein is required in order to ensure that latent defects are discovered and corrected before malfunctioning or serious trouble results. Inspection requirements are arranged, as nearly as possible, according to the manner in which they will be performed. The requirements are divided into groups and listed under area headings in the &ldquo;How To Use This Manual&rdquo; portion of this manual and &pms-ginfowp.inspect-fig;.</para>
+</pms-para>
+<pms-para>
+<title>INSPECTION INTERVALS</title>
+<para hcp="no" esd="no">The &pms-ginfowp.inspect-interval; inspection will be performed every &pms-ginfowp.inspect-hrs; flight hours or &pms-ginfowp.inspect-days; days, whichever comes first. The &pms-ginfowp.inspect-hrs; flight hours will not be extended except in actual operational emergencies. In no case shall the aircraft intentionally be scheduled for a flight that will cause it to exceed the &pms-ginfowp.inspect-hrs; flight hours inspection due time. The &pms-ginfowp.inspect-days; day interval is a full &pms-ginfowp.inspect-weeks; weeks. That is, if a &pms-ginfowp.inspect-days; day is done on Tuesday, the next &pms-ginfowp.inspect-days; day inspection will not be due until &pms-ginfowp.inspect-dayofweek; &pms-ginfowp.inspect-weeks; weeks later.</para>
+</pms-para>
+<pms-para>
+<title>SPECIFIC NON-INSTALLED EQUIPMENT ON AIRCRAFT</title>
+<para hcp="no" esd="no">This work package may contain inspection requirements applicable to specific
+equipment not installed on your aircraft. Those requirements should be disregarded.
+</para>
+</pms-para>
+<pms-para>
+<title>DA FORMS</title>
+<para hcp="no" esd="no"><extref docno="DA Form 2408-13-1"/> will be used to record all deficiencies or shortcomings discovered during the &pms-ginfowp.inspect-interval;. Use <extref docno="DA PAM 738-751"/> to properly complete this form.
+</para>
+</pms-para>
+<pms-para>
+<title>SPECIAL INSTRUCTIONS</title>
+<para hcp="no" esd="no">The &pms-ginfowp.inspect-interval; will not be exceeded except in actual operational emergencies. When operational emergencies require aircraft operation beyond the normal inspection due-time, a circled red X status symbol and an appropriate statement (to include authority) must be entered in Part I, Fault Information block of <extref docno="DA Form 2408-13-1" posttext="(Aircraft Inspection and Maintenance Record)"/> until such time as the inspection is complete. When inspections are delayed to meet emergency requirements, commanders will assure that the aircraft status symbol reverts to a red &ldquo;X&rdquo; and that delayed inspections are accomplished immediately upon termination of the actual emergency. When unusual local conditions of environment, utilization, mission, experience of flight crew and maintenance personnel, periods of inactivity, etc., are encountered, the maintenance officer will, at his discretion, increase the scope and/or frequency of maintenance of inspections as necessary to ensure safe flight.
+</para>
+<para hcp="no" esd="no">Aircraft that are down, Not Mission Capable due to Supply (NCMS), or Not Mission Capable due to Maintenance (NMCM), are deferred from the &pms-ginfowp.inspect-interval; inspection until the aircraft is return to flyable status. When the NMCS and/or NMCM condition is cleared from the aircraft that has been deferred, the &pms-ginfowp.inspect-interval;  must be done before the first flight. It is the maintenance office&apos;s responsibility to determine those inspections necessary during NMCS and/or NMCM to preserve the aircraft. Maintenance situations and climates vary too much to permit a definition of an adequate inspection of the aircraft in NMCS and/or NMCM status.
+</para>
+<para hcp="no" esd="no">Accessing procedures and detailed inspection criteria can be found in the applicable maintenance manuals. Use the alphabetical index in the applicable manuals. Unless otherwise directed, removed panels and opened doors will be reinstalled and closed upon completion of each area inspection.
+</para>
+<para hcp="no" esd="no">The total man-hour (M/H) requirements for a complete &pms-ginfowp.inspect-interval; inspection is &pms-ginfowp.manhours; M/H.
+</para>
+</pms-para>
+<pms-para>
+&pms_or_pmi.eir;
+</pms-para>
+<pms-para>
+<title>OZONE DEPLETING CHEMICALS</title>
+<para hcp="no" esd="no">&pms-ginfowp.odc;</para>
+</pms-para>
+<pms-para>
+<title>HAZARDOUS MATERIALS (HAZMAT)</title>
+<para hcp="no" esd="no">&pms-ginfowp.hazmat;</para>
+</pms-para>
+<pms-para>
+<title>INSPECTION AREAS</title>
+<para hcp="no" esd="no">Inspection areas are shown in &pms-ginfowp.inspect-fig;.</para>
+</pms-para>
+</pms-geninfo>'>
+]]>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Preventive Maintenance Service Scope and General Information
+**
+** -ENTITY LIST-
+**  pm-ginfowp.geninfo-phased
+**  pm-ginfowp.geninfo-progressive
+**  pm-ginfowp.geninfo-additional
+**  pms_or_pmi.eir
+**  pm-ginfowp.aircraft (see editboil.ent)
+**  pm-ginfowp.flight-cycle (see editboil.ent)
+**  pm-ginfowp.phase-hours (see editboil.ent)
+**  pm-ginfowp.no-phases (see editboil.ent)
+**  pm-ginfowp.inspect-interval (see editboil.ent)
+**  pm-ginfowp.tm-maint (see editboil.ent)
+**  pm-ginfowp.tm-changeover (see editboil.ent)
+**  pm-ginfowp.fig1 (see editboil.ent)
+**  pm-ginfowp.fig2 (see editboil.ent)
+**  pm-ginforwp.codes-expl (see editboil.ent)
+**  pms_or_pmi-tm (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**    B.5.6 General information work package (Phased Maintenance Inspection 
+**          Manual only) <pm-ginfowp>
+**    B.5.6.3 General information <geninfo>.
+**
+**  MIL-STD-40051-2C
+**    B.5.6 General information work package (Phased Maintenance Inspection 
+**          Manual only) <pm-ginfowp>
+**    B.5.6.3 General information <geninfo>.
+********************************************************************************
+-->
+<![%pms_or_pmi-tm;[
+<!ENTITY pm-ginfowp.geninfo-phased '<para0>
+<title>PHASED SCHEDULE</title>
+<para hcp="no" esd="no">The phased maintenance inspection checklist contains requirements for inspection of the &pm-ginfowp.aircraft; aircraft on a phased schedule having a &pm-ginfowp.flight-cycle; hour (flight hours) cycle with &pm-ginfowp.phase-hours; hour phases. Each requirement included herein is designated for accomplishment at least once, but not more than &pm-ginfowp.no-phases; times during the &pm-ginfowp.flight-cycle; hour cycle.</para>
+</para0>'>
+
+<!ENTITY pm-ginfowp.geninfo-progressive '<para0>
+<title>PROGRESSIVE PHASED MAINTENANCE SCHEDULE</title>
+<para hcp="no" esd="no">The progressive phased maintenance inspection checklist contains requirements for
+inspection of the &pm-ginfowp.aircraft; aircraft on a phased schedule of &pm-ginfowp.inspect-interval; hours intervals.</para>
+</para0>'>
+
+<!ENTITY pm-ginfowp.geninfo-additional '<para0>
+<title>EXCEEDING THE PHASED SCHEDULE</title>
+<para esd="no" hcp="no">The phased maintenance inspection intervals designated
+are the maximum and shall not be exceeded except in actual operational emergencies
+as explained herein. It is the Commander&rsquo;s responsibility to determine
+(on an individual aircraft basis) when inspection intervals may be exceeded.
+For this purpose, operational emergencies are conditions of combat, or conditions
+of disaster which necessitate flight to evacuate aircraft or personnel. When
+aircraft are operated beyond the normal inspection due time because of such
+emergency situations, a circled red X status symbol and an appropriate statement
+(to include authority) must be entered on the appropriate aircraft form as
+specified in <extref docno="DA PAM 738-751"/> until such time as
+the inspection is complete. When inspections are delayed to meet emergency
+requirements, Commanders will assure that the aircraft status symbol reverts
+to a red X and that delayed inspections are accomplished immediately upon
+termination of the actual emergency. When unusual local conditions (utilization,
+type of mission, personnel, periods of inactivity, environmental conditions,
+etc.) dictate, it is the prerogative and responsibility of the Maintenance
+Officer to increase the scope and/or frequency of maintenance or inspection
+as necessary to ensure safe operation <extref docno="TM 1-1500-328-23" posttext=")"
+pretext="("/>.</para>
+</para0>
+<para0 esd="no" hcp="no">
+<title>MAINTENANCE ACTIVITIES</title>
+<para esd="no" hcp="no"> The inspections prescribed by this checklist will
+be accomplished at specified phases by Aviation Maintenance Company (AMC)
+activities with assistance of Aviation Support Battalion (ASB) and Depot Maintenance
+activities when required. The inspection of the part/component is visual unless
+stated otherwise.</para>
+</para0>
+<para0 esd="no" hcp="no">
+<title>LIMITATIONS</title>
+<para esd="no" hcp="no">The checklist does not contain instructions for repair,
+adjustment or other means of rectifying conditions. Neither does it contain
+special tolerances, limits or instructions for special troubleshooting to
+find causes for malfunctions. Such data will be obtained from the latest issue
+of the aircraft &pm-ginfowp.tm-maint; series Maintenance Manuals.</para>
+</para0>
+<para0 esd="no" hcp="no">
+<title>CHANGEOVER TO THE PHASED MAINTENANCE SYSTEM</title>
+<para esd="no" hcp="no">Changeover shall be accomplished in accordance with
+instructions provided in &pm-ginfowp.tm-changeover;. The requirements of this TM/TB must be
+accomplished prior to implementation of Phase 1 inspection requirements specified
+in this checklist.</para>
+</para0>
+<para0 esd="no" hcp="no">
+<title>PRE-INSPECTION MAINTENANCE TEST FLIGHT (MTF)</title>
+<para esd="no" hcp="no">A pre-inspection MTF to duplicate non-hazardous equipment
+problems, determine unsatisfactory conditions, determine equipment operation
+problems, etc., is recommended prior to start of aircraft disassembly for
+phased maintenance inspection. The decision to perform the pre-inspection
+MTF, however, shall be the responsibility of the unit Maintenance Officer.
+</para>
+</para0>
+<para0 esd="no" hcp="no">
+<title>SPECIAL INSPECTIONS, CALENDAR INSPECTIONS AND LUBRICATION REQUIREMENTS
+</title>
+<para esd="no" hcp="no">Special inspections, calendar inspections and lubrication
+requirements contained in &pm-ginfowp.tm-maint; and those listed on the aircraft&rsquo;s <extref
+docno="DA Form 2408-18"/> shall be reviewed and accomplished in accordance
+with the &ldquo;inspection due&rdquo; requirements specified in those documents.
+</para>
+</para0>
+<para0 esd="no" hcp="no">
+<title>TIME BETWEEN OVERHAUL (TBO) AND RETIREMENT LIFE ITEMS CHECK</title>
+<para esd="no" hcp="no">Prior to start of the applicable phased maintenance
+inspection, a check will be made of components and their remaining operating
+hours prior to removal. The latest issue of the aircraft&rsquo;s &pm-ginfowp.tm-maint; and <extref
+docno="DA Form 2408-16"/> shall be referred to for a complete listing of components
+and their TBO and retirement life.</para>
+</para0>
+<para0 esd="no" hcp="no">
+<title>USING THE PHASED INSPECTION CHECKLIST</title>
+<para esd="no" hcp="no">
+A new checklist shall be used each time phased maintenance is due on
+the aircraft. This checklist is arranged such that it can be separated by
+area and distributed to the maintenance crew. For use of the checklist refer
+to <extref docno="DA PAM 738-751"/>
+</para></para0>
+
+<para0 esd="no" hcp="no">
+<title>FINAL RECORDS CHECK</title>
+<para esd="no" hcp="no">After all corrective actions have been completed and
+following completion of the phased inspection, the Technical Inspector or
+designated supervisor shall verify that all applicable forms and records have
+been properly updated. All uncorrected faults shall be entered on applicable
+aircraft forms in accordance with <extref docno="DA PAM 738-751"/>. A Final
+Records Checklist shall be used is to ensure forms and records have been inspected
+for completeness and accuracy prior to release of the aircraft from the phased
+maintenance inspection. The PID of the inspector verifying the final records
+check shall be entered adjacent to the indicated form or record on the Final
+Records Checklist. The PID entered shall be registered on the Signature Sheet
+adjacent to that person&rsquo;s signature.</para>
+</para0>
+
+<para0 esd="no" hcp="no">
+<title>MAINTENANCE OPERATIONAL CHECKS</title>
+<para esd="no" hcp="no">After the completion of any required corrective actions
+to any of the components of a functional system of the aircraft, maintenance
+operational checks (MOC) shall be performed on that system to determine the
+effectiveness of the maintenance actions performed and to verify the proper
+operation of that system. These MOC shall be performed in accordance with <extref
+docno="TM1-1500-328-23"/>. <extref docno="DA Form 2408-13-1"/> may
+be used to record and sign off the Maintenance Operational Checks performed.
+</para>
+</para0>
+<para0 esd="no" hcp="no">
+<title>MAINTENANCE TEST FLIGHT</title>
+<para esd="no" hcp="no">When all required inspections have been accomplished
+and initialed in accordance with the above procedure, the MTF shall be performed
+in accordance with the requirements of &pm-ginfowp.tm-maint; and <extref docno="TM 1-1500-328-23"/> using
+the MTF form in the MTF technical manual.</para>
+</para0>
+<para0 esd="no" hcp="no">
+<title>CHECKLIST DISTRIBUTION</title>
+<para esd="no" hcp="no">The completion of each phased maintenance inspection
+shall be recorded on applicable forms as prescribed by <extref docno="DA PAM 738-751"/>.
+The signed checklist, together with all forms prescribed by <extref docno="DA PAM 738-751"/>,
+will be filed. Disposition will be in accordance with <extref docno="DA PAM 738-751"/> or
+specific instructions in the applicable aircraft technical manual.</para>
+</para0>
+<para0 esd="no" hcp="no">
+<title>INSPECTION AREAS</title>
+<para esd="no" hcp="no">&pm-ginfowp.fig1; reflects the inspection areas of
+the &pm-ginfowp.aircraft; aircraft. Those areas are titled as shown. &pm-ginfowp.fig2; shows
+the location of access doors and panels which require removal at various phased
+maintenance inspections.</para>
+</para0>
+<para0 esd="no" hcp="no">
+&pms_or_pmi.eir;
+</para0>'>
+]]>

@@ -1,0 +1,26 @@
+<!-- iso-amso.ent (initially distributed with DocBook XML DTD V4.1.1beta1) -->
+
+<!-- Derived from the corresponding ISO 8879 standard entity set
+     and the Unicode character mappings provided by Sebastian Rahtz
+     With additional derivations from
+     ftp://ftp.unicode.org/Public/MAPPINGS/VENDORS/MISC/SGML.TXT -->
+
+<!ENTITY ang    "&#38;#x2220;"> <!-- ANGLE -->
+<!ENTITY angmsd "&#38;#x2221;"> <!-- MEASURED ANGLE -->
+<!ENTITY beth   "&#38;#x2136;"> <!-- BET SYMBOL -->
+<!ENTITY bprime "&#38;#x2035;"> <!-- REVERSED PRIME -->
+<!ENTITY comp   "&#38;#x2201;"> <!-- COMPLEMENT -->
+<!ENTITY daleth "&#38;#x2138;"> <!-- DALET SYMBOL -->
+<!ENTITY ell    "&#38;#x2113;"> <!-- SCRIPT SMALL L -->
+<!ENTITY empty  "&#38;#x2205;"> <!--  -->
+<!ENTITY gimel  "&#38;#x2137;"> <!-- GIMEL SYMBOL -->
+<!ENTITY image  "&#38;#x2111;"> <!-- BLACK-LETTER CAPITAL I -->
+<!ENTITY inodot "&#38;#x0131;"> <!-- LATIN SMALL LETTER DOTLESS I -->
+<!--     jnodot	Unknown unicode character -->
+<!ENTITY nexist "&#38;#x2204;"> <!-- THERE DOES NOT EXIST -->
+<!ENTITY oS     "&#38;#x24C8;"> <!-- CIRCLED LATIN CAPITAL LETTER S -->
+<!ENTITY planck "&#38;#x210F;"> <!-- PLANCK CONSTANT OVER TWO PI -->
+<!ENTITY real   "&#38;#x211C;"> <!-- BLACK-LETTER CAPITAL R -->
+<!ENTITY sbsol  "&#38;#xFE68;"> <!-- SMALL REVERSE SOLIDUS -->
+<!ENTITY vprime "&#38;#x2032;"> <!-- PRIME -->
+<!ENTITY weierp "&#38;#x2118;"> <!-- SCRIPT CAPITAL P -->

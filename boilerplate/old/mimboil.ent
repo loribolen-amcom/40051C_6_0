@@ -1,0 +1,778 @@
+<!-- DOCUMENTATION
+********************************************************************************
+** -FILE-
+**  MIMBOIL.ENT 
+**
+** -TITLE-
+**  Maintenance Information Chapter Non-Editable Boilerplates
+**
+**  Boilerplates text are for both page-base and frame-base TMs. The information 
+**  was generated from MIL-STD-40051-1 and MIL-STD-40051-2 Appendix E.
+** 
+** !! NO TEXT IS CHANGED IN THIS DOCUMENT !!
+** !! EDITABLE TEXT IS IN "editboil.ent"  !! 
+**
+** -FORMAL PUBLIC IDENTIFIER (FPI)-
+**  "-//USA-DOD//ENTITIES MIL-STD-2361 MIM Boilerplate REV C 6.0 20150630//EN"
+********************************************************************************
+-->
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Periods Of Inventory, Verbatim Statement
+**
+** -ENTITY LIST-
+**  inventorywp.prdinv 
+** 
+** -SOURCE-
+**  MIL-STD-40051-1
+**    E.5.3.13.2.6 Periods of inventory <prdinv>
+**
+**  MIL-STD-40051-2
+**    E.5.3.13.2.6 Periods of inventory <prdinv>
+********************************************************************************
+-->
+<!ENTITY inventorywp.prdinv '<prdinv><title>PERIODS OF INVENTORY</title>
+<para hcp="no" esd="no">Inventoriable items shall be checked against the <extref pretext="Aircraft Inventory Record, " docno="DA Form 2408-17"/>, at the following periods
+<seqlist>
+<item>Upon receipt.</item>
+<item>Prior to transfer of the aircraft to another organization.</item>
+<item>Upon placing aircraft in storage and upon removal from storage.  Aircraft need not be inventoried while in storage.</item>
+<item>Twelve months after last inventory.</item>
+</seqlist></para></prdinv>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Overhaul and Retirement Schedule Introduction Statement
+**
+** -ENTITY LIST-
+**  maintwp.orsch
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    E.5.3.5.3.24 Overhaul and retirement schedule (aircraft only) <orsch>
+**
+**  MIL-STD-40051-2B
+**    E.5.3.5.3.24 Overhaul and retirement schedule (aircraft only) <orsch>
+********************************************************************************
+-->
+<!ENTITY maintwp.orsch 'Units of operating equipment that are to be overhauled or retired at the period specified are listed here.  Unless otherwise specified in <extref docno="TM 1-1500-328-23" posttext=", Aeronautical Equipment Maintenance Management Policies and Procedures"/>, removal of equipment for overhaul may be accomplished at the inspection nearest the time when overhaul is due.'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Maintenance Work Package Inspection And Test Ammunition Statement 
+**
+** -ENTITY LIST-
+**   maintwp.test-inspect.disposition-1 
+**
+** -SOURCE-   
+**  MIL-STD-40051-1B
+**    E.5.3.5.3.2.2.f(1) Inspection of conventional and chemical ammunition or components
+**    containing radioactive materials (Maintainer, below depot sustainment,
+**    or ASB only) <inspect>.
+**
+**  MIL-STD-40051-2B
+**    E.5.3.5.3.2.2.f(1) Inspection of conventional and chemical ammunition or components
+**    containing radioactive materials (Maintainer, below depot sustainment,
+**    or ASB only) <inspect>.
+********************************************************************************
+-->
+<!ENTITY maintwp.test-inspect.disposition-1 '<para hcp="no" esd="no">Each lot of material shall be inspected and screened 100 percent if one critical nonfunctioning defect is observed. If a critical functioning defect occurs, save remaining pieces and components: suspend the lot from local issue and use. Submit malfunction reports as prescribed in <extref docno="AR 75-1" posttext=" (Malfunctions Involving Ammunition and Explosives)"/>. Disposition instructions will be furnished by the US Army Materiel Command.</para>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Maintenance WP for Inspection And Test Ammunition Statements 
+**
+** -ENTITY LIST-
+**  maintwp.test-inspect.disposition-2 
+**  maintwp.test-inspect.disposition-2.table-num (see editboil.ent) 
+**   
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    E.5.3.5.3.2.2.f(2) Inspection of conventional and chemical ammunition or components
+**    containing radioactive materials (Maintainer, below depot sustainment,
+**    or ASB only) <inspect>.
+**
+**  MIL-STD-40051-2B
+**    E.5.3.5.3.2.2.f(2) Inspection of conventional and chemical ammunition or components
+**    containing radioactive materials (Maintainer, below depot sustainment,
+**    or ASB only) <inspect>.
+********************************************************************************
+-->
+<!ENTITY maintwp.test-inspect.disposition-2 '<para hcp="no" esd="no">A lot of materiel is acceptable for issue if the acceptable criteria as indicated in &maintwp.test-inspect.disposition-2.table-num; are met.</para>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Maintenance WP for Inspection And Test Ammunition Statements 
+**
+** -ENTITY LIST-
+**  maintwp.test-inspect.disposition-3 
+**     
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    E.5.3.5.3.2.2.f(3) Inspection of conventional and chemical ammunition or components
+**    containing radioactive materials (Maintainer, below depot sustainment,
+**    or ASB only) <inspect>..
+**
+**  MIL-STD-40051-2B
+**    E.5.3.5.3.2.2.f(3) Inspection of conventional and chemical ammunition or components
+**    containing radioactive materials (Maintainer, below depot sustainment,
+**    or ASB only) <inspect>.
+********************************************************************************
+-->
+<!ENTITY maintwp.test-inspect.disposition-3 '<para hcp="no" esd="no">Report all lots of materiel rejected under applicable serviceability table for
+disposition instructions to: Commander, US Army TACOM Life Cycle Management Command, Chemical/Biological Defense, ATTN: AMSTA-LCW-C,
+6501 E. 11 Mile Road, Warren, MI 48397-5000. Include a statement describing the capability and workload situation of your organization as to whether you are capable of reworking/demilitarizing the item.</para>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Maintenance WP for Inspection And Test Ammunition Statements 
+**
+** -ENTITY LIST-
+**  maintwp.test-inspect.disposition-3 
+**
+** -SOURCE-   
+**  MIL-STD-40051-1B
+**    E.5.3.5.3.16.1.f(3) Inspection and test of conventional and chemical 
+**    ammunition or components containing radioactive materials (field, below 
+**    depot sustainment, and ASB only) <test-inspect>.
+**
+**  MIL-STD-40051-2B
+**    E.5.3.5.3.16.1.f(3) Inspection and test of conventional and chemical 
+**    ammunition or components containing radioactive materials (field, below 
+**    depot sustainment, and ASB only) <test-inspect>.
+********************************************************************************
+-->
+<!ENTITY maintwp.test-inspect.disposition-3 '<para hcp="no" esd="no">Report all lots of materiel rejected under applicable serviceability table for disposition instructions to: <proponent><name>Commander, US Army Armament, and Chemical Logistics Activity, </name><address><servnomen>ATTN: AMSMC-DSM, </servnomen><city>Rock Island, </city><state>IL </state><zip>61299-6000</zip></address></proponent>. Include a statement describing the capability and workload situation of your organization as to whether you are capable of reworking/demilitarizing the item.</para>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Packaging Information for PPM Statement
+**
+** CHANGE from maintwp.ppm.packaging to ppmgeninfowp
+** -ENTITY LIST-
+**  ppmgeninfowp 
+**  ppmgeninfo
+**
+** -SOURCE-
+** MIL-STD-40051-1B
+**     E.5.3.9.1 Preservation, packaging, and marking (DMWR/NMWR only)  <ppmgeninfowp>
+**
+** MIL-STD-40051-2B
+**		E.5.3.9.1 Preservation, packaging, and marking (DMWR/NMWR only)  <ppmgeninfowp>
+**
+********************************************************************************
+-->
+<!ENTITY ppmgeninfo '<geninfo>
+<para0>
+<title>PACKAGING</title>
+<para>Military preservation, Level A packing, and marking shall be accomplished
+in accordance with the specific packaging instructions contained in &maintwp.ppm.packaging.wp;.</para>
+</para0>
+<para0>
+<title>MARKING FOR SHIPMENT AND STORAGE</title>
+<para><seqlist>
+<item>Storage: In addition to any special markings called out on the special packaging instruction (SPI) or in the packaging requirements code, all unit packages, intermediate packs, exterior shipping containers, and, as applicable, unitized loads shall be marked in accordance with MIL-STD-129 including bar coding. The repair facility is responsible for application of special markings as required by MIL-STD-129 regardless of whether specified in the contract/order or not. Special markings include, but are not limited to, Shelf-life markings, structural markings, and transportation special handling markings. The marking of pilferable and sensitive materiel will not identify the nature of the materiel.</item>
+<item>Shipment: The repair facility shall apply identification and address markings with bar codes in accordance with <extref docno="MIL-STD-129"/>. A Military Shipment Label (MSL) is required for all shipments except contractor to contractor. The MSL will include both linear and 2D bar codes per the standard. Military Shipping Label: Military Shipment Labels may be created using the Computer Automated Transportation Tool Military Shipment Label/Issue Receipt Release Document (CATT MSL/IRRD).</item></seqlist></para></para0>
+<para0>
+<title>HEAT TREATMENT AND MARKING OF WOOD PACKAGING MATERIALS</title>
+<para>Wood Packaging Materials (WPM) (e.g., boxes, crates, skids, pallets, and any wood used as inner packaging made of non-manufactured wood) shall be constructed of lumber that has been heat-treated in accordance with the requirements of International Standard for Phytosanitary Measures (ISPM) –15. The WPM manufacturer shall be affiliated with an inspection agency accredited by the board of review of the American Lumber Standard Committee. The WPM manufacturer shall ensure traceability to the original source of heat treatment. Each piece of WPM shall be marked to show the conformance to the International Plant Protection Convention Standard. Certification markings shall be indelible and permanent. They may be stamped, stenciled, or branded directly onto or into the WPM. Certification marks shall be applied in a visible location on at least two opposite sides of the wood packaging product, but are not
+required on each individual component piece of a wood packaging product. On dunnage, the marking shall be applied every 2 feet to opposite surfaces of each piece. If possible, the mark shall be visible when the dunnage is placed in the load to enable inspectors to verify the WPM&apos;s compliance without unloading or unstuffing the container. Foreign manufacturers shall have the heat treatment of WPM verified in accordance with their National Plant Protection Organization&apos;s compliance program.</para>
+</para0>
+<para0>
+<title>ALTERNATIVES</title> <para>The packaging requirements have been validated and the method of preservation/packing has proven successful in meeting the needs of the military distribution system, including undefined storage and shipment throughout the world. Tailoring of the packaging instructions may only be authorized by the packaging requirements developer. If tailored, prototype package is required to validate the sizes and fit requirements. Minor dimensional and size changes are acceptable provided email notification is provided to the packaging requirements developer. Any design changes or changes in the method of preservation that provide a cost savings without degrading the method of preservation or packing or affecting the serviceability of the item will be considered and responded to within 10 days of submission. The equipment proponent reserves the right to require testing to validate alternate preservation methods, materials, alternates, blocking, bracing, cushioning, and packing.</para>
+</para0>
+<para0>
+<title>REUSE OF PACKAGING MATERIALS</title>
+<para>The cushioning material and the fiberboard boxes may be reused provided:<seqlist>
+<item>There is no visible damage to material.</item>
+<item>The foam cushioning has not taken a permanent set.</item>
+<item>The fiberboard has no punctures, delaminating, or crushed flutes.</item>
+</seqlist></para>
+<para>The water vapor proof barrier bag be shall never be reused. Always use new barrier material, evacuate air from the barrier bag, and conduct a snap test after two hours on each bag to ensure seal is holding. All components of the wood box/crate must be present, properly secured in position, and not broken. Splits are acceptable provided the boards remain secured and not loose. When reapplying the lid, fasteners shall be placed 1/2 inch away from the previous fastener hole. Strapping shall be applied per <extref docno="MIL-STD-147"/>.</para>
+</para0>
+<para0>
+<title>CONTAINER REPAIR</title>
+<para>Each long life metal reusable container will be inspected and reconditioned in accordance with <extref docno="TB 9-289"/>, <extref docno="TM 55-8100-200-24"/> or <extref docno="SB 725-92-1"/> and the applicable container-drawing package. Container drawings are available upon request from the packaging requirements developer. This reconditioning effort includes mandatory replacement of breather valves, humidity indicators, data plates, sealing gaskets, and desiccant, plus all shear mounts with an age factor of five years or older. It also includes a leak test after reconditioning, inspection and replacement of unserviceable wood skids, and touch up or total stripping and refinishing of the container surfaces with CARC paint.</para>
+</para0></geninfo>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+** Additional Information On-Data Plate Statement
+**
+** -ENTITY LIST-
+**  maintwp.test.data-plate
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    E.5.3.5.3.3 Testing <test>. 
+**      b(4) Final painting, refinishing, and marking. 
+**    
+**  MIL-STD-40051-2B
+**    E.5.3.5.3.3 Testing <test>. 
+**      b(4) Final painting, refinishing, and marking. 
+********************************************************************************
+-->
+<!ENTITY maintwp.test.data-plate '<para hcp="no" esd="no">When sufficient space is not available on the existing data plate to add information, the plate shall be replaced and all pertinent data transferred to the new plate. Data shall not be stamped directly on any part, assembly, or item of equipment except when approved by the Government.</para>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Introduction For Illustrated List Of Manufacture 
+**
+** -ENTITY LIST-
+**  manu_items_introwp.intro
+**  manu_items_introwp.maint-level  (see editboil.ent)
+**  manu_items_introwp.rpstl (see editboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    E.5.3.10.1.3 Introduction for illustrated list of manufactured items work package <intro>.
+**
+**  MIL-STD-40051-2B
+**    E.5.3.10.1.3 Introduction for illustrated list of manufactured items work package <intro>.
+********************************************************************************
+-->
+<!ENTITY manu_items_introwp.intro '<para0 hcp="no" esd="no">
+<title>ILLUSTRATED LIST OF MANUFACTURED ITEMS INTRODUCTION</title>
+<subpara1 hcp="no" esd="no"><title>Scope</title>
+<para hcp="no" esd="no">This work package includes complete instructions for making items authorized to be manufactured or fabricated at the &manu_items_introwp.maint-level;.</para></subpara1>
+<subpara1 hcp="no" esd="no"><title>How to Use the Index of Manufactured Items</title>
+<para hcp="no" esd="no">A part number index in alphanumeric order is provided for cross-referencing the part number of the item to be manufactured to the page which covers fabrication criteria.</para></subpara1>
+<subpara1 hcp="no" esd="no"><title>Explanation of the Illustrations of Manufactured Items</title>
+<para hcp="no" esd="no">All instructions needed by maintenance personnel to manufacture the item are included on the illustrations. &manu_items_introwp.rpstl; All bulk materials needed for manufacture of an item are listed by part number or specification number in a tabular list on the illustration.</para></subpara1></para0>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Introduction For Depot Mobilization Requirements 
+**
+** -ENTITY LIST-
+**  mobilwp.intro
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**   E.5.3.9.4.3 Introduction for depot mobilization requirements work package <intro>
+**
+**  MIL-STD-40051-2B
+**   E.5.3.9.4.3 Introduction for depot mobilization requirements work package <intro>
+********************************************************************************
+-->
+<!ENTITY mobilwp.intro '<para0 hcp="no" esd="no">
+<title>DEPOT MOBILIZATION REQUIREMENTS INTRODUCTION</title>
+<subpara1 hcp="no" esd="no"><title>Scope</title>
+<para hcp="no" esd="no">The purpose of this work package is to streamline and accelerate the overhaul process during the mobilization of the depot.</para></subpara1>
+<subpara1 hcp="no" esd="no"><title>Explanation of Mobilization Requirements</title>
+<para hcp="no" esd="no">The mobilization requirements include a list of instructions for modifying preshop analysis and/or overhaul procedures.  The pertinent procedures to be modified are referred to by page and work package number, followed by the action to be taken.</para></subpara1></para0>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  AOAP Sampling Interval Statement 
+**
+** -ENTITY LIST-
+**  pmcsintrowp.intro.aoap 
+**  pmcsintrowp.intro.aoap.timeframe (see editboil.ent)
+**  pmcsintrowp.intro.aoap.prescribed (see editboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    K.5.3.3.1 PMCS data
+**      d(2) AOAP sampling interval statement 
+**
+**  MIL-STD-40051-2B
+**    K.5.3.3.1 PMCS data
+**      d(2) AOAP sampling interval statement 
+********************************************************************************
+-->
+<!ENTITY pmcsintrowp.intro.aoap '<para hcp="no" esd="no">Engine oil/transmission oil/hydraulic fluids must be sampled at &pmcsintrowp.intro.aoap.timeframe; as prescribed by &pmcsintrowp.intro.aoap.prescribed;.</para>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  AOAP Not Available/Non-Enrolled Statement 
+**
+** -ENTITY LIST-
+**  lo.intro.aoap-na
+**  lo.intro.component-equipment (see editboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    K.5.3.3.2 Army Oil Analysis Program (AOAP) not available/non-enrolled statement.
+**
+**  MIL-STD-40051-2B 
+**   K.5.3.3.2 Army Oil Analysis Program (AOAP) not available/non-enrolled statement.
+********************************************************************************
+-->
+<!ENTITY lo.intro.aoap-na 'This &lo.intro.component-equipment; is not enrolled in the Army Oil Analysis Program. HARDTIME INTERVALS APPLY.'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Fluid Leakage Narrative For PMCS Statement
+**
+** -ENTITY LIST-
+**  pmcsintrowp.intro.fluid-leakage 
+**  pmcsintrowp.intro.component-equipment (see editboil.ent) 
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    E.5.3.4.1.3 PMCS data
+**      d When the equipment contains fluids
+**
+**  MIL-STD-40051-2B
+**    E.5.3.4.1.3 PMCS data
+**      d When the equipment contains fluids
+********************************************************************************
+-->
+<!ENTITY pmcsintrowp.intro.fluid-leakage '<fluid.leakage><title>FLUID LEAKAGE</title>
+<para hcp="no" esd="no">It is necessary for you to know how fluid leakage affects the status of the &pmcsintrowp.intro.component-equipment;.  Following are types/classes of leakage you need to know to be able to determine the status of the &pmcsintrowp.intro.component-equipment;. Learn these leakage definitions and remember - when in doubt, notify your supervisor.</para>
+<para hcp="no" esd="no">When operating with Class I or II leaks, continue to check fluid levels as required in the PMCS.</para>
+<para hcp="no" esd="no">Class III leaks should be reported immediately to your supervisor. <seqlist>
+<item>Class I See page of fluid (as indicated by wetness or discoloration) not great enough to form drops.</item>
+<item>Class II Leakage of fluid great enough to form drops but not enough to cause drops to drip from item being checked/inspected.</item>
+<item>Class III Leakage of fluid great enough to form drops that fall from item being checked/inspected.</item></seqlist></para></fluid.leakage>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Conditions To Change Oil Filter Statement
+**
+** -ENTITY LIST-
+**  lo.intro.oilfilter 
+**
+** -SOURCE-
+**  MIL-STD-40051-1
+**   K.5.3.2 Oil filter statement
+**  
+**  MIL-STD-40051-2 
+**    K.5.3.2 Oil filter statement
+********************************************************************************
+-->
+<!ENTITY lo.intro.oilfilter '<para hcp="no" esd="no">Oil filters shall be serviced/cleaned/changed, as applicable, when:
+<randlist bullet="no">
+<item>They are known to be contaminated or clogged,</item>
+<item>Service is recommended by AOAP laboratory analysis, or </item>
+<item>At prescribed hardtime intervals.</item></randlist></para>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  LUBE ORDER Warranty Statement
+**
+** -ENTITY LIST-
+**  lo.intro.warranty 
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    K.5.3.4 Warranty hardtime statement.
+**
+**  MIL-STD-40051-2B 
+**    K.5.3.4 Warranty hardtime statement.
+********************************************************************************
+-->
+<!ENTITY lo.intro.warranty '<para hcp="no" esd="no">For equipment under manufacturer&rsquo;s warranty, hardtime oil service intervals shall be followed.  Intervals shall be shortened if lubricants are known to be contaminated or if operation is under adverse conditions such as longer than usual operating hours, extended idling periods, extreme dust, etc.</para>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Standard Statement When No MRP Is Included In The PMCS.
+**
+** -ENTITY LIST-
+**  pmcswp.pmcstable.mrplpart.no-mrp 
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    E.5.3.4.3.2 Mandatory replacement parts <mrplpart>
+**      b No mandatory replacement parts 
+** 
+**  MIL-STD-40051-2B
+**    E.5.3.4.2.4 Mandatory replacement parts <mrplpart>
+**      b No mandatory replacement parts 
+********************************************************************************
+-->
+<!ENTITY pmcswp.pmcstable.mrplpart.no-mrp '<para hcp="no" esd="no">There are no replacement parts required for these PMCS procedures.</para>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  PMCS Introduction Lubricant Is Authorized In Arctic Operation Note
+**
+** -ENTITY LIST-
+**  lotable.arctic-oper.auth
+**   
+** -SOURCE-
+**  MIL-STD-40051-1B
+**   K.5.7.1 Notes to tables.
+**
+**  MIL-STD-40051-2B
+**   K.5.7.1 Notes to tables.
+********************************************************************************
+-->
+<!ENTITY lotable.arctic-oper.auth '<note acknowledge = "no"><trim.para esd="no" hcp="no">For Arctic Operation,
+refer to <extref docno="FM 9-207"/></trim.para></note>'>
+
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+** PMCS Introduction Lubricant Is Not Authorized In Arctic Operation Note
+**
+** -ENTITY LIST-
+**  lotable.arctic-oper.not-auth
+**  lotable.arctic-oper.not-auth.component (see editboil.ent)
+**   
+** -SOURCE-
+**  MIL-STD-40051-2B
+**    K.5.7.1 Notes to tables.
+**
+
+********************************************************************************
+-->
+<!ENTITY lotable.arctic-oper.not-auth '<note acknowledge = "no"><trim.para esd="no" hcp="no">15W-40 oil is not authorized in this particular &pmcswp.pmcstable.pmcsproc.arctic-oper.not-auth.component;.</trim.para></note>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  PMI Checklist Concerning MTF Note
+**
+** -ENTITY LIST-
+**  pmi-chklistwp.note 
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    E.5.3.17.4 Phased maintenance checklist
+**
+**  MIL-STD-40051-2B
+**    E.5.3.17.4 Phased maintenance checklist
+********************************************************************************
+-->
+<!ENTITY pmi-cklistwp.note '<note acknowledge = "no">
+<trim.para esd="no" hcp="no">Prior to start of the Phased Maintenance Inspection, it is recommended that a pre-inspection maintenance test flight (MTF) be conducted. Accomplishment of the MTF shall be determined by the field maintenance officer. The pre-inspection MTF should be conducted by a maintenance test pilot following a review of the aircraft forms and records and a briefing from the crew of the aircraft. The MTF is recommended to assess the aircraft performance and identify deficiencies that should be corrected while the aircraft is undergoing phased maintenance inspections.</trim.para></note>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  PMI General information Statement
+**
+** -ENTITY LIST-
+**  pmiwp.geninfo
+**  pmiwp.geninfo.aircraft (see editboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    E.5.3.13.1.3 PMI General information and introduction <geninfo>
+**
+**  MIL-STD-40051-2B
+**    E.5.3.13.1.3 PMI General information and introduction <geninfo>
+********************************************************************************
+-->
+<!ENTITY pmiwp.geninfo '<title>GENERAL INFORMATION</title>
+<para hcp="no" esd="no">This work package contains complete requirements for special inspections, overhaul and retirement schedule, and standards of serviceability applicable to the aircraft. The inspections prescribed in this section shall be accomplished at specified periods by AVUM activities, with the assistance of AVIM activities when required. Complete Daily, Intermediate, Periodic, or Phased inspections are contained in the &pmiwp.geninfo.aircraft;.</para>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  PMI General Information Statement
+**
+** -ENTITY LIST-
+**  pmiwp.def-geninfo 
+**
+** -SOURCE-
+**  MIL-STD-40051-1
+**    E.5.3.13.1.5a PMI Special inspections
+**      a Definition and general information
+**
+**  MIL-STD-40051-2
+**    E.5.3.13.1.5a PMI Special inspections
+**      a Definition and general information
+********************************************************************************
+-->
+<!ENTITY pmiwp.def-geninfo '<para hcp="no" esd="no">This information supplements scheduled inspections as outlined in the applicable aircraft inspection checklists.  Inspection of items which are required to be inspected at intervals not compatible with airframe operating time or airframe inspection intervals is also included. Refer to <extref  docno="DA PAM 738-751" posttext=" (Functional Users Manual for the Army Maintenance Management System-Aviation (TAMMS-A))"/> for applicable forms, records, and worksheets required for these inspection intervals.  Typical examples of this type of inspection are as follows:
+<seqlist>
+<item>Inspections which are solely contingent upon specific conditions or incidents that occur (e.g., hard landings, over speed, or sudden stoppage), wherein immediate inspection is required to ensure safe flight.</item>
+<item>Inspection of components or airframe on a calendar basis: e.g., first aid kits, weight and balance check, aircraft inventory.</item></seqlist></para>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  PMI Standard Of Serviceability Statement
+**
+** -ENTITY LIST-
+**  pmiwp.stdserv 
+**
+** -SOURCE-
+**  MIL-STD-40051-1
+**    E.5.3.12.1.4 PMI Standards of Serviceability
+**
+**  MIL-STD-40051-2
+**    E.5.3.12.1.4 PMI Standards of Serviceability
+********************************************************************************
+-->
+<!ENTITY pmiwp.stdserv '<para hcp="no" esd="no">Standards of serviceability to be utilized in the day-to-day inspection and maintenance of the aircraft can be found as fits, tolerances, wear limits, and specifications in the aircraft maintenance manuals.  Standards of serviceability for transfer to aircraft are contained in <extref docno="TM 1-1500-328-23"/>.</para>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  PMS Mandatory Actuation Warning
+**  PMS Mandatory Actuation Ammonition Warning 
+**
+** -ENTITY LIST-
+**  pms-inspecwp.actuat.warning 
+**  pms-inspecwp.actuat-ammo.warning
+**  pms-inspecwp.tm (see editboil.ent)
+**  pms-inspecwp.ammo-tm (see editboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    E.5.3.16.3 Actuation warning
+
+**
+**  MIL-STD-40051-2B
+**    E.5.3.16.3 Actuation warning 
+********************************************************************************
+-->
+<!ENTITY pms-inspecwp.actuat.warning '<warning><warning.group>
+<trim.para>Accidental actuation of aircraft power plant or hydraulic system, or
+&pms-inspecwp.aircraft; may cause severe injury or death.
+Before starting inspection, aircraft safety check must be performed,
+if applicable IAW &pms-inspecwp.tm;.
+</trim.para></warning.group></warning>'>
+
+<!ENTITY pms-inspecwp.actuat-ammo.warning '<warning><warning.group>
+<trim.para>Accidental actuation of aircraft power plant or hydraulic system, or
+&pms-inspecwp.aircraft; may cause severe injury or death.
+Before starting inspection, aircraft safety check must be performed,
+if applicable IAW &pms-inspecwp.tm; and all armament must be safetied,
+deactivated, and cleared &pms-inspecwp.ammo-tm;.
+</trim.para></warning.group></warning>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  PMS Mandatory safety-of-flight inspection items
+
+**
+** -ENTITY LIST-
+**  pms-inspecwp.fscap.warning 
+**
+** -SOURCE-
+**  MIL-STD-40051-1
+**    5.2.1.8 Preventive maintenance services and phased maintenance inspection manuals title page
+with warning data (Aviation only).
+**
+**  MIL-STD-40051-2
+**    5.2.1.8 Preventive maintenance services and phased maintenance inspection manuals title page
+with warning data (Aviation only).
+********************************************************************************
+-->
+<!ENTITY pms-inspecwp.fscap.warning '<warning><warning.group><title>FSCAP WARNING</title><trim.para>Certain inspections are mandatory Safety of Flight requirements, and the inspection intervals cannot be exceeded. In the event these insepctions cannot be accomplished st the specified interval, the aircraft condition status symbol will be immediatly changed to a red X. Mandatory Safety-of-Flight inspection items are printed in bold face type.</trim.para></warning.group></warning>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  PMS Inspection Discrepancy Form Reference Statement.
+**
+** -ENTITY LIST-
+**  pms-inspecwp.checklist
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    E.5.3.16.5a PMS Inspection - Standard checklist statement
+**      a. First item in checklist 
+**
+**  MIL-STD-40051-2B
+**    E.5.3.16.5a PMS Inspection - Standard checklist statement
+**      a. First item in checklist 
+********************************************************************************
+-->
+<!ENTITY pms-inspecwp.checklist '<trim.para>Inspect aircraft forms and records for recorded discrepancies <extref pretext="(" docno="DA PAM 738-751" posttext=", Functional Users Manual for the Army Maintenance Management System Aviation (TAMMS-A))"/>.</trim.para>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  PMS Inspection Last Item To Perform Statement
+**
+** -ENTITY LIST-
+**  pms-inspecwp.last-item
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    E.5.3.16.5 PMS Inspection - Standard checklist statement
+**      c. Last item in checklist
+**
+**  MIL-STD-40051-2B
+**    E.5.3.16.5 PMS Inspection - Standard checklist statement
+**     c. Last item in checklist
+********************************************************************************
+-->
+<!ENTITY pms-inspecwp.last-item '<para>Inspect for foreign object damage and ensure all access panels or doors opened or removed for this inspection are closed or reinstalled.</para>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Quality Assurance - Statement of Responsibility
+**
+** -ENTITY LIST-
+**  qawp.responsibility
+**
+** -SOURCE-
+**  MIL-STD-40051-1
+**    E.5.3.9.5.3 Quality Assurance - Statement of Responsibility <responsibility>
+** 
+**  MIL-STD-40051-2B
+**    E.5.3.9.5.3 Quality Assurance - Statement of Responsibility <responsibility>
+********************************************************************************
+-->
+<!ENTITY qawp.responsibility '<title>STATEMENT OF RESPONSIBILITY</title>
+<para hcp="no" esd="no">The depot/contractor is responsible for complying with the quality assurance requirements contained in this work package and in accordance with <extref docno="ISO 9000 Series" pretext="International Standards Organization "/> or equivalent.  The commodity manager reserves the right to perform inspections or make changes that ensure the depot work being done meets the quality standards of the DMWR and preserves the inherent reliability of the item.</para>'>
+
+
+<!-- DOCUMENTATION
+
+********************************************************************************
+** -TITLE-
+**  Quality Assurance -  In-process inspections
+**
+** -ENTITY LIST-
+**  qawp.inprocess
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    E.5.3.9.5.8 Quality Assurance - In-process inspections <inprocess>
+**
+**  MIL-STD-40051-2B
+**    E.5.3.9.5.8 Quality Assurance - In-process inspections <inprocess>
+********************************************************************************
+-->
+<!ENTITY qawp.inprocess '<title>IN-PROCESS INSPECTIONS</title>
+<para>In-process quality assurance inspections are contained throughout the overhaul procedures of this DMWR.  These inspections are immediately preceded by a statement such as &ldquo;QA check&rdquo; to identify them, and they are the minimum inspections required.  Additional quality assurance inspections may be established by the depot or the commodity manager.</para>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Quality Assurance - Acceptance Inspections
+**
+
+** -ENTITY LIST-
+**  qawp.acceptance
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    E.5.3.8.5.9 Quality Assurance - Acceptance inspections <acceptance>
+**
+**  MIL-STD-40051-2B
+**    E.5.3.8.5.9 Quality Assurance - Acceptance inspections <acceptance>
+********************************************************************************
+-->
+<!ENTITY qawp.acceptance '<title>ACCEPTANCE INSPECTIONS</title>
+<para hcp="no" esd="no">Items overhauled in accordance with this DMWR will be accepted based on the following criteria
+<seqlist><item>Conformance to quality of material requirements.</item>
+<item>Conformance to all in-process quality assurance inspections.</item>
+<item>Conformance to all final assembly testing requirements.</item>
+<item>Conformance to the preservation, packaging, and marking requirements.</item>
+</seqlist></para>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Storage Aircraft General Information Statement
+**
+** -ENTITY LIST-
+
+**  storagewp.geninfo 
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    E.5.3.13.3.4 General information for storage of aircraft work package 
+**    <geninfo>
+**
+**  MIL-STD-40051-2B
+**    E.5.3.13.3.4 General information for storage of aircraft work package 
+**    <geninfo>
+********************************************************************************
+-->
+<!ENTITY storagewp.geninfo '<para0>
+<title>GENERAL INFORMATION</title>
+<subpara1 hcp="no" esd="no">
+<title>Components Involved in an Accident</title>
+<para hcp="no" esd="no">Any component removed for reason of accident shall not be preserved, but shall be shipped in the same condition it was in after the accident.</para></subpara1>
+<subpara1 hcp="no" esd="no"><title>Categories of Storage</title>
+<para hcp="no" esd="no">
+<seqlist>
+<item>Flyable storage &ndash; no time limit.</item>
+<item>Short term (administrative storage) &ndash; 1 to 45 days.</item>
+<item>Intermediate storage &ndash; 46 to 180 days.</item>
+</seqlist></para></subpara1></para0>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Service Upon Receipt Checking Unpacked Equipment Mandatory Steps
+**
+** -ENTITY LIST-
+**  surwp.surmat.chkeqp.inspect 
+**
+** -SOURCE-
+**  MIL-STD-40051-1
+**    E.5.3.2.3.3 Service upon receipt of materiel <surmat>
+**      b(3) Checking unpacked equipment <chkeqp> 
+**
+**  MIL-STD-40051-2 
+**    E.5.3.2.3.3 Service upon receipt of materiel <surmat>
+**      b(3) Checking unpacked equipment <chkeqp> 
+********************************************************************************
+-->
+<!ENTITY surwp.surmat.chkeqp.inspect '<step1><para hcp="no" esd="no">Inspect the equipment for damage incurred during shipment. If the equipment has been damaged, report the damage on <extref docno="DD Form 361" posttext=", Transportation Discrepancy Report"/>.</para></step1>
+<step1><para hcp="no" esd="no">Check the equipment against the packing slip to see if the shipment is complete. Report all discrepancies in accordance with <extref docno="DTR 4500.9-R, Part II"/>).</para></step1>
+<step1><para hcp="no" esd="no">Check to see whether the equipment has been modified.</para></step1>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Aircraft Weighing And Loading General Information Statement
+**
+** -ENTITY LIST-
+**  wtloadwp.geninfo 
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    E.5.3.13.4.3 Weighing and loading work package - General information 
+**    <geninfo>
+**
+**  MIL-STD-40051-2B
+**    E.5.3.13.4.3 Weighing and loading work package - General information 
+**    <geninfo>
+********************************************************************************
+-->
+<!ENTITY wtloadwp.geninfo '<title>WEIGHING AND LOADING ASB<brk/>GENERAL INFORMATION</title>
+<para0 hcp="no" esd="no"><title>Scope</title>
+<para hcp="no" esd="no">This work package contains description, information, and procedures for aircraft weighing and loading.  </para></para0>'>

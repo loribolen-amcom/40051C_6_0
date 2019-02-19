@@ -1,0 +1,424 @@
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  SELECTION BOILERPLATE TEXT
+**
+**  Each selectable entity turns on (INCLUDE) or off (IGNORE) boilerplate text,
+**  depending on the TM being developed. Each selectable entity group provides,
+**  in the documentation comment, selectable choices and instructions what to
+**  change.
+**
+** -FORMAL PUBLIC IDENTIFIER (FPI)-
+**  "-//USA-DOD//ENTITIES MIL-STD-2361 Selection Boilerplate  REV C 6.0 20150630//EN"
+********************************************************************************
+-->
+ 
+ 
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Page-Base Or Frame-Base TM Selection
+**
+** -INSTRUCTION-
+**  -IF- Frame-base or IETM
+**       -THEN-
+**          -SET- "frame-base" to "INCLUDE" -AND-
+**          -SET- "page-base" to "IGNORE"
+**  -IF- Page-base TM
+**          -SET- "frame-base" to "IGNORE" -AND-
+**          -SET- "page-base" to "INCLUDE"
+********************************************************************************
+-->
+
+<!ENTITY % frame-base "IGNORE">
+<!ENTITY % page-base "INCLUDE">
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Services Included In TM
+**
+** -USED FOR-
+**  + Reporting Errors And Recommending Improvements Statement
+**  + RPSTL Introduction
+**
+** -INSTRUCTION-
+**  -IF- Multiple Service TM
+**       -THEN-
+**          -SET- multi-tm to "INCLUDE"
+**          -SET- single-tm to "IGNORE"
+**       -ELSE-
+**          -SET- multi-tm to "IGNORE"
+**          -SET- single-tm to "INCLUDE"
+**  TM includes:
+**    1. Army
+**       -THEN-
+**          -SET- army-tm to "INCLUDE"
+**       -ELSE-
+**          -SET- army-tm to "IGNORE"
+**    2. Navy
+**       -THEN-
+**          -SET- usn-tm to "INCLUDE"
+**       -ELSE-
+**          -SET- usn-tm to "IGNORE"
+**    3. Air Force
+**       -THEN-
+**          -SET- usaf-tm to "INCLUDE"
+**       -ELSE-
+**          -SET- usaf-tm to "IGNORE"
+**    4. Marines
+**       -THEN-
+**          -SET- usmc-tm to "INCLUDE" -AND-
+**          -SET- non-usmc-tm to "IGNORE"
+**       -ELSE-
+**          -SET- usmc-tm to "IGNORE" -AND-
+**          -SET- non-usmc-tm to "INCLUDE"
+**
+** -EXAMPLE-
+**   When Army and the Navy is included in the TM
+**     -SET- "multi-tm", "army-tm", "usn-tm", and "non-usmc-tm" to "INCLUDE" -AND-
+**     -SET- "single-tm", "usaf-tm" and "usmc-tm" to "IGNORE".
+**
+** -SELECTABLE ENTITY LIST-
+**  multi-tm
+**  single-tm
+**  army-tm
+**  usn-tm
+**  usaf-tm
+**  usmc-tm
+**  non-usmc-tm
+**
+********************************************************************************
+-->
+
+<!ENTITY % multi-tm "IGNORE">
+<!ENTITY % single-tm "INCLUDE">
+<!ENTITY % army-tm "INCLUDE">
+<!ENTITY % usn-tm "IGNORE">
+<!ENTITY % usaf-tm "IGNORE">
+<!ENTITY % usmc-tm "IGNORE">
+<!ENTITY % non-usmc-tm "INCLUDE">
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Classified TM/IETM
+**
+** -USED FOR-
+**  Reporting Errors And Recommending Improvements Statement
+**
+** -INSTRUCTION-
+**   -IF- Classified
+**      -THEN-
+**        -SET- "unclass-tm" to "IGNORE"
+**        -SET- "class-tm" to "INCLUDE"
+**      -ELSE- -SET- "class-tm" to "IGNORE"
+**        -SET- "unclass-tm" to "INCLUDE"
+**        -SET- "class-tm" to "IGNORE"
+**
+** -SELECTABLE ENTITY LIST-
+**  class-tm
+**  unclass-tm
+********************************************************************************
+-->
+
+<!ENTITY % class-tm "IGNORE">
+<!ENTITY % unclass-tm "INCLUDE">
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Hand receipt (HR) manuals (Field) 
+**
+** -USED FOR-
+**  IETM hand receipt
+**          Or
+**  Manual hand receipt
+**
+** -INSTRUCTION-
+**   -IF- Hand receipt is included with the IETM
+**      -THEN-
+**        -SET- "hr.in.ietm" to "INCLUDE"
+**        -SET- "hr.own.tm" to "IGNORE"
+**      -ELSE- 
+**        -SET- "hr.in.ietm" to "IGNORE"
+**        -SET- "hr.own.tm" to "INCLUDE"
+**        
+**
+** -SELECTABLE ENTITY LIST-
+**  hr.in.ietm 
+**  hr.own.tm  
+********************************************************************************
+-->
+
+<!ENTITY % hr.in.ietm "INCLUDE">
+<!ENTITY % hr.own.tm  "IGNORE">
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Preventive Maintenance Services (PMS) or
+**  Phased Maintenance Inspection (PMI) TM
+**
+** -INSTRUCTION-
+**  -IF- PMS or PMI TM
+**     -THEN- -SET- "pms_or_pmi-tm" to "INCLUDE"
+**     -ELSE- -SET- "pms_or_pmi-tm" to "IGNORE"
+**
+** -SELECTABLE ENTITY LIST-
+**  ammo-tm
+********************************************************************************
+-->
+
+<!ENTITY % pms_or_pmi-tm "INCLUDE">
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Army Conventional And Chemical Ammunition TM
+**
+** -INSTRUCTION-
+**  -IF- Conventional and Chemical Ammunition TM
+**     -THEN- -SET- "ammo-tm" to "INCLUDE"
+**     -ELSE- -SET- "ammo-tm" to "IGNORE"
+**
+** -SELECTABLE ENTITY LIST-
+**  ammo-tm
+********************************************************************************
+-->
+
+<!ENTITY % ammo-tm "IGNORE">
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Separate RPSTL TM or TM Includes RPSTL
+**
+**  -INSTRUCTION-
+**   -IF- No RPSTL in TM
+**      -THEN-
+**       -SET- "introwp.RPSTL_manual-tm" to "IGNORE",
+**       -SET- "introwp.RPSTL_wp-tm" to "IGNORE"
+**   -IF- RPSTL TM (TM Number with P)
+**      -THEN-
+**       -SET- "introwp.RPSTL_manual-tm" to "INCLUDE",
+**       -SET- "introwp.RPSTL_wp-tm" to "IGNORE"
+**   -IF- TM includes RPSTL (TM Number with &P)
+**      -ELSE-
+**       -SET- "introwp.RPSTL_manual-tm" to "IGNORE"
+**       -SET- "introwp.RPSTL_wp-tm" to "INCLUDE"
+**
+** -SELECTABLE ENTITY LIST-
+**  introwp.RPSTL_manual-tm
+**  introwp.RPSTL_wp-tm
+********************************************************************************
+-->
+
+<!ENTITY % introwp.RPSTL_manual-tm "INCLUDE">
+<!ENTITY % introwp.RPSTL_wp-tm "IGNORE">
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  DMWR or NMWR Manual
+**
+** -INSTRUCTION-
+**  -IF- NOT Depot TM
+**     -THEN-
+**      -SET- "dmwr" to "IGNORE"
+**      -SET- "nmwr" to "IGNORE"
+**  -IF- Depot TM -AND- DMWR
+**     -THEN-
+**      -SET- "dmwr" to "INCLUDE"
+**      -SET- "nmwr" to "IGNORE"
+**  -IF- Depot TM -AND- NMWR
+**     -THEN-
+**      -SET- "dmwr" to "IGNORE"
+**      -SET- "nmwr" to "INCLUDE"
+**
+** -SELECTABLE ENTITY LIST-
+**  dmwr
+**  nmwr
+********************************************************************************
+-->
+
+<!ENTITY % dmwr "IGNORE">
+<!ENTITY % nmwr "IGNORE">
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Any Usable On Code (UOC) to List
+**
+** -INSTRUCTION-
+**  -IF- TM contains UOC
+**     -THEN-
+**      -SET- "uoc-list" to "INCLUDE"
+**     -ELSE-
+**      -SET- "uoc-list" to "IGNORE"
+**
+** -SELECTABLE ENTITY LIST-
+**  uoc-list
+********************************************************************************
+-->
+
+<!ENTITY % uoc-list "INCLUDE">
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  RPSTL Cross Reference Indexes
+**
+**  -INSTRUCTION-
+**   -IF- RPSTL Includes One or More RPSTL Indexes
+**      -THEN- -SET- "introwp.index" to "INCLUDE"
+**      -ELSE- -SET- "introwp.index" to "IGNORE"
+**
+** -SELECTABLE ENTITY LIST-
+**  introwp.index
+********************************************************************************
+-->
+
+<!ENTITY % introwp.index "IGNORE">
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  RPSTL Cross Reference Index Used
+**
+**  -INSTRUCTION-
+**   -IF- "introwp.index=INCLUDE" (see above)
+**      -THEN-
+**       -IF- NSN -AND- Part No. -AND- Ref Des Indices Used
+**        -THEN-
+**         -SET- "introwp.nsn_pn_refdes-index" to "INCLUDE"
+**         -SET- "introwp.nsn_pn-index" -AND- "introwp.nsn_refdes-index" -AND-
+**               "introwp.nsn-index" -AND- "introwp.pn_refdes-index" -AND-
+**               "introwp.pn-index" -AND- "introwp.refdes-index" to "IGNORE"
+**       -IF- NSN -AND- Part No. Indices Only Used
+**        -THEN-
+**         -SET- "introwp.nsn_pn-index" to "INCLUDE"
+**         -SET- "introwp.nsn_pn_refdes-index" -AND- "introwp.nsn_refdes-index" -AND-
+**               "introwp.nsn-index" -AND- "introwp.pn_refdes-index" -AND-
+**               "introwp.pn-index" -AND- "introwp.refdes-index" to "IGNORE"
+**       -IF- NSN Index Only Used
+**        -THEN-
+**         -SET- "introwp.nsn-index" to "INCLUDE"
+**         -SET- "introwp.nsn_pn_refdes-index" -AND- "introwp.nsn_refdes-index" -AND-
+**               "introwp.nsn_pn-index" -AND- "introwp.pn_refdes-index" -AND-
+**               "introwp.pn-index" -AND- "introwp.refdes-index" to "IGNORE"
+**       -IF- Part No. -AND- Ref Des Indices Only Used
+**        -THEN-
+**         -SET- "introwp.pn_refdes-index" to "INCLUDE"
+**         -SET- "introwp.nsn_pn-index" -AND- "introwp.nsn_refdes-index" -AND-
+**               "introwp.nsn-index" -AND- "introwp.nsn_pn_refdes-index" -AND-
+**               "introwp.pn-index" -AND- "introwp.refdes-index" to "IGNORE"
+**       -IF- Part No. Index Only Used
+**        -THEN-
+**         -SET- "introwp.pn-index" to "INCLUDE"
+**         -SET- "introwp.nsn_pn-index" -AND- "introwp.nsn_refdes-index" -AND-
+**               "introwp.nsn-index" -AND- "introwp.nsn_pn_refdes-index" -AND-
+**               "introwp.pn_refdes-index" -AND- "introwp.refdes-index" to "IGNORE"
+**       -IF- Ref Des Index Only Used
+**        -THEN-
+**         -SET- "introwp.refdes-index" to "INCLUDE"
+**         -SET- "introwp.nsn_pn-index" -AND- "introwp.nsn_refdes-index" -AND-
+**               "introwp.nsn-index" -AND- "introwp.nsn_pn_refdes-index" -AND-
+**               "introwp.pn_refdes-index" -AND- "introwp.pn-index" to "IGNORE"
+**
+** -EXAMPLE-
+**  If using NSN and Reference Designator Indexes set
+**    introwp.nsn_refdes-index "INCLUDE".
+**
+** -SELECTABLE ENTITY LIST-
+**  introwp.nsn_pn_refdes-index (NSN, Part No., Reference Designator)
+**  introwp.nsn_pn-index (NSN, Part No.)
+**  introwp.nsn_refdes-index (NSN, Reference Designator)
+**  introwp.nsn-index  (NSN)
+**  introwp.pn_refdes-index (Part No., Reference Designator)
+**  introwp.pn-index  (Part No.)
+**  introwp.refdes-index (Reference Designator)
+********************************************************************************
+-->
+
+<!ENTITY % introwp.nsn_pn_refdes-index "INCLUDE">
+<!ENTITY % introwp.nsn_pn-index "IGNORE">
+<!ENTITY % introwp.nsn_refdes-index "IGNORE">
+<!ENTITY % introwp.nsn-index "IGNORE">
+<!ENTITY % introwp.pn_refdes-index "IGNORE">
+<!ENTITY % introwp.pn-index "IGNORE">
+<!ENTITY % introwp.refdes-index "IGNORE">
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  MAC Maintenance Concept
+**
+** -INSTRUCTION-
+**  -IF- MAC is Standard Two-Level Maintenance
+**     -THEN-
+**       -SET- "mac.nonav-level" to "INCLUDE"
+**       -SET- "mac.av-level" to "IGNORE"
+**  -IF- MAC is Aviation Two-Level Maintenance
+**     -THEN-
+**       -SET- "mac.nonav-level" to "IGNORE"
+**       -SET- "mac.av-level" to "INCLUDE"
+**
+** -SELECTABLE ENTITY LIST-
+**  mac.nonav-level
+**  mac.av-level
+********************************************************************************
+-->
+
+<!ENTITY % mac.nonav-level "INCLUDE">
+<!ENTITY % mac.av-level "IGNORE">
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  COEI and BII Standard Information Method Used
+**
+**  The COEI and BII has two methods to display information Method A and Method B.
+**
+**
+** -INSTRUCTION-
+**  -IF- Using METHOD A
+**     -THEN-
+**       -SET- "coeibiiwp.method-a" to "INCLUDE"
+**       -SET- "coeibiiwp.method-b" to "IGNORE"
+**     -ELSE-
+**       -SET- "coeibiiwp.method-a" to "IGNORE"
+**       -SET- "coeibiiwp.method-b" to "INCLUDE"
+**
+** -SELECTABLE ENTITY LIST-
+**  coeibiiwp.method-a
+**  coeibiiwp.method-b
+********************************************************************************
+-->
+
+<!ENTITY % coeibiiwp.method-a "INCLUDE">
+<!ENTITY % coeibiiwp.method-b "IGNORE">
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Tool Identification List Maintenance Level SELECTION
+**
+**  The Tool Identification has different narrative for DMWR/NMWR and remaining
+**  maintenance levels.
+** -INSTRUCTION-
+**  -IF- Depot (DMWR/NMWR) Maintenance Level
+**     -THEN-
+**       -SET- "toolidwp.dmwr-nmwr" to "INCLUDE"
+**       -SET- "toolidwp.common" to "IGNORE"
+**     -ELSE-
+**       -SET- "toolidwp.dmwr-nmwr" to "IGNORE"
+**       -SET- "toolidwp.common" to "INCLUDE"
+**
+** -SELECTABLE ENTITY LIST-
+**  toolidwp.dmwr-nmwr
+**  toolidwp.common
+********************************************************************************
+-->
+
+<!ENTITY % toolidwp.dmwr-nmwr "IGNORE">
+<!ENTITY % toolidwp.common "INCLUDE">

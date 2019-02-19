@@ -1,0 +1,66 @@
+<!-- iso-amsn.ent (initially distributed with DocBook XML DTD V4.1.1beta1) -->
+
+<!-- Derived from the corresponding ISO 8879 standard entity set
+     and the Unicode character mappings provided by Sebastian Rahtz
+     With additional derivations from
+     ftp://ftp.unicode.org/Public/MAPPINGS/VENDORS/MISC/SGML.TXT -->
+
+<!ENTITY gnap   "&#38;#xE411;"> <!--  -->
+<!ENTITY gne    "&#38;#x2269;"> <!--  -->
+<!ENTITY gnE    "&#38;#x2269;"> <!--  -->
+<!ENTITY gnsim  "&#38;#x22E7;"> <!-- GREATER-THAN BUT NOT EQUIVALENT TO -->
+<!ENTITY gvnE   "&#38;#x2269;"> <!-- GREATER-THAN BUT NOT EQUAL TO -->
+<!ENTITY lnap   "&#38;#xE2A2;"> <!--  -->
+<!ENTITY lnE    "&#38;#x2268;"> <!--  -->
+<!ENTITY lne    "&#38;#x2268;"> <!--  -->
+<!ENTITY lnsim  "&#38;#x22E6;"> <!--  -->
+<!ENTITY lvnE   "&#38;#x2268;"> <!-- LESS-THAN BUT NOT EQUAL TO -->
+<!ENTITY nap    "&#38;#x2249;"> <!-- NOT ALMOST EQUAL TO -->
+<!ENTITY ncong  "&#38;#x2247;"> <!-- NEITHER APPROXIMATELY NOR ACTUALLY EQUAL TO -->
+<!ENTITY nequiv "&#38;#x2262;"> <!-- NOT IDENTICAL TO -->
+<!ENTITY ngE    "&#38;#x2271;"> <!--  -->
+<!ENTITY nge    "&#38;#x2271;"> <!-- NEITHER GREATER-THAN NOR EQUAL TO -->
+<!ENTITY nges   "&#38;#x2271;"> <!--  -->
+<!ENTITY ngt    "&#38;#x226F;"> <!-- NOT GREATER-THAN -->
+<!ENTITY nle    "&#38;#x2270;"> <!-- NEITHER LESS-THAN NOR EQUAL TO -->
+<!ENTITY nlE    "&#38;#x2270;"> <!--  -->
+<!ENTITY nles   "&#38;#x2270;"> <!--  -->
+<!ENTITY nlt    "&#38;#x226E;"> <!-- NOT LESS-THAN -->
+<!ENTITY nltri  "&#38;#x22EA;"> <!-- NOT NORMAL SUBGROUP OF -->
+<!ENTITY nltrie "&#38;#x22EC;"> <!-- NOT NORMAL SUBGROUP OF OR EQUAL TO -->
+<!ENTITY nmid   "&#38;#x2224;"> <!-- DOES NOT DIVIDE -->
+<!ENTITY npar   "&#38;#x2226;"> <!-- NOT PARALLEL TO -->
+<!ENTITY npr    "&#38;#x2280;"> <!-- DOES NOT PRECEDE -->
+<!ENTITY npre   "&#38;#x22E0;"> <!-- DOES NOT PRECEDE OR EQUAL -->
+<!ENTITY nrtri  "&#38;#x22EB;"> <!-- DOES NOT CONTAIN AS NORMAL SUBGROUP -->
+<!ENTITY nrtrie "&#38;#x22ED;"> <!-- DOES NOT CONTAIN AS NORMAL SUBGROUP OR EQUAL -->
+<!ENTITY nsc    "&#38;#x2281;"> <!-- DOES NOT SUCCEED -->
+<!ENTITY nsce   "&#38;#x22E1;"> <!-- DOES NOT SUCCEED OR EQUAL -->
+<!ENTITY nsim   "&#38;#x2241;"> <!--  -->
+<!ENTITY nsime  "&#38;#x2244;"> <!--  -->
+<!ENTITY nsmid  "&#38;#xE2AA;"> <!--  -->
+<!ENTITY nspar  "&#38;#x2226;"> <!-- NOT PARALLEL TO -->
+<!ENTITY nsub   "&#38;#x2284;"> <!-- NOT A SUBSET OF -->
+<!ENTITY nsube  "&#38;#x2288;"> <!--  -->
+<!ENTITY nsubE  "&#38;#x2288;"> <!--  -->
+<!ENTITY nsup   "&#38;#x2285;"> <!-- NOT A SUPERSET OF -->
+<!ENTITY nsupE  "&#38;#x2289;"> <!--  -->
+<!ENTITY nsupe  "&#38;#x2289;"> <!--  -->
+<!ENTITY nvdash "&#38;#x22AC;"> <!-- DOES NOT PROVE -->
+<!ENTITY nvDash "&#38;#x22AD;"> <!-- NOT TRUE -->
+<!ENTITY nVDash "&#38;#x22AF;"> <!-- NEGATED DOUBLE VERTICAL BAR DOUBLE RIGHT TURNSTILE -->
+<!ENTITY nVdash "&#38;#x22AE;"> <!-- DOES NOT FORCE -->
+<!ENTITY prnap  "&#38;#x22E8;"> <!--  -->
+<!ENTITY prnE   "&#38;#xE2B3;"> <!--  -->
+<!ENTITY prnsim "&#38;#x22E8;"> <!--  -->
+<!ENTITY scnap  "&#38;#x22E9;"> <!--  -->
+<!ENTITY scnE   "&#38;#xE2B5;"> <!--  -->
+<!ENTITY scnsim "&#38;#x22E9;"> <!--  -->
+<!ENTITY subne  "&#38;#x228A;"> <!--  -->
+<!ENTITY subnE  "&#38;#x228A;"> <!-- SUBSET OF WITH NOT EQUAL TO -->
+<!ENTITY supne  "&#38;#x228B;"> <!--  -->
+<!ENTITY supnE  "&#38;#x228B;"> <!--  -->
+<!ENTITY vsubnE "&#38;#xE2B8;"> <!--  -->
+<!ENTITY vsubne "&#38;#x228A;"> <!-- SUBSET OF WITH NOT EQUAL TO -->
+<!ENTITY vsupne "&#38;#x228B;"> <!-- SUPERSET OF WITH NOT EQUAL TO -->
+<!ENTITY vsupnE "&#38;#x228B;"> <!-- SUPERSET OF WITH NOT EQUAL TO -->

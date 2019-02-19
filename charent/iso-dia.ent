@@ -1,0 +1,19 @@
+<!-- iso-dia.ent (initially distributed with DocBook XML DTD V4.1.1beta1) -->
+
+<!-- Derived from the corresponding ISO 8879 standard entity set
+     and the Unicode character mappings provided by Sebastian Rahtz -->
+
+<!ENTITY acute  "&#38;#x00B4;"> <!-- ACUTE ACCENT -->
+<!ENTITY breve  "&#38;#x02D8;"> <!-- BREVE -->
+<!ENTITY caron  "&#38;#x02C7;"> <!-- CARON -->
+<!ENTITY cedil  "&#38;#x00B8;"> <!-- CEDILLA -->
+<!ENTITY circ   "&#38;#x005E;"> <!-- RING OPERATOR -->
+<!ENTITY dblac  "&#38;#x02DD;"> <!-- DOUBLE ACUTE ACCENT -->
+<!ENTITY die    "&#38;#x00A8;"> <!--  -->
+<!ENTITY dot    "&#38;#x02D9;"> <!-- DOT ABOVE -->
+<!ENTITY grave  "&#38;#x0060;"> <!-- GRAVE ACCENT -->
+<!ENTITY macr   "&#38;#x00AF;"> <!-- MACRON -->
+<!ENTITY ogon   "&#38;#x02DB;"> <!-- OGONEK -->
+<!ENTITY ring   "&#38;#x02DA;"> <!-- RING ABOVE -->
+<!ENTITY tilde  "&#38;#x02DC;"> <!-- TILDE -->
+<!ENTITY uml    "&#38;#x00A8;"> <!--  -->

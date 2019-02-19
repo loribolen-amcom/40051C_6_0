@@ -1,0 +1,91 @@
+<!-- iso-amsr.ent (initially distributed with DocBook XML DTD V4.1.1beta1) -->
+
+<!-- Derived from the corresponding ISO 8879 standard entity set
+     and the Unicode character mappings provided by Sebastian Rahtz.
+     With additional derivations from
+     ftp://ftp.unicode.org/Public/MAPPINGS/VENDORS/MISC/SGML.TXT -->
+
+<!ENTITY ape    "&#38;#x224A;"> <!--  -->
+<!ENTITY asymp  "&#38;#x224D;"> <!-- EQUIVALENT TO -->
+<!ENTITY bcong  "&#38;#x224C;"> <!-- ALL EQUAL TO -->
+<!ENTITY bepsi  "&#38;#x220D;"> <!-- SMALL CONTAINS AS MEMBER -->
+<!ENTITY bowtie "&#38;#x22C8;"> <!--  -->
+<!ENTITY bsim   "&#38;#x223D;"> <!--  -->
+<!ENTITY bsime  "&#38;#x22CD;"> <!--  -->
+<!ENTITY bump   "&#38;#x224E;"> <!--  -->
+<!ENTITY bumpe  "&#38;#x224F;"> <!--  -->
+<!ENTITY cire   "&#38;#x2257;"> <!--  -->
+<!ENTITY colone "&#38;#x2254;"> <!--  -->
+<!ENTITY cuepr  "&#38;#x22DE;"> <!--  -->
+<!ENTITY cuesc  "&#38;#x22DF;"> <!--  -->
+<!ENTITY cupre  "&#38;#x227C;"> <!--  -->
+<!ENTITY dashv  "&#38;#x22A3;"> <!--  -->
+<!ENTITY ecir   "&#38;#x2256;"> <!--  -->
+<!ENTITY ecolon "&#38;#x2255;"> <!--  -->
+<!ENTITY eDot   "&#38;#x2251;"> <!--  -->
+<!ENTITY esdot  "&#38;#x2250;"> <!--  -->
+<!ENTITY efDot  "&#38;#x2252;"> <!--  -->
+<!ENTITY egs    "&#38;#x22DD;"> <!--  -->
+<!ENTITY els    "&#38;#x22DC;"> <!--  -->
+<!ENTITY erDot  "&#38;#x2253;"> <!--  -->
+<!ENTITY fork   "&#38;#x22D4;"> <!--  -->
+<!ENTITY frown  "&#38;#x2322;"> <!--  -->
+<!ENTITY gap    "&#38;#x2273;"> <!-- GREATER-THAN OR EQUIVALENT TO -->
+<!ENTITY gsdot  "&#38;#x22D7;"> <!--  -->
+<!ENTITY gE     "&#38;#x2267;"> <!--  -->
+<!ENTITY gel    "&#38;#x22DB;"> <!--  -->
+<!ENTITY gEl    "&#38;#x22DB;"> <!--  -->
+<!ENTITY ges    "&#38;#x2265;"> <!-- GREATER-THAN OR EQUAL TO -->
+<!ENTITY Gg     "&#38;#x22D9;"> <!-- VERY MUCH GREATER-THAN -->
+<!ENTITY gl     "&#38;#x2277;"> <!--  -->
+<!ENTITY gsim   "&#38;#x2273;"> <!-- GREATER-THAN OR EQUIVALENT TO -->
+<!ENTITY Gt     "&#38;#x226B;"> <!-- MUCH GREATER-THAN -->
+<!ENTITY lap    "&#38;#x2272;"> <!-- LESS-THAN OR EQUIVALENT TO -->
+<!ENTITY ldot   "&#38;#x22D6;"> <!--  -->
+<!ENTITY lE     "&#38;#x2266;"> <!--  -->
+<!ENTITY lEg    "&#38;#x22DA;"> <!--  -->
+<!ENTITY leg    "&#38;#x22DA;"> <!--  -->
+<!ENTITY les    "&#38;#x2264;"> <!-- LESS-THAN OR EQUAL TO -->
+<!ENTITY lg     "&#38;#x2276;"> <!-- LESS-THAN OR GREATER-THAN -->
+<!ENTITY Ll     "&#38;#x22D8;"> <!--  -->
+<!ENTITY lsim   "&#38;#x2272;"> <!-- LESS-THAN OR EQUIVALENT TO -->
+<!ENTITY Lt     "&#38;#x226A;"> <!-- MUCH LESS-THAN -->
+<!ENTITY ltrie  "&#38;#x22B4;"> <!--  -->
+<!ENTITY mid    "&#38;#x2223;"> <!--  -->
+<!ENTITY models "&#38;#x22A7;"> <!-- MODELS -->
+<!ENTITY pr     "&#38;#x227A;"> <!--  -->
+<!ENTITY prap   "&#38;#x227E;"> <!--  -->
+<!ENTITY pre    "&#38;#x227C;"> <!--  -->
+<!ENTITY prsim  "&#38;#x227E;"> <!--  -->
+<!ENTITY rtrie  "&#38;#x22B5;"> <!--  -->
+<!ENTITY samalg "&#38;#x2210;"> <!--  -->
+<!ENTITY sc     "&#38;#x227B;"> <!--  -->
+<!ENTITY scap   "&#38;#x227F;"> <!--  -->
+<!ENTITY sccue  "&#38;#x227D;"> <!--  -->
+<!ENTITY sce    "&#38;#x227D;"> <!--  -->
+<!ENTITY scsim  "&#38;#x227F;"> <!--  -->
+<!ENTITY sfrown "&#38;#x2322;"> <!-- FROWN -->
+<!ENTITY smid   "&#38;#xE301;"> <!--  -->
+<!ENTITY smile  "&#38;#x2323;"> <!--  -->
+<!ENTITY spar   "&#38;#x2225;"> <!-- PARALLEL TO -->
+<!ENTITY sqsub  "&#38;#x228F;"> <!--  -->
+<!ENTITY sqsube "&#38;#x2291;"> <!--  -->
+<!ENTITY sqsup  "&#38;#x2290;"> <!--  -->
+<!ENTITY sqsupe "&#38;#x2292;"> <!--  -->
+<!ENTITY ssmile "&#38;#x2323;"> <!-- SMILE -->
+<!ENTITY Sub    "&#38;#x22D0;"> <!--  -->
+<!ENTITY subE   "&#38;#x2286;"> <!--  -->
+<!ENTITY Sup    "&#38;#x22D1;"> <!--  -->
+<!ENTITY supE   "&#38;#x2287;"> <!--  -->
+<!ENTITY thkap  "&#38;#x2248;"> <!-- ALMOST EQUAL TO -->
+<!ENTITY thksim "&#38;#x223C;"> <!-- TILDE OPERATOR -->
+<!ENTITY trie   "&#38;#x225C;"> <!--  -->
+<!ENTITY twixt  "&#38;#x226C;"> <!-- BETWEEN -->
+<!ENTITY vdash  "&#38;#x22A2;"> <!--  -->
+<!ENTITY Vdash  "&#38;#x22A9;"> <!--  -->
+<!ENTITY vDash  "&#38;#x22A8;"> <!--  -->
+<!ENTITY veebar "&#38;#x22BB;"> <!--  -->
+<!ENTITY vltri  "&#38;#x22B2;"> <!--  -->
+<!ENTITY vprop  "&#38;#x221D;"> <!--  -->
+<!ENTITY vrtri  "&#38;#x22B3;"> <!--  -->
+<!ENTITY Vvdash "&#38;#x22AA;"> <!--  -->

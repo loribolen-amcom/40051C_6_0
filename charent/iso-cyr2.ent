@@ -1,0 +1,31 @@
+<!-- iso-cyr2.ent (initially distributed with DocBook XML DTD V4.1.1beta1) -->
+
+<!-- Derived from the corresponding ISO 8879 standard entity set
+     and the Unicode character mappings provided by Sebastian Rahtz -->
+
+<!ENTITY djcy   "&#38;#x0452;"> <!-- CYRILLIC SMALL LETTER DJE -->
+<!ENTITY DJcy   "&#38;#x0402;"> <!-- CYRILLIC CAPITAL LETTER DJE -->
+<!ENTITY gjcy   "&#38;#x0453;"> <!-- CYRILLIC SMALL LETTER GJE -->
+<!ENTITY GJcy   "&#38;#x0403;"> <!-- CYRILLIC CAPITAL LETTER GJE -->
+<!ENTITY jukcy  "&#38;#x0454;"> <!-- CYRILLIC SMALL LETTER UKRAINIAN IE -->
+<!ENTITY Jukcy  "&#38;#x0404;"> <!-- CYRILLIC CAPITAL LETTER UKRAINIAN IE -->
+<!ENTITY dscy   "&#38;#x0455;"> <!-- CYRILLIC SMALL LETTER DZE -->
+<!ENTITY DScy   "&#38;#x0405;"> <!-- CYRILLIC CAPITAL LETTER DZE -->
+<!ENTITY iukcy  "&#38;#x0456;"> <!-- CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I -->
+<!ENTITY Iukcy  "&#38;#x0406;"> <!-- CYRILLIC CAPITAL LETTER BYELORUSSIAN-UKRAINIAN I -->
+<!ENTITY yicy   "&#38;#x0457;"> <!-- CYRILLIC SMALL LETTER YI -->
+<!ENTITY YIcy   "&#38;#x0407;"> <!-- CYRILLIC CAPITAL LETTER YI -->
+<!ENTITY jsercy "&#38;#x0458;"> <!-- CYRILLIC SMALL LETTER JE -->
+<!ENTITY Jsercy "&#38;#x0408;"> <!-- CYRILLIC CAPITAL LETTER JE -->
+<!ENTITY ljcy   "&#38;#x0459;"> <!-- CYRILLIC SMALL LETTER LJE -->
+<!ENTITY LJcy   "&#38;#x0409;"> <!-- CYRILLIC CAPITAL LETTER LJE -->
+<!ENTITY njcy   "&#38;#x045A;"> <!-- CYRILLIC SMALL LETTER NJE -->
+<!ENTITY NJcy   "&#38;#x040A;"> <!-- CYRILLIC CAPITAL LETTER NJE -->
+<!ENTITY tshcy  "&#38;#x045B;"> <!-- CYRILLIC SMALL LETTER TSHE -->
+<!ENTITY TSHcy  "&#38;#x040B;"> <!-- CYRILLIC CAPITAL LETTER TSHE -->
+<!ENTITY kjcy   "&#38;#x045C;"> <!-- CYRILLIC SMALL LETTER KJE -->
+<!ENTITY KJcy   "&#38;#x040C;"> <!-- CYRILLIC CAPITAL LETTER KJE -->
+<!ENTITY ubrcy  "&#38;#x045E;"> <!-- CYRILLIC SMALL LETTER SHORT U -->
+<!ENTITY Ubrcy  "&#38;#x040E;"> <!-- CYRILLIC CAPITAL LETTER SHORT U -->
+<!ENTITY dzcy   "&#38;#x045F;"> <!-- CYRILLIC SMALL LETTER DZHE -->
+<!ENTITY DZcy   "&#38;#x040F;"> <!-- CYRILLIC CAPITAL LETTER DZHE -->

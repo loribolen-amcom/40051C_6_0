@@ -1,0 +1,693 @@
+<!-- DOCUMENTATION
+********************************************************************************
+** -FILE-
+**  PRODBOIL.ENT
+**
+** -TITLE-
+**  Production Front Matter Non-Editable Boilerplates
+**
+**  Boilerplates text are for both page-base and frame-base TMs. The information 
+**  was generated from MIL-STD-40051-1 and MIL-STD-40051-2.
+** 
+** !! NO TEXT IS CHANGED IN THIS DOCUMENT !!
+** !! EDITABLE TEXT IS IN "selectboil.ent" AND "editboil.ent"  !! 
+**
+** -FORMAL PUBLIC IDENTIFIER (FPI)-
+**  "-//USA-DOD//ENTITIES MIL-STD-2361 Production Boilerplate  REV C 6.0 20150630//EN"
+********************************************************************************
+-->
+
+
+<!-- DOCUMENTATION
+**************************************************************************
+**
+** -TITLE-
+** Revision Summary Frame
+** (Revisions that Support Maintenance Transformation)
+** -ENTITY LIST-
+**  framefrnt.revsummary
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**   5.2.1.5 Revision Summary Frame <revisionsummary>.
+** 
+**************************************************************************
+-->
+<!ENTITY framefrnt.revsummary "<para>This revision implements Army Maintenance Transformation and changes the
+Maintenance Allocation Chart (MAC) to support Field and Sustainment Maintenance.
+</para>">
+
+<!-- DOCUMENTATION
+**************************************************************************
+** -TITLE-
+** Availability Statement 
+**
+** -ENTITY LIST-
+**  notices.avail
+**  proponent-address.army (see editboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**   5.2.1.6.8 Availability statement (DMWR/NMWR only) <avail>.
+** 
+**  MIL-STD-40051-2B
+**   5.2.1.1.6 Availability statement (DMWR/NMWR only) <avail>.
+**************************************************************************
+-->
+<!ENTITY notices.avail '<avail>
+<text>This publication is not available through the St. Louis Media Distribution Division. 
+This publication is available through </text>&proponent-address.army;<text>.</text></avail>'>
+
+<!-- DOCUMENTATION
+**************************************************************************
+** -TITLE-
+**  Reporting Errors And Recommending Improvements Statement - Page Base
+**
+** -SOURCE-
+**  MIL-STD-40051-2B
+**    5.2.1.6.1 Reporting errors and recommending improvements statement 
+**    <reporting>.
+**************************************************************************
+-->
+<!-- DOCUMENTATION
+**************************************************************************
+** -TITLE-
+**  Unclassified/standard TMs
+**
+** -SOURCE-
+**  MIL-STD-40051-2
+**    5.2.1.6.1 Reporting errors and recommending improvements statement 
+**              <reporting>.
+**       a. Unclassified/standard TMs.
+****************************************************************************
+-->
+<!-- DOCUMENTATION
+**************************************************************************
+** -TITLE-
+**  Pocket size TMs, oversize TMs, and TMs with less than eight pages. 
+**
+** -SOURCE-
+**  MIL-STD-40051-2
+**    5.2.1.6.1 Reporting errors and recommending improvements statement 
+**              <reporting>.
+**       b. Pocket size TMs, oversize TMs, and TMs with less than eight 
+**          pages. 
+**************************************************************************
+-->
+<!-- DOCUMENTATION
+**************************************************************************
+** -TITLE-
+**  ARMY Only TMs
+**
+**  The entity for Army only unclassified multi-size TMs. 
+**
+** -ENTITY LIST-
+**  titleblk.reporting.std-pocket.army
+**  proponent-address.army (see editboil.ent)
+**  proponent-email.army (see editboil.ent)
+**  proponent-fax.army (see editboil.ent)
+**  army-tm (see selectboil.ent)
+**  page-base (see selectboil.ent)
+**  unclass-tm (see selectboil.ent)
+**  single-tm (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-2B
+**    5.2.1.7.1 Reporting errors and recommending improvements statement 
+**              <reporting>.
+**      a. Unclassified/standard TMs. 
+**       (1) Army Only TMs.
+**
+**    5.2.1.7.1 Reporting errors and recommending improvements statement 
+**              <reporting>. 
+**      b. Pocket size TMs, oversize TMs, and TMs with less than eight 
+**         pages. 
+**       (1) Army Only TMs.
+**************************************************************************
+-->
+<![%page-base;[
+<![%single-tm;[
+<![%unclass-tm;[
+<![%army-tm;[
+<!ENTITY titleblk.reporting.std-pocket.army '<reporting>
+<title>REPORTING ERRORS AND RECOMMENDING IMPROVEMENTS</title>
+<para>You can help improve this manual. If you find any mistakes or if you know of a way to improve the procedures, please let us know. &ndash; Mail your letter or <extref docno="DA Form 2028" posttext=" (Recommended Changes to Publications and Blank Forms)"/>, located in the back of this manual directly to: &proponent-address.army;. You may also send in your recommended changes via electronic mail or by fax. Our fax number is &proponent-fax.army;. Our e-mail address is &proponent-email.army;.</para></reporting>'>
+]]>
+]]>
+]]>
+]]>
+
+
+<!-- DOCUMENTATION
+**************************************************************************
+** -TITLE-
+**  USMC Only TMs
+**
+**  The entity for USMC only unclassified multi-size TMs. 
+**
+** -ENTITY LIST-
+**  titleblk.reporting.std-pocket.usmc
+**  proponent-address.usmc (see editboil.ent)
+**  proponent-email.usmc (see editboil.ent)
+**  proponent-fax.usmc (see editboil.ent)
+**  usmc-tm (see selectboil.ent)
+**  page-base (see selectboil.ent)
+**  unclass-tm (see selectboil.ent)
+**  single-tm (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-2B
+**    5.2.1.7.1 Reporting errors and recommending improvements statement 
+**              <reporting>. 
+**      a. Unclassified/standard TMs. 
+**         (2) Marine Only TMs.
+**
+**    5.2.1.7.1 Reporting errors and recommending improvements statement 
+**              <reporting>.
+**      b. Pocket size TMs, oversize TMs, and TMs with less than eight 
+**         pages. 
+**         (2) (b)  Marine Only TMs.
+**************************************************************************
+-->
+<![%page-base;[
+<![%single-tm;[
+<![%unclass-tm;[
+<![%usmc-tm;[
+<!ENTITY titleblk.reporting.std-pocket.usmc '<reporting>
+<title>REPORTING ERRORS AND RECOMMENDING IMPROVEMENTS</title>
+<para>You can help improve this manual. If you find any mistakes or if you know of a way to improve the procedures, please let us know. Submit notice of discrepancies or suggested changes on a <extref docno="NAVMC form 10772"/>. 
+<seqlist>
+The NAVMC may be submitted using either of the following:
+<item >The first method of submittal does not require a Common Access Card
+(CAC) to access the form. Click on http://navalforms.daps.dla.mil/web/public/forms, select the "Keyword Search"
+button, enter "10772" in the Search Criteria Box. Under "type" click on download page button. Click on PDF icon. Enter user data in the appropriate
+fields. Must have users contact information block filled with Unit address and telephone number. Click on the 'Envelope' icon in the tool bar. Select "Send
+Copy " click on "OK". When the PDF document is created, an Outlook Email screen will open with the .PDF as an attachment. On the TO: line type
+SMB.LOG.Tech.Pubs.fct@usmc.mil. In the body of the email, type any additional information you wish to provide. Click 'SEND'.</item>
+<item><link>The https://portal.logcom.usmc.mil/sites/pubs/default.aspx</link>  URL will allow access to the Albany Publications web site (CAC required) where the form can be filled out and be submitted to the NAVMC web master.</item></seqlist></para>
+<para>
+Problems or questions regarding the NAVMC 10772 program should be reported by calling DSN 567-7628 or DSN 567-5017 (Commercial number is
+(229) 639-7628 or (229) 639-5017).</para>
+<para>
+ &proponent-address.usmc;. You may also send in your recommended changes via electronic mail or by fax. Our fax number is &proponent-fax.usmc;. Our e-mail address is &proponent-email.usmc;.</para></reporting>'>
+]]>
+]]>
+]]>
+]]>
+
+
+<!-- DOCUMENTATION
+**************************************************************************
+** -TITLE-
+**  Multi-Service Each Service's Statement
+**
+**  Common service statements for standard and other size TMs
+**
+** -ENTITY LIST-
+**  titleblk.reporting.std-pocket.multi-service
+**  proponent-address.army (see editboil.ent)
+**  proponent-email.army (see editboil.ent)
+**  proponent-fax.army (see editboil.ent)
+**  proponent-address.usmc (see editboil.ent)
+**  proponent-email.usmc (see editboil.ent)
+**  proponent-fax.usmc (see editboil.ent)
+**  proponent-address.usn (see editboil.ent)
+**  proponent-email.usn (see editboil.ent)
+**  proponent-fax.usn (see editboil.ent)
+**  proponent-address.usaf (see editboil.ent)
+**  proponent-email.usaf (see editboil.ent)
+**  proponent-fax.usaf (see editboil.ent)
+**  army-tm (see selectboil.ent)
+**  usmc-tm (see selectboil.ent)
+**  usn-tm (see selectboil.ent)
+**  usaf-tm (see selectboil.ent)
+**  page-base (see selectboil.ent)
+**  unclass-tm (see selectboil.ent)
+**  multi-tm (see selectboil.ent)
+**  
+** -SOURCE-
+**  MIL-STD-40051-2B 
+**    5.2.1.7.1 Reporting errors and recommending improvements statement 
+**              <reporting>. 
+**      a. Unclassified/standard TMs. 
+**         (3) Multi-service TMs.
+**
+**    5.2.1.7.1 Reporting errors and recommending improvements statement 
+**              <reporting>.
+**      b. Pocket size TMs, oversize TMs, and TMs with less than eight 
+**         pages. 
+**         (3) Multi-service TMs.
+**************************************************************************
+-->
+<![%page-base;[
+<![%unclass-tm;[
+<![%multi-tm;[
+<!ENTITY titleblk.reporting.std-pocket.multi-service '
+<![%army-tm;[
+<reporting.para service ="army">Mail your letter or <extref docno="DA Form 2028" posttext=" (Recommended Changes to Publications and Blank Forms)"/>, located in the back of this manual directly to: &proponent-address.army;. You may also send in your recommended changes via electronic mail or by fax. Our fax number is &proponent-fax.army;. Our e-mail address is &proponent-email.army;.</reporting.para>
+]]>
+<![%usmc-tm;[
+<reporting.para service ="marines">By NAVMC form 10772 directly to &proponent-address.usmc;. You may also send in your recommended changes via electronic mail or by fax. Our fax number is &proponent-fax.usmc;. Our e-mail address is &proponent-email.usmc;.</reporting.para>
+]]>
+<![%usn-tm;[
+<reporting.para service ="navy">By letter directly to &proponent-address.usn;. You may also send in your recommended changes via electronic mail or by fax. Our fax number is &proponent-fax.usn;. Our e-mail address is &proponent-email.usn;.</reporting.para>
+]]>
+<![%usaf-tm;[
+<reporting.para service ="af">By Air Force <extref docno="AFTO Form 22"/> directly to &proponent-address.usaf;. You may also send in your recommended changes via electronic mail or by fax. Our fax number is &proponent-fax.usaf;. Our e-mail address is &proponent-email.usaf;.</reporting.para>
+]]>
+'>
+]]>
+]]>
+]]>
+
+
+<!-- DOCUMENTATION
+**************************************************************************
+** -TITLE-
+**  Multi-service TMs
+**
+**  Unclassified, standard size TMs used for Army, USMC, Navy and/or Air 
+**  Force. 
+**
+** -ENTITY LIST-
+**  titleblk.reporting.std.multi-service 
+**  titleblk.reporting.std-pocket.multi-service
+**  page-base (see selectboil.ent)
+**  unclass-tm (see selectboil.ent)
+**  multi-tm (see selectboil.ent)
+**  
+** -SOURCE-
+**  MIL-STD-40051-2B 
+**    5.2.1.7.1 Reporting errors and recommending improvements statement 
+**              <reporting>. 
+**      a. Unclassified/standard TMs. 
+**        (3) Multi-service TMs.
+**************************************************************************
+-->
+<![%page-base;[
+<![%unclass-tm;[
+<![%multi-tm;[
+<!ENTITY titleblk.reporting.std.multi-service '<reporting>
+<title>REPORTING ERRORS AND RECOMMENDING IMPROVEMENTS</title>
+<para>You can help improve this manual. If you find any mistakes or if you know of a way to improve the procedures, please let us know. Service, should be submitted as follows:</para>
+&titleblk.reporting.std-pocket.multi-service;
+<para>A reply will be furnished to you.</para>
+</reporting>'>
+]]>
+]]>
+]]>
+
+
+<!-- DOCUMENTATION
+**************************************************************************
+** -TITLE-
+**  Multi-service TMs
+**
+**  Unclassified, Pocket, oversize, and with less than eight pages size TMs 
+**  used for Army, USMC, Navy and/or Air Force. 
+**
+** -ENTITY LIST-
+**  titleblk.reporting.pocket.multi-service 
+**  titleblk.reporting.std-pocket.multi-service
+**  page-base (see selectboil.ent)
+**  unclass-tm (see selectboil.ent)
+**  multi-tm (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-2B 
+**  5.2.1.7.1 Reporting errors and recommending improvements statement 
+**            <reporting>.
+**    b. Pocket size TMs, oversize TMs, and TMs with less than eight 
+**       pages. 
+**       (3) Multi-service TMs.
+**************************************************************************
+-->
+<![%page-base;[
+<![%unclass-tm;[
+<![%multi-tm;[
+<!ENTITY titleblk.reporting.pocket.multi-service '<reporting>
+<title>REPORTING ERRORS AND RECOMMENDING IMPROVEMENTS</title>
+<para>You can help improve this manual. If you find any mistakes or if you know of a way to improve the procedures, please let us know. Reports, as applicable by the requiring Service, should be submitted as follows:
+</para>
+&titleblk.reporting.std-pocket.multi-service;
+<para>A reply will be furnished to you.</para>
+</reporting>'>
+]]>
+]]>
+]]>
+
+
+<!-- DOCUMENTATION
+**************************************************************************
+** -TITLE-
+**  Classified TMs
+**
+** -SOURCE-
+**  MIL-STD-40051-2B
+**    5.2.1.7.1 Reporting errors and recommending improvements statement 
+**              <reporting>.
+**       c. Classified TMs.
+**************************************************************************
+-->
+<!-- DOCUMENTATION
+**************************************************************************
+** -TITLE-
+**  Army Only TMs
+**
+** -ENTITY LIST-
+**  titleblk.reporting.class.army
+**  proponent-address.army (see editboil.ent)
+**  army-tm (see selectboil.ent)
+**  page-base (see selectboil.ent)
+**  class-tm (see selectboil.ent)
+**  single-tm (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-2B 
+**    5.2.1.7.1 Reporting errors and recommending improvements statement 
+**              <reporting>.
+**      c Classified TMs. 
+**        (1) Army or Marine Only TMs.
+**************************************************************************
+-->
+<![%page-base;[
+<![%army-tm;[
+<![%class-tm;[
+<![%single-tm;[
+<!ENTITY titleblk.reporting.class.army '<reporting>
+<title>REPORTING ERRORS AND RECOMMENDING IMPROVEMENTS</title>
+<para>You can help improve this manual. If you find any mistakes or if you know of a way to improve this manual, write and tell us about it. Address your correspondence to &proponent-address.army;. When dealing with classified information, make sure that your correspondence is properly marked and is handled in accordance with current security regulations.</para></reporting>'>
+]]>
+]]>
+]]>
+]]>
+
+
+<!-- DOCUMENTATION
+**************************************************************************
+** -TITLE-
+**  USMC Only TMs
+**
+** -ENTITY LIST-
+**  titleblk.reporting.class.usmc
+**  proponent-address.usmc (see editboil.ent)
+**  usmc-tm (see selectboil.ent)
+**  page-base (see selectboil.ent)
+**  class-tm (see selectboil.ent)
+**  single-tm (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-2B 
+**    5.2.1.7.1 Reporting errors and recommending improvements statement 
+**              <reporting>.
+**      c Classified TMs. 
+**        (1) Army or Marine Only TMs.
+**************************************************************************
+-->
+<![%page-base;[
+<![%single-tm;[
+<![%usmc-tm;[
+<![%class-tm;[
+<!ENTITY titleblk.reporting.class.usmc '<reporting>
+<title>REPORTING ERRORS AND RECOMMENDING IMPROVEMENTS</title>
+<para>You can help improve this manual. If you find any mistakes or if you know of a way to improve this manual, write and tell us about it. Address your correspondence to &proponent-address.usmc;. When dealing with classified information, make sure that your correspondence is properly marked and is handled in accordance with current security regulations.</para></reporting>'>
+]]>
+]]>
+]]>
+]]>
+
+
+<!-- DOCUMENTATION
+**************************************************************************
+** -TITLE-
+**  Multi-service TMs
+**
+**  Classified TMs used for Army, USMC, Navy and/or Air Force. 
+**
+** -ENTITY LIST-
+**  titleblk.reporting.class.multi-service 
+**  proponent-address.army (see editboil.ent)
+**  proponent-address.usmc (see editboil.ent)
+**  proponent-address.usn (see editboil.ent)
+**  proponent-address.usaf (see editboil.ent)
+**  army-tm (see selectboil.ent)
+**  usmc-tm (see selectboil.ent)
+**  usn-tm (see selectboil.ent)
+**  usaf-tm (see selectboil.ent)
+**  page-base (see selectboil.ent)
+**  multi-tm (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-2B 
+**    5.2.1.7.1 Reporting errors and recommending improvements statement 
+**              <reporting>.
+**      c Classified TMs. 
+**        (2) Multi-service TMs.
+**************************************************************************
+-->
+<![%page-base;[
+<![%class-tm;[
+<![%multi-tm;[
+<!ENTITY titleblk.reporting.class.multi-service '<reporting>
+<title>REPORTING ERRORS AND RECOMMENDING IMPROVEMENTS</title>
+<para>You can help improve this manual. If you find any mistakes or if you know of a way to improve this manual, write and tell us about it. Service, should be submitted as follows:</para>
+<![%army-tm;[<reporting.para service="army">Address your correspondence to &proponent-address.army;.</reporting.para>]]>
+<![%usmc-tm;[<reporting.para service="marines"> Address your correspondence to &proponent-address.usmc;.</reporting.para>]]>
+<![%usn-tm;[<reporting.para service="navy">Address your correspondence to &proponent-address.usn;.</reporting.para>]]>
+<![%usaf-tm;[<reporting.para service="af">Address your correspondence to &proponent-address.usaf;.</reporting.para>]]>
+<para>When dealing with classified information, make sure that your correspondence is properly marked and is handled in accordance with current security regulations.</para>
+</reporting>'>
+]]>
+]]>
+]]>
+
+
+<!-- DOCUMENTATION
+**************************************************************************
+** -TITLE-
+**  Reporting Errors And Recommending Improvements Statement - Frame Base
+**
+
+** -SOURCE-
+**  MIL-STD-40051-1
+**    5.2.1.6.5 Reporting errors and recommending improvements statement 
+**    <reporting>.
+**************************************************************************
+-->
+<!-- DOCUMENTATION
+**************************************************************************
+** -TITLE-
+**  Unclassified IETMs
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    5.2.1.7.5 Reporting errors and recommending improvements statement 
+**              <reporting>.
+**       a. Unclassified IETM.
+**************************************************************************
+-->
+<!-- DOCUMENTATION
+**************************************************************************
+** -TITLE-
+**  Classsifed IETMs
+**
+**  Statement to add to the unclassified statement.
+**
+** -ENTITY LIST-
+**  reporting.ietm-class 
+**  frame-base (see selectboil.ent)
+**  class-tm (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    5.2.1.6.7 Reporting errors and recommending improvements statement 
+**              <reporting>.
+**       b. Classified IETMs.
+**************************************************************************
+-->
+<![%frame-base;[
+<![%class-tm;[
+<!ENTITY reporting.ietm-class 'When dealing with classified information, make sure that your correspondence is properly marked and is handled in accordance with current security regulations. '>
+]]>
+]]>
+
+<!-- DOCUMENTATION
+**************************************************************************
+** -TITLE-
+**  ARMY Only IETM 
+**
+**  The entity for Army Only Unclassified/Classified IETMs. 
+**
+** -ENTITY LIST-
+**  titleblk.reporting.ietm.army
+**  reporting.ietm-class
+**  proponent-address.army (see editboil.ent)
+**  proponent-email.army (see editboil.ent)
+**  proponent-fax.army (see editboil.ent)
+**  army-tm (see selectboil.ent)
+**  ietm-class (see selectboil.ent)
+**  frame-base (see selectboil.ent)
+**  class-tm (see selectboil.ent)
+**  single-tm (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+
+**    5.2.1.6.7 Reporting errors and recommending improvements statement 
+**              <reporting>.
+**       a. Unclassified IETM.
+**         (1) Army Only TM.
+**       b. Classified IETMs.
+**************************************************************************
+-->
+<![%frame-base;[
+<![%single-tm;[
+<![%army-tm;[
+<!ENTITY titleblk.reporting.ietm.army '<reporting>
+<title>REPORTING ERRORS AND RECOMMENDING IMPROVEMENTS</title>
+<para>You can help improve this IETM. If you find any mistakes or if you know of a way to improve the procedures, please let us know. <![%class-tm;[&reporting.ietm-class;]]>If your IETM supports online forms, fill in the electronic publication change request and when connected to the internet, transmit the form. If your IETM does not support online forms, obtain a copy of a <extref docno="DA Form 2028" posttext=", Recommended Changes to Publications and Blank Forms"/>. Your IETM may include a partially completed <extref docno="DA Form 2028"/>. Print out the form and complete filling in the pertinent information. For IETMs without a printable <extref docno="DA Form 2028"/>, blank forms should be available through your publications system. Complete the <extref docno="DA Form 2028"/> and mail it directly to: &proponent-address.army;. If you are unable to obtain a <extref docno="DA Form 2028"/>, you may provide the recommendations by letter to the above address. You may also send in your recommended changes via electronic mail or by fax. Our fax number is &proponent-fax.army;. Our e-mail address is &proponent-email.army;.</para></reporting>'>
+]]>
+]]>
+]]>
+
+
+<!-- DOCUMENTATION
+**************************************************************************
+** -TITLE-
+**  USMC Only IETM 
+**
+**  The entity for USMC Only Unclassified/Classified IETMs. 
+**
+** -ENTITY LIST-
+**  titleblk.reporting.ietm.usmc
+**  reporting.ietm-class 
+**  proponent-address.usmc (see editboil.ent)
+**  proponent-email.usmc (see editboil.ent)
+**  proponent-fax.usmc (see editboil.ent)
+**  usmc-tm (see selectboil.ent)
+**  ietm-class (see selectboil.ent)
+**  frame-base (see selectboil.ent)
+**  single-tm (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    5.2.1.6.7 Reporting errors and recommending improvements statement 
+**              <reporting>.
+**       a. Unclassified IETM.
+**         (2) USMC Only TM.
+**       b. Classified IETMs.
+**************************************************************************
+-->
+<![%frame-base;[
+<![%single-tm;[
+<![%usmc-tm;[
+<!ENTITY titleblk.reporting.ietm.usmc '<reporting>
+<title>REPORTING ERRORS AND RECOMMENDING IMPROVEMENTS</title>
+<para>You can help improve this IETM. If you find any mistakes or if you know of a way to improve the procedures, please let us know. <![%class-tm;[&reporting.ietm-class;]]>If your IETM supports online forms, fill in the electronic publication change request and when connected to the internet, transmit the form. If your IETM does not support online forms, obtain a copy of a <extref docno="NAVMC Form 10772" posttext=", Recommended Changes to Publications and Blank Forms"/>. Your IETM may include a partially completed <extref docno="NAVMC Form 10772"/>. Print out the form and complete filling in the pertinent information. For IETMs without a printable <extref docno="NAVMC Form 10772"/>, blank forms should be available through your publications system. Complete the <extref docno="NAVMC Form 10772"/> and mail it directly to: &proponent-address.usmc;. If you are unable to obtain a <extref docno="NAVMC Form 10772"/>, you may provide the recommendations by letter to the above address. You may also send in your recommended changes via electronic mail or by fax. Our fax number is &proponent-fax.usmc;. Our e-mail address is &proponent-email.usmc;.</para></reporting>'>
+]]>
+]]>
+]]>
+
+
+<!-- DOCUMENTATION
+**************************************************************************
+** -TITLE-
+**  Reporting Errors And Recommending Improvements Statement - 
+**  IETM - Multi-service 
+**
+**  Unclassified/Classified IETMs used for Army, USMC, Navy and/or Air Force. 
+**
+** -ENTITY LIST-
+**  titleblk.reporting.class.multi-service 
+**  reporting.ietm-class
+**  proponent-address.army (see editboil.ent)
+**  proponent-address.usmc (see editboil.ent)
+**  proponent-address.usn (see editboil.ent)
+**  proponent-address.usaf (see editboil.ent)
+**  proponent-fax (see editboil.ent)
+**  proponent-email (see editboil.ent)
+**  army-tm (see selectboil.ent)
+**  usmc-tm (see selectboil.ent)
+**  usn-tm (see selectboil.ent)
+**  usaf-tm (see selectboil.ent)
+**  ietm-class (see selectboil.ent)
+**  frame-base (see selectboil.ent)
+**  multi-tm (see selectboil.ent)
+**  
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    5.2.1.6.7 Reporting errors and recommending improvements statement 
+**              <reporting>.
+**       a. Unclassified IETM.
+**         (3) Multi-service TM.
+**       b. Classified IETMs.
+****************************************************************************
+-->
+<![%frame-base;[
+<![%multi-tm;[
+<!ENTITY titleblk.reporting.ietm.multi-service '<reporting>
+<title>REPORTING ERRORS AND RECOMMENDING IMPROVEMENTS</title>
+<para>You can help improve this IETM. If you find any mistakes or if you know of a way to improve the procedures, please let us know. <![%class-tm;[&reporting.ietm-class;]]>Service, should be submitted as follows:</para>
+<![%army-tm;[
+<reporting.para service="army">If your IETM supports online forms, fill in the electronic publication change request and when connected to the internet, transmit the form. If your IETM does not support online forms, obtain a copy of a <extref docno="DA Form 2028" posttext=", Recommended Changes to Publications and Blank Forms"/>. Your IETM may include a partially completed DA 2028. Print out the form and complete filling in the pertinent information. For IETMs without a printable <extref docno="DA Form 2028"/>, blank forms should be available through your publications system. Complete the <extref docno="DA Form 2028"/> and mail it directly to: &proponent-address.army;. If you are unable to obtain a <extref docno="DA Form 2028"/>, you may provide the recommendations by letter to the above address.</reporting.para>
+]]>
+<![%usmc-tm;[
+<reporting.para service="marines">If your IETM supports online forms, fill in the electronic publication change request and when connected to the internet, transmit the form. If your IETM does not support online forms, obtain a copy of a <extref docno="NAVMC Form 10772" posttext=", Recommended Changes to Publications and Blank Forms"/>. Your IETM may include a partially completed NAVMC Form 10772. Print out the form and complete filling in the pertinent information. For IETMs without a printable <extref docno="NAVMC Form 10772"/>, blank forms should be available through your publications system. Complete the <extref docno="NAVMC Form 10772"/> and mail it directly to: &proponent-address.usmc;. If you are unable to obtain a <extref docno="NAVMC Form 10772"/>, you may provide the recommendations by letter to the above address.</reporting.para>
+]]>
+<![%usn-tm;[
+<reporting.para service="navy">If your IETM supports online forms, fill in the electronic publication change request and when connected to the internet, transmit the form. If your IETM does not support online forms, you may provide the recommendations by letter to the above address.</reporting.para>
+]]>
+<![%usaf-tm;[
+<reporting.para service="af">If your IETM supports online forms, fill in the electronic publication change request and when connected to the internet, transmit the form. If your IETM does not support online forms, obtain a copy of an <extref docno="AFTO Form 22" posttext=", Technical Order Publications Improvement Report"/>. Your IETM may include a partially completed <extref docno="AFTO Form 22"/>. Print out the form and complete filling in the pertinent information. For IETMs without a printable <extref docno="AFTO Form 22"/>, blank forms should be available through your publications system. Complete the AFTO Form 22 and mail it directly to: &proponent-address.usaf;. If you are unable to obtain a <extref docno="AFTO Form 22"/>, you may provide the recommendations by letter to the above address.</reporting.para>
+]]>
+<para>You may also send in your recommended changes via electronic mail or by fax. Our fax number is &proponent-fax;. Our e-mail address is
+&proponent-email;. A reply will be furnished to you.</para></reporting>'>
+]]>
+]]>
+
+<!-- DOCUMENTATION
+**************************************************************************
+** -TITLE-
+**  PMS and PMI Title Block With Warning And Note Data 
+**
+** -ENTITY LIST-
+**  titleblk.pm.warning.data 
+**  pms_or_pmi-tm (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-2B  
+**    5.2.1.8 Preventive maintenance services and phased maintenance 
+**            inspection manuals title block page with warning data.
+**************************************************************************
+-->
+<![%pms_or_pmi-tm;[
+<!ENTITY titleblk.pm.warning.data '<pm.warning.data>
+<warning>
+<trim.para>Certain inspections are Mandatory Safety-of-Flight requirements, and the inspection intervals cannot be exceeded.  In the event these inspections cannot be accomplished at the specified interval, the aircraft condition status symbol will be changed to a red X. Mandatory safety-of-flight inspection items are printed in bold face type.</trim.para></warning>
+<note>
+<trim.para>Inspection items contained in this manual are considered the minimum requirements for performing phased maintenance and must be performed. The cumulative effects of inspection deferrals are unknown and could result in catastrophic failure or increased maintenance at a later date. Therefore, the use of special lettering to emphasize mandatory safety-of-flight items is not to be construed as authority for deferral of other inspections.</trim.para></note></pm.warning.data>'>
+]]>
+
+
+<!-- DOCUMENTATION
+**************************************************************************
+** -TITLE-
+**  International Standardization Agreements Statement
+**
+**  When specified by the procuring activity, the "How to Use This Manual" 
+**  shall contain the statement.
+**
+** -ENTITY LIST-
+**  howtouse.intl-agree 
+**  howtouse.intl-agree.ref (see editboil.ent)
+**  howtouse.intl-agree.pg (see editboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**   5.2.1.9.1 International standardization agreements.
+**************************************************************************
+-->
+<!ENTITY howtouse.intl-agree '<note>
+<trim.para>Certain provisions of this <![%page-base;[technical manual]]><![%frame-base;[IETM]]>
+ &howtouse.intl-agree.ref; are the subject of international standardization agreement &howtouse.intl-agree.pg;. When revision or cancellation of this technical manual is proposed which will modify the international agreement concerned, the technical manual management activity will take appropriate action through international standardization channels, including departmental standardization offices, to change the agreement or make other appropriate accommodations. </trim.para></note>'>
+

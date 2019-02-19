@@ -1,0 +1,1634 @@
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Editable Boilerplate Text
+**
+**  Each information chapter has verbatim text, but some require user specific
+**  information. Some user specific information is known during the TM start and
+**  some will be edited later in the TM development. The document for each
+**  editable user specific entity provides the information to insert and 
+**  location in MIL-STD-40051-1C and -2C.
+**
+** -FORMAL PUBLIC IDENTIFIER (FPI)-
+**  "-//USA-DOD//ENTITIES MIL-STD-2361 Editable Boilerplate REV C 6.0 20150630//EN"
+********************************************************************************
+-->
+
+<!-- DOCUMENTATION
+********************************************************************************
+**              B O I L E R P L A T E   E D I T A B L E    T E X T
+**
+** -INSTRUCTION-
+**  Boilerplate information NOT used in the TM is ignored and not shown, thus
+**  it does NOT require modification.
+**
+**  The information is organized by front matter and information chapters.
+**  The information is organiizad by frontcover abbreviated for LUBE Orders. The Lube Order entities are cover at the end of this boilerplate.
+
+**  The editable boilerplate entity name is constructed using the main
+**  boilerplate entity name followed by a "-" and then the editable part name.
+**
+** -EXAMPLE-
+**  "ginfowp.qual.mat.info-tm" where the parent boilerplate entity
+**   name is "ginfowp.qual.mat.info" and the editable part name is "-tm".
+**
+**  The main boilerplate entity name is constructed is designed to use the work
+**  package element, descendent element(s), and boilerplate name.
+**
+**  -EXAMPLE-
+**   "ginfowp.qual.mat.info" where the work package element is "ginfowp", the
+**   descendent element is "qual.mat", and the boilerplate name is "info".
+********************************************************************************
+-->
+
+<!-- DOCUMENTATION
+********************************************************************************
+**                            C O M M O N
+**
+**                   E D I T A B L E    E N T I T Y
+********************************************************************************
+-->
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Short End Item Name
+**
+** -INSTRUCTION-
+**  -INSERT- The TM corresponding short end item name.
+**
+** -ENTITY USED IN-
+**  + General Information Work Package <ginfowp>
+**    - EIR <eir>
+**    - Warranty <wrntyref>
+**    - Mobilization Requirements <mobreq>
+**  + COEI and BII Work Package <coeibiiwp>
+**  + AAL Work Package <aalwp>
+**  + Expendable/Durable Items Work Package <explistwp>
+**  + Tools and Special Tools Identification Work Package <toolidwp>
+**
+** -SOURCE-
+**  MIL-STD-40051-1C Distribution statement <dist>.
+**   5.2.1.1.8 
+**    B.5.2.5 EIR <eir>
+**    B.5.2.11 Warranty <wrntyref>
+**    B.5.2.23 Mobilization Requirements <mobreq>
+**    G.5.4.3.1 COEI and BII Work Package <coeibiiwp>
+**    G.5.5.3.1 AAL Work Package <aalwp>
+**    G.5.6.3 Expendable/Durable Items Work Package <explistwp>
+**    G.5.7.3 Tools and Special Tools Identification Work Package <toolidwp>
+**
+**  MIL-STD-40051-2C (insert the short end item name or equipment name)
+**    5.2.1.1.8 
+**    B.5.2.5 EIR <eir>
+**    B.5.2.11 Warranty <wrntyref>
+**    B.5.2.23 Mobilization Requirements <mobreq>
+**    G.5.4.3.1 COEI and BII Work Package <coeibiiwp>
+**    G.5.5.3.1 AAL Work Package <aalwp>
+**    G.5.6.3 Expendable/Durable Items Work Package <explistwp>
+**    G.5.7.3 Tools and Special Tools Identification Work Package <toolidwp>
+**
+** -ENTITY LIST-
+**  short.end.item.name
+**  short.model.number
+********************************************************************************
+-->
+
+<!ENTITY short.end.item.name "INSERT THE SHORT END ITEM NAME">
+<!ENTITY short.model.number "INSERT THE SHORT MODEL NUMBER">
+
+<!-- DOCUMENTATION
+********************************************************************************
+**                         F R O N T   M A T T E R
+**
+**                        E D I T A B L E   D A T A
+********************************************************************************
+-->
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Army Proponent Activity and Address
+**
+** -INSTRUCTION-
+**  -INSERT- The Army proponent activity name and address
+**
+** -ENTITY USED IN ENTITIES-
+**  notices.avail
+**  titleblk.reporting.std-pocket.army
+**  titleblk.reporting.std-pocket.multi-service
+**  titleblk.reporting.class.army
+**  titleblk.reporting.class.multi-service
+**  titleblk.reporting.class.ietm.army
+**  titleblk.reporting.ietm.multi-service
+**  lubeorder.frntcover_abbreviated.reporting
+**
+** -ENTITY LIST-
+**  proponent-address.army
+**  army-tm (see selectboil.ent)
+********************************************************************************
+-->
+
+<![%army-tm;[
+<!ENTITY proponent-address.army '<proponent>
+<name>INSERT ARMY PROPONENT NAME</name>
+<address>
+<servnomen>OPTIONAL SERVICE NOMENCLATURE</servnomen>
+<street>0 OR MORE STREET INFORMATION</street>
+<city>INSERT CITY,</city>
+<state>INSERT STATE</state>
+<zip>OPTIONAL ZIP CODE</zip>
+<country>OPTIONAL COUNTRY</country>
+</address></proponent>'>
+]]>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Reporting Army Proponent Fax and Email Data
+**
+** -INSTRUCTION-
+**  -IF- No DSN Fax Telephone Number
+**     -THEN- -REPLACE- "INCLUDE" to "IGNORE"
+**  -INSERT- The Army FAX DSN telephone number (if applicable)
+**  -INSERT- The Army FAX commercial telephone number
+**  -INSERT- The Army Email address.
+**
+** -ENTITY USED IN ENTITY-
+**  titleblk.reporting.std-pocket.army
+**  titleblk.reporting.std-pocket.multi-service
+**  titleblk.reporting.ietm.army
+**  lubeorder.frntcover_abbreviated.reporting
+**
+** -ENTITY LIST-
+**  proponent-fax.army
+**  proponent-email.army
+**  army-tm (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    5.2.1.6.7 Reporting errors and recommending improvements statement
+**              <reporting>.
+**
+**  MIL-STD-40051-2B
+**    5.2.1.7.1 Reporting errors and recommending improvements statement
+**              <reporting>.
+********************************************************************************
+-->
+
+<![%army-tm;[
+<!ENTITY proponent-fax.army
+'<![INCLUDE[<phone type="dsn" receive="fax"></phone> and ]]><phone type="coml" receive="fax">INSERT FAX Number</phone>'>
+<!ENTITY proponent-email.army '<internet show.address="yes"><email address="INSERT EMAIL ADDRESS"/></internet>'>
+]]>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  USMC Proponent Activity and Address
+**
+** -INSTRUCTION-
+**  -INSERT- The USMC proponent activity name and address
+**  -REMOVE- Optional XML elements not used. Marked with OPTIONAL or 0 or More.
+**
+** -ENTITY USED IN ENTITIES-
+**  titleblk.reporting.std-pocket.usmc
+**  titleblk.reporting.std-pocket.multi-service
+**  titleblk.reporting.class.usmc
+**  titleblk.reporting.class.multi-service
+**  titleblk.reporting.class.ietm.usmc
+**  titleblk.reporting.ietm.multi-service
+**  lubeorder.frntcover_abbreviated.reporting
+**
+** -ENTITY LIST-
+**  proponent-address.usmc
+**  usmc-tm (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    5.2.1.6.7 Reporting errors and recommending improvements statement
+**              <reporting>.
+**
+**  MIL-STD-40051-2B
+**    5.2.1.1.1 Reporting errors and recommending improvements statement
+**              <reporting>.
+********************************************************************************
+-->
+
+<![%usmc-tm;[
+<!ENTITY proponent-address.usmc '<proponent>
+<name>INSERT USMC PROPONENT NAME</name>
+<address>
+<servnomen>OPTIONAL SERVICE NOMENCLATURE</servnomen>
+<street>0 OR MORE STREET INFORMATION</street>
+<city>INSERT CITY,</city>
+<state>INSERT STATE</state>
+<zip>OPTIONAL ZIP CODE</zip>
+<country>OPTIONAL COUNTRY</country>
+</address></proponent>'>
+]]>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Reporting USMC Proponent Fax and Email Data
+**
+** -INSTRUCTION-
+**  -IF- No DSN Fax Telephone Number
+**     -THEN- -REPLACE- "INCLUDE" to "IGNORE"
+**  -INSERT- The USMC FAX DSN telephone number (if applicable)
+**  -INSERT- The USMC FAX commercial telephone number
+**  -INSERT- The USMC Email address.
+**
+** -ENTITY USED IN ENTITY-
+**  titleblk.reporting.std-pocket.usmc
+**  titleblk.reporting.std-pocket.multi-service
+**  titleblk.reporting.ietm.usmc
+**  lubeorder.frntcover_abbreviated.reporting
+**
+** -ENTITY LIST-
+**  proponent-fax.usmc
+**  proponent-email.usmc
+**  usmc-tm (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    5.2.1.6.7 Reporting errors and recommending improvements statement
+**              <reporting>.
+**
+**  MIL-STD-40051-2B
+**    5.2.1.7.1 Reporting errors and recommending improvements statement
+**              <reporting>.
+********************************************************************************
+-->
+
+<![%usmc-tm;[
+<!ENTITY proponent-fax.usmc
+'<![IGNORE[<phone type="dsn" receive="fax">INSERT DSN FAX TELEPHONE NUMBER</phone> and ]]><phone type="coml" receive="fax">INSERT COMMERCIAL FAX TELEPHONE NUMBER</phone>'>
+<!ENTITY proponent-email.usmc '<internet show.address="yes"><email address="INSERT EMAIL ADDRESS"/></internet>'>
+]]>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  USN Proponent Activity and Address
+**
+** -INSTRUCTION-
+**  -INSERT- The USN proponent activity name and address
+**
+** -ENTITY USED IN ENTITIES-
+**  titleblk.reporting.std-pocket.multi-service
+**  titleblk.reporting.class.multi-service
+**  titleblk.reporting.ietm.multi-service
+**  lubeorder.frntcover_abbreviated.reporting
+**
+** -ENTITY LIST-
+**  proponent-address.usmc
+**  usn-tm (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    5.2.1.6.7 Reporting errors and recommending improvements statement
+**              <reporting>.
+**
+**  MIL-STD-40051-2B
+**    5.2.1.7.1 Reporting errors and recommending improvements statement
+**              <reporting>.
+********************************************************************************
+-->
+
+<![%usn-tm;[
+<!ENTITY proponent-address.usn '<proponent>
+<name>INSERT USN PROPONENT NAME</name>
+<address>
+<servnomen>OPTIONAL SERVICE NOMENCLATURE</servnomen>
+<street>0 OR MORE STREET INFORMATION</street>
+<city>INSERT CITY,</city>
+<state>INSERT STATE</state>
+<zip>OPTIONAL ZIP CODE</zip>
+<country>OPTIONAL COUNTRY</country>
+</address></proponent>'>
+]]>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Reporting USN Proponent Fax and Email Data
+**
+** -INSTRUCTION-
+**  -IF- No DSN Fax Telephone Number
+**     -THEN- -SET- "INCLUDE" to "IGNORE"
+**  -INSERT- The USN FAX DSN telephone number (if applicable)
+**  -INSERT- The USN FAX commercial telephone number
+**  -INSERT- The USN Email address.
+**
+** -ENTITY USED IN ENTITY-
+**  titleblk.reporting.std-pocket.multi-service
+**
+** -ENTITY LIST-
+**  proponent-fax.usn
+**  proponent-email.usn
+**  usn-tm (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    5.2.1.6.7 Reporting errors and recommending improvements statement
+**              <reporting>.
+**
+**  MIL-STD-40051-2B
+**    5.2.1.7.1 Reporting errors and recommending improvements statement
+**              <reporting>.
+********************************************************************************
+-->
+
+<![%usn-tm;[
+<!ENTITY proponent-fax.usn
+'<![IGNORE[<phone type="dsn" receive="fax">INSERT DSN FAX TELEPHONE NUMBER</phone> and ]]><phone type="coml" receive="fax">INSERT COMMERCIAL FAX TELEPHONE NUMBER</phone>'>
+<!ENTITY proponent-email.usn '<internet show.address="yes"><email address="INSERT EMAIL ADDRESS"/></internet>'>
+]]>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  USAF Proponent Activity and Address
+**
+** -INSTRUCTION-
+**  -INSERT- The USAF proponent activity name and address
+**
+** -ENTITY USED IN ENTITIES-
+**  titleblk.reporting.std-pocket.multi-service
+**  titleblk.reporting.class.multi-service
+**  titleblk.reporting.ietm.multi-service
+**  lubeorder.frntcover_abbreviated.reporting
+**
+** -ENTITY LIST-
+**  proponent-address.usaf
+**  usaf-tm (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1
+**    5.2.1.6.7 Reporting errors and recommending improvements statement
+**              <reporting>.
+**
+**  MIL-STD-40051-2
+**    5.2.1.7.1 Reporting errors and recommending improvements statement
+**              <reporting>.
+********************************************************************************
+-->
+
+<![%usaf-tm;[
+<!ENTITY proponent-address.usaf '<proponent>
+<name>INSERT USAF PROPONENT NAME</name>
+<address>
+<servnomen>OPTIONAL SERVICE NOMENCLATURE</servnomen>
+<street>0 OR MORE STREET INFORMATION</street>
+<city>INSERT CITY,</city>
+<state>INSERT STATE</state>
+<zip>OPTIONAL ZIP CODE</zip>
+<country>OPTIONAL COUNTRY</country>
+</address></proponent>'>
+]]>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Reporting USAF Proponent Fax and Email Data
+**
+** -INSTRUCTION-
+**  -IF- No DSN Fax Telephone Number
+**     -THEN- -REPLACE- "INCLUDE" to "IGNORE"
+**  -INSERT- The USAF FAX DSN telephone number (if applicable)
+**  -INSERT- The USAF FAX commercial telephone number
+**  -INSERT- The USAF Email address.
+**
+** -ENTITY USED IN ENTITY-
+**  titleblk.reporting.std-pocket.multi-service
+**
+** -ENTITY LIST-
+**  proponent-fax.usaf
+**  proponent-email.usaf
+**
+** -SOURCE-
+**  MIL-STD-40051-1
+**    5.2.1.6.7 Reporting errors and recommending improvements statement
+**              <reporting>.
+**
+**  MIL-STD-40051-2
+**    5.2.1.7.1 Reporting errors and recommending improvements statement
+**              <reporting>.
+********************************************************************************
+-->
+
+<![%usaf-tm;[
+<!ENTITY proponent-fax.usaf
+'<![IGNORE[<phone type="dsn" receive="fax">INSERT DSN FAX TELEPHONE NUMBER</phone> and ]]><phone type="coml" receive="fax">INSERT COMMERCIAL FAX TELEPHONE NUMBER</phone>'>
+<!ENTITY proponent-email.usaf '<internet show.address="yes"><email address="INSERT EMAIL ADDRESS"/></internet>'>
+]]>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Reporting Multi-Service Proponent Fax and Email Data (Frame-base Only)
+**
+** -INSTRUCTION-
+**  -IF- No DSN Fax Telephone Number
+**     -THEN- -REPLACE- "INCLUDE" to "IGNORE"
+**  -INSERT- The proponent FAX DSN telephone number (if applicable)
+**  -INSERT- The proponent FAX commercial telephone number
+**  -INSERT- The proponent Email address.
+**
+**  -NOTE- The information may be the same as service contact data.
+**
+** -ENTITY USED IN ENTITY-
+**  titleblk.reporting.ietm.multi-service
+**
+** -ENTITY LIST-
+**  proponent-fax
+**  proponent-email
+**  frame-base (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1
+**    5.2.1.6.7.a(3) Reporting errors and recommending improvements statement
+**                   <reporting>.
+********************************************************************************
+-->
+
+<![%frame-base;[
+<!ENTITY proponent-fax
+'<![IGNORE[<phone type="dsn" receive="fax">INSERT DSN FAX TELEPHONE NUMBER</phone> and ]]><phone type="coml" receive="fax">INSERT COMMERCIAL FAX TELEPHONE NUMBER</phone>'>
+<!ENTITY proponent-email '<internet show.address="yes"><email address="INSERT EMAIL ADDRESS"/></internet>'>
+]]>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  "How to Use This Manual" International Standardization Agreements
+**
+** -INSTRUCTION-
+**  -INSERT-
+**  The reference information for "howtouse.intl-agree.ref" using either
+**  the <xref> or <link> elements. This reference(s) are internal to the TM and
+**  may include multiple references to work packages, tasks, steps, and/or
+**  paragraph.
+**
+**  -INSERT-
+**  The reference information for "howtouse.intl-agree.pg" using either
+**  the <extref> or <link> elements. This reference(s) are external to the TM and
+**  specifies the international standardization documents. Several examples are
+**  the ABCA or ASCC standard number; the NATO STANAG, NETR, or NEPR NUMBER; or
+**  appropriate documentary reference).
+**
+** -ENTITY USED IN ENTITY-
+**  howtouse.intl-agree
+**
+** -ENTITY LIST-
+**  howtouse.intl-agree.ref
+**  howtouse.intl-agree.pg
+**
+** -SOURCE-
+**  MIL-STD-40051-1
+**    5.2.1.9 International standardization agreements <howtouse>.
+** 
+**  MIL-STD-40051-2
+**    5.2.1.10.1 International standardization agreements <howtouse>.
+********************************************************************************
+-->
+
+<!ENTITY howtouse.intl-agree.ref '<xref wpid="REPLACE_WP_ID" taskid="REPLACE_TASK_ID" stepstart="REPLACE_STEP_ID"/>'>
+
+<!ENTITY howtouse.intl-agree.pg '<extref docno="REPLACE WITH THE ABCA OR ASCC STANDARD NUMBER; THE NATO STANAG, NETR, OR NEPR NUMBER; OR APPROPRIATE DOCUMENTARY REFERENCE"/>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+**      G E N E R A L   I N F O R M A T I O N   C H A P T E R   ( G I M )
+**
+**                        E D I T A B L E   D A T A
+********************************************************************************
+-->
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+** Warranty Period As Mileage Or Time Frame
+**
+** -INSTRUCTION-
+**  -INSERT- The warranty period as mileage or time frame.
+**
+** -ENTITY USED IN ENTITY-
+**  ginfowp.wrntyref
+**
+** -ENTITY LIST-
+**  ginfowp.wrntyref-time
+**
+** -SOURCE-
+**  MIL-STD-40051-1
+**    B.5.2.11 Warranty information <wrntyref>.
+**
+**  MIL-STD-40051-2
+**    B.5.2.11 Warranty information <wrntyref>.
+********************************************************************************
+-->
+
+<!ENTITY ginfowp.wrntyref-time 'INSERT WARRANTY REFERENCE TIME FRAME'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Quality of Material - Replacement, Repair, or Modification Requirements
+**  TM/IETM
+**
+** -INSTRUCTION-
+**  -INSERT- The quality of material replacement, repair, or modification
+**           requirements TM/IETM document number.
+**
+** -ENTITY USED IN ENTITY-
+**  ginfowp.qual.mat.info
+**
+** -ENTITY LIST-
+**  ginfowp.qual.mat.info-tm
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    B.5.2.15 Quality of material (Unit/AVUM and above only) <qual.mat.info>.
+**
+**  MIL-STD-40051-2B
+**    B.5.2.15 Quality of material (Unit/AVUM and above only) <qual.mat.info>.
+********************************************************************************
+-->
+
+<!ENTITY ginfowp.qual.mat.info-tm '<extref docno="INSERT THE TM OR IETM NUMBER"/>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Engineering Change Proposals Address
+**
+** -INSTRUCTION-
+**  -INSERT- The ECP Proponent name and address.
+**
+** -ENTITY USED IN ENTITY-
+**  ginfowp.ecp
+**
+** -ENTITY LIST-
+**  ginfowp.ecp-address
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**    B.5.2.20 Engineering Change Proposals (ECPs) (DMWR/NMWR only) <ecp>.
+**
+**  MIL-STD-40051-2C
+**    B.5.2.20 Engineering Change Proposals (ECPs) (DMWR/NMWR only) <ecp>.
+********************************************************************************
+-->
+
+<!ENTITY ginfowp.ecp-address '<proponent>
+<name>RESPONSIBLE COMMAND OR ACTIVITY PROPONENT NAME </name>
+<address>
+<servnomen>OPTIONAL SERVICE NOMENCLATURE</servnomen>
+<street>0 OR MORE STREET INFORMATION</street>
+<city>REQUIRED CITY,</city>
+<state>REQUIRED STATE</state>
+<zip>OPTIONAL ZIP CODE</zip>
+<country>OPTIONAL COUNTRY</country>
+</address></proponent>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+** Mobilization Requirements Reference
+**
+** -INSTRUCTION-
+**  -INSERT- The Mobilization Work Package unique identifier.
+**
+** -ENTITY USED IN ENTITY-
+**  ginfowp.mobreq
+**
+** -ENTITY LIST-
+**  ginfowp.mobreq-wp
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**    B.5.2.23 Mobilization requirements (DMWR/NMWR only) <mobreq>.
+**
+**  MIL-STD-40051-2C
+**    B.5.2.23 Mobilization requirements (DMWR/NMWR only) <mobreq>.
+********************************************************************************
+-->
+
+<!ENTITY ginfowp.mobreq-wp '<xref wpid="INSERT_THE_APPROPRIATE_WORK_PACKAGE_ID"/>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Repair Parts WP Reference
+**
+** -INSTRUCTION-
+**  -INSERT- The appropriate Part List Work Package unique identifier.
+**
+** -ENTITY USED IN ENTITY-
+**  ginfowp.supdata-partlist.wp
+**
+** -ENTITY LIST-
+**  ginfowp.supdata-partlist.wpref
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**    B.5.2.26.3 Repair parts.
+**
+**  MIL-STD-40051-2C
+**    B.5.2.26.3 Repair parts.
+********************************************************************************
+-->
+
+<!ENTITY ginfowp.supdata-partlist.wpref '<xref wpid="INSERT_THE_PART_LIST_WORK_PACKAGE_ID"/>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Supporting Data - Repair parts TM Reference
+**
+** -INSTRUCTION-
+**  -INSERT- The appropriate RPSTL TM number.
+**
+** -ENTITY USED IN ENTITY-
+**  ginfowp.supdata-partlist.tm
+**
+** -ENTITY LIST-
+**  ginfowp.supdata-partlist.tmref
+**
+** -SOURCE-
+**  MIL-STD-40051-2C
+**    B.5.2.26.3 Repair parts.
+********************************************************************************
+-->
+
+<!ENTITY ginfowp.supdata-partlist.tmref '<extref docno="REPLACE WITH RPSTL TM NUMBER"/>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+** Mobilization Requirements Reference
+**
+** -INSTRUCTION-
+**  -INSERT- The PPM Packaging Work Package unique identifier.
+**
+** -ENTITY USED IN ENTITY-
+**  ppmgeninfo
+**
+** -ENTITY LIST-
+**  maintwp.ppm.packaging.wp
+**  
+** -SOURCE-
+**  MIL-STD-40051-1
+**    E.5.3.9.1 Preservation, packaging, and marking general information work package
+**
+**  MIL-STD-40051-2
+**     E.5.3.9.1 Preservation, packaging, and marking general information work package
+
+********************************************************************************
+-->
+
+<!ENTITY maintwp.ppm.packaging.wp '<xref wpid="INSERT_THE_APPROPRIATE_WORK_PACKAGE_ID"/>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  PMS and PMI Reporting Errors and Recommending Improvements
+**
+** -INSTRUCTION-
+**  -INSERT- The proponent mailing address.
+**  -INSERT- The both proponent fax numbers for DSN and commercial.
+**  -INSERT- The proponent e-mail address.
+**
+** -ENTITY USED IN ENTITY-
+**  pms_or_pmi.eir
+**
+** -ENTITY LIST-
+**  pms_or_pmi.eir.address
+**  pms_or_pmi.eir.phone
+**  pms_or_pmi.eir.email
+**  pms_or_pmi-tm (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    B.5.5.4 General information <pms-geninfo>.
+**
+**  MIL-STD-40051-2B
+**     B.5.5.4 General information <pms-geninfo>.
+********************************************************************************
+-->
+
+<![%pms_or_pmi-tm;[
+<!ENTITY pms_or_pmi.eir.address "INSERT PROPONENT MAILING ADDRESS">
+
+<!ENTITY pms_or_pmi.eir.fax '<phone type="dsn" receive="fax">INSERT PROPONENT DSN FAX NUMBER</phone> or <phone type="coml" receive="fax">INSERT PROPONENT COMMERCIAL FAX NUMBER</phone>'>
+
+<!ENTITY pms_or_pmi.eir.email '<internet show.address="yes"><email address="INSERT PROPONENT E-MAIL ADDRESS"/></internet>'>
+]]>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  PMS Scope and General Information - References and Data
+**
+**  Figure 1 - Reference to the WP or title and figure # requirements which have
+**  the inspected items and what conditions are desired/undesired.
+**  Figure 2 - Reference to the WP or title and figure # requirements which have
+**  inspection areas are shown.
+**
+** -INSTRUCTION-
+**  -INSERT- The WP identifier where the inspection area diagram figure resides 
+**           in "wpid" attribute for <pms-ginfo.inspect-fig>.
+**  -INSERT- The figure identifier in "figid" attribute for 
+**           <pms-ginfo.inspect-fig>.
+**  -INSERT- The appropriate aircraft model number.
+**  -INSERT- The inspection interval to be performed (i.e., 10 hour/14 day).
+**  -INSERT- The inspection performed flight hour cycle (i.e., ten).
+**  -INSERT- The inspection performed calendar days (i.e., fourteen).
+**  -INSERT- The next inspection day of week from Tuesday (i.e., Tuesday).
+**  -INSERT- For the WARNING add additional actuation equipment  (i.e., firing 
+**           of armament, jettison ballistics). Start each piece of equipment 
+**           with ", or ". If no additional equipment is necessary, remove all 
+**           text between the quotes.
+**  -INSERT- For the WARNING insert the maintenance TM number for the attribute 
+**           'docno'.
+**  -INSERT- For the WARNING if armament information is needed insert the 
+**           armament TM number for the attribute 'docno'. 
+**
+**           If additional armament TM number references are needed add a 
+**           <extref docno="Armament TM Number"/> for each manual. 
+**
+**           If no armament TM numbers apply, remove all text between quotes.
+**  -INSERT- The total number of man-hours (i.e., 4.0).
+**  -INSERT- The ozone depleting chemicals (ODC) statement.
+**  -INSERT- The hazard material statement.
+**
+** -ENTITY USED IN ENTITY-
+**  pms-ginfowp
+**
+** -ENTITY LIST-
+**  pms-ginfowp.inspect-fig
+**  pms-ginfowp.aircraft
+**  pms-ginfowp.inspect-interval 
+**  pms-ginfowp.inspect-hrs
+**  pms-ginfowp.inspect-days 
+**  pms-ginfowp.inspect-weeks
+**  pms-ginfowp.inspect-dayofweek 
+**  pms-ginfowp.warning-equip
+**  pms-ginfowp.warning-tm-maint
+**  pms-ginfowp.warning-tm-arm
+**  pms-ginfowp.manhours
+**  pms-ginfowp.odc
+**  pms-ginfowp.hazmat
+**  pms_or_pmi-tm (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**    B.5.5.3 Maintenance activities <scope>.
+**    B.5.5.4 General information <pms-geninfo>.
+**
+**  MIL-STD-40051-2B
+**     B.5.5.3 Maintenance activities <scope>.
+**     B.5.5.4 General information <pms-geninfo>.
+********************************************************************************
+-->
+
+<![%pms_or_pmi-tm;[
+<!ENTITY pms-ginfowp.inspect-fig '<xref wpid="INSERT_THE_APPROPRIATE_WORK_PACKAGE_ID" figid="INSERT_THE_APPROPRIATE_FIGURE_ID"/>'>
+
+<!ENTITY pms-ginfowp.aircraft "INSERT THE AIRCRAFT MODEL">
+
+<!ENTITY pms-ginfowp.inspect-interval "INSERT THE INSPECTION INTERVAL">
+
+<!ENTITY pms-ginfowp.inspect-hrs "INSERT THE AIRCRAFT HOURS">
+
+<!ENTITY pms-ginfowp.inspect-days  "INSERT THE CALENDAR DAYS">
+
+<!ENTITY pms-ginfowp.inspect-weeks   "INSERT THE NUMBER OF WEEKS">
+
+<!ENTITY pms-ginfowp.inspect-dayofweek   "INSERT THE DAY OF WEEK">
+
+<!ENTITY pms-ginfowp.warning-equip   "INSERT AIRCRAFT EQUIPMENT(S)"> 
+
+<!ENTITY pms-ginfowp.warning-tm-maint   '<extref docno="INSERT THE MAINTENANCE TM NUMBER"/>'>
+<!ENTITY pms-ginfowp.warning-tm-arm   ' and all armament must be safetied, deactivated, and cleared <extref docno="INSERT THE ARMAMENT TM NUMBER"/>'>
+
+<!ENTITY pms-ginfowp.manhours  "INSERT THE TOTAL NUMBER OF MAN-HOURS">
+
+<!ENTITY pms-ginfowp.odc  "INSERT THE ODC STATEMENT">
+
+<!ENTITY pms-ginfowp.hazmat  "INSERT THE HAZMAT STATEMENT">
+
+<!ENTITY pms_or_pmi.eir.address "INSERT PROPONENT MAILING ADDRESS">
+
+<!ENTITY pms_or_pmi.eir.fax '<phone type="dsn" receive="fax">INSERT PROPONENT DSN FAX NUMBER</phone> or <phone type="coml" receive="fax">INSERT PROPONENT COMMERCIAL FAX NUMBER</phone>'>
+
+<!ENTITY pms_or_pmi.eir.email '<internet show.address="yes"><email address="INSERT PROPONENT E-MAIL ADDRESS"/></internet>'>
+]]>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  PMI General Information
+**
+** -INSTRUCTION-
+**   -INSERT- The aircraft model. -ENTITY- pm-ginfowp.aircraft
+**
+**   -INSERT- The flight hour cycle to perform the PM requirements
+**            -ENTITY- pm-ginfowp.flight-cycle
+**
+**   -INSERT- The flight hour phases. -ENTITY- pm-ginfowp.phase-hours
+**
+**   -INSERT- The maximum number of phases during the flight cycle.
+**            -ENTITY- pm-ginfowp.no-phases
+**
+**   -INSERT- The latest issue of the aircraft TM number series Maintenance
+**            Manuals that contain the instructions for repair, adjustment or
+**            other means of rectifying conditions. Also contains the special
+**            tolerances, limits or instructions for special troubleshooting
+**            to find causes for malfunctions. -ENTITY- pm-ginfowp.tm-maint
+**
+**   -INSERT- The changeover to phased maintenance system either a TM or TB 
+**            number. -ENTITY- pm-ginfowp.tm-changeover
+**
+**   -INSERT- The possible 'Inspect Phase Type.' entries with a brief 
+**            explanation for each entry. -ENTITY- pm-ginforwp.codes-expl
+**
+** -INSTRUCTION
+**    Reference to the WP sequence # or title and figure # that shows the
+**    aircraft's inspection areas (Figure 1 -ENTITY- pm-ginfowp.fig1), and
+**    required removal locations of access doors and panels inspection areas
+**    (Figure 2 -ENTITY- pm-ginfowp.fig2).
+**   -INSERT- The WP identifier where the appropriate figure resides.
+**   -INSERT- The figure unique identifier.
+**
+** -ENTITY USED IN ENTITY-
+**  pm-ginfowp.geninfo-additional
+**  pm-ginfowp.geninfo-phased
+**  pm-ginfowp.geninfo-progressive
+**
+** -ENTITY LIST-
+**  pm-ginfowp.aircraft
+**  pm-ginfowp.flight-cycle
+**  pm-ginfowp.phase-hours
+**  pm-ginfowp.no-phases
+**  pm-ginfowp.inspect-interval
+**  pm-ginfowp.tm-maint
+**  pm-ginfowp.tm-changeover
+**  pm-ginforwp.codes-expl
+**  pm-ginfowp.fig1
+**  pm-ginfowp.fig2
+**  pms_or_pmi-tm (see selectboil.ent)
+**
+** -SOURCE
+**  MIL-STD-40051-1B
+**    B.5.6 General information work package (Phased Maintenance Inspection
+**          Manual only) <pm-ginfowp>
+**    B.5.6.3 General information <geninfo>.
+**
+**  MIL-STD-40051-2B
+**    B.5.6 General information work package (Phased Maintenance Inspection
+**          Manual only) <pm-ginfowp>
+**    B.5.6.3 General information <geninfo>.
+********************************************************************************
+-->
+
+<![%pms_or_pmi-tm;[
+<!ENTITY pm-ginfowp.aircraft "INSERT WITH AIRCRAFT MODEL">
+
+<!ENTITY pm-ginfowp.flight-cycle "INSERT WITH FLIGHT HOUR CYCLE">
+
+<!ENTITY pm-ginfowp.phase-hours "INSERT WITH PHASE HOURS">
+
+<!ENTITY pm-ginfowp.no-phases "INSERT WITH NUMBER OF PHASES">
+
+<!ENTITY pm-ginfowp.inspect-interval "INSPECT INSPECTION INTERVAL">
+
+<!ENTITY pm-ginfowp.tm-maint '<extref docno="INSERT WITH AIRCRAFT MAINTENANCE TM NUMBER"/>'>
+
+<!ENTITY pm-ginfowp.tm-changeover '<extref docno="INSERT WITH AIRCRAFT CHANGEOVER TM/TB NUMBER"
+posttext=" entitled,  &ldquo;INSERT TM/TB TITLE&rdquo;"/>'>
+
+<!ENTITY pm-ginfowp.codes-expl "INSERT APPROPRIATE CODES/EXPLANATIONS">
+
+<!ENTITY pm-ginfowp.fig1 "<xref wpid='INSERT_THE_WORK_PACKAGE_ID' figid='INSERT-FIGURE-ID'/>">
+
+<!ENTITY pm-ginfowp.fig2 "<xref wpid='INSERT_THE_WORK_PACKAGE_ID' figid='INSERT-FIGURE-ID'/>">
+]]>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+**   M A I N T E N A N C E   I N F O R M A T I O N   C H A P T E R   ( M I M )
+**
+**
+**                           E D I T A B L E   D A T A
+********************************************************************************
+-->
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Illustration Manufactured Parts Maintenance Level
+**
+**  RPTSL Parts Maintenance Level
+
+** -INSTRUCTION-
+**  -REPLACE- With appropriate maintenance level
+**
+** -ENTITY USED IN ENTITY-
+**  manu_items_introwp.intro **
+** -ENTITY LIST-
+**  manu_items_introwp.maint-level  
+
+** -ENTITY USED IN ENTITY-
+**  introwp-intro-non-aviation **
+**  introwp.intro-av  **
+** -ENTITY LIST-
+**  introwp_intro.maint-level
+**
+** -SOURCE-
+**  MIL-STD-40051-2
+**    E.5.3.10.1.3 Introduction for illustrated list of manufacture items work
+**    package <intro>
+********************************************************************************
+-->
+
+<!ENTITY manu_items_introwp.maint-level "INSERT MAINTENANCE LEVEL">
+<!ENTITY introwp_intro.maint-level "INSERT MAINTENANCE LEVEL">
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Illustration Manufactured Parts RPSTL Reference
+**
+** -INSTRUCTION-
+**  -REPLACE- With appropriate RPSTL reference
+**
+** -ENTITY USED IN ENTITY-
+**  manu_items_introwp
+**
+** -ENTITY LIST-
+**  manu_items_introwp.rpstl
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**    E.5.3.10.1.3 Introduction for illustrated list of manufactured items work package <intro>.
+**
+**  MIL-STD-40051-2C
+**    E.5.3.10.1.3 Introduction for illustrated list of manufactured items work package <intro>.
+*******************************************************************************
+-->
+
+<!ENTITY manu_items_introwp.rpstl '<extref docno="WHEN APPLICABLE, A REFERENCE TO THE ASSOCIATED PARTS INFORMATION TM"/> OR <xref wpid="RPSTL_PART_LIST_WORK_PACKAGE"/>.'>
+ 
+
+<!-- DOCUMENTATION
+********************************************************************************
+** LUBRICATION ORDERS
+** -TITLE-
+**  PMCS AOAP Hour/Mileage Timeframe
+**
+** -INSTRUCTION-
+**  -REPLACE- With AOAP hour/mileage timeframe.
+**
+** -ENTITY USED IN ENTITY-
+**  pmcsintrowp.intro.aoap
+**
+** -ENTITY LIST-
+**  pmcsintrowp.intro.aoap.prescribed
+**  page-base (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-1C
+**   K.5.3.3.1 Army Oil Analysis Program (AOAP) sampling interval statement.
+** 
+**  MIL-STD-40051-2C
+**   K.5.3.3.1 Army Oil Analysis Program (AOAP) sampling interval statement.
+********************************************************************************
+-->
+
+<![%page-base;[
+<!ENTITY pmcsintrowp.intro.aoap.prescribed "Engine oil/transmission oil/hydraulic fluids must be sampled at (REPLACE WITH APPLICABLE HOUR/MILEAGE TIMEFRAME) as prescribed by (insert DA PAM 750-8 or DA PAM 738-751).">
+]]>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  PMCS AOAP Reference
+**
+** -INSTRUCTION-
+**  -IF- AOAP reference is TB 43-0106
+**     -THEN-
+**        -REPLACE- "IGNORE" with "INCLUDE"
+**        -REPLACE- "INCLUDE" with "IGNORE"
+**  -IF- AOAP reference is DA PAM 738-750
+**     -THEN- No change
+**
+** -ENTITY USED IN ENTITY-
+**  pmcsintrowp.intro.aoap
+**
+** -ENTITY LIST-
+**  pmcsintrowp.intro.aoap.timeframe
+**  page-base (see selectboil.ent)
+**
+** -SOURCE-
+**  MIL-STD-40051-2
+**   K.5.3.3.1 Army Oil Analysis Program (AOAP) statements.
+********************************************************************************
+-->
+
+<![%page-base;[
+<!ENTITY pmcsintrowp.intro.aoap.timeframe
+'<![IGNORE[<extref docno="TB 43-0106" posttext=", Aeronautical Equipment Army Oil Analysis Program (AOAP)"/>]]>
+<![INCLUDE[<extref docno="DA PAM 738-750" posttext=", Functional Users Guide for the Army Maintenance Management System (TAMMS)"/>]]>'>
+]]>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  LO Introduction Component or Equipment
+**
+** -INSTRUCTION-
+**  -REPLACE- With component or equipment used in LO.
+**
+** -ENTITY LIST-
+**  lo.intro.component-equipment
+**
+** -ENTITY USED IN ENTITY-
+**  lo.intro.aoap-na
+**
+** -SOURCE-
+**  MIL-STD-40051-1
+**    E.5.3.4.1.3 PMCS data
+**      d(3) AOAP not available/non-enrolled statement
+**
+**  MIL-STD-40051-2
+**    E.5.3.4.1.3 PMCS data
+**      d(3) AOAP not available/non-enrolled statement
+**
+** -ENTITY USED IN ENTITY-
+**  pmcsintrowp.intro.fluid-leakage
+**
+**  MIL-STD-40051-1
+**    E.5.3.4.1.3 PMCS data
+**      d(3) AOAP not available/non-enrolled statement
+**
+** -SOURCE-
+**  MIL-STD-40051-2
+**    E.5.3.4.1.3 PMCS data
+**      e When the equipment contains fluids
+********************************************************************************
+-->
+
+<!ENTITY lo.intro.component-equipment "REPLACE WITH NAME OF COMPONENT/EQUIPMENT">
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  PMCS Introduction Not Authorized Arctic Operation Component
+**
+** -INSTRUCTION-
+**  -REPLACE- With not authorized arctic operation component(s).
+**
+** -ENTITY USED IN ENTITY-
+**  pmcswp.pmcstable.pmcsproc.arctic-oper.not-auth
+**
+** -ENTITY LIST-
+**  pmcswp.pmcstable.pmcsproc.arctic-oper.not-auth.component
+**
+** -SOURCE-
+**  MIL-STD-40051-1
+**    E.5.3.4.2.3.1 PMCS data preparation <pmcswp.pmcstable>
+**      e Procedure <pmcsproc>
+**        (8) For Arctic Operation
+**
+**  MIL-STD-40051-2
+**    E.5.3.4.2.3.1 PMCS data preparation <pmcswp.pmcstable>
+**      e Procedure <pmcsproc>
+**        (8) For Arctic Operation
+********************************************************************************
+-->
+
+<!ENTITY pmcswp.pmcstable.pmcsproc.arctic-oper.not-auth.component "REPLACE WITH COMPONENT NAME">
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Maintenance WP Inspection And Test Ammunition Referenced Table
+**
+** -INSTRUCTION-
+**  -INSERT- The table identifier containing the inspection and test information.
+**
+** -ENTITY USED IN ENTITY-
+**  maintwp.test-inspect.disposition-2
+**
+** -ENTITY LIST-
+**  maintwp.test-inspect.disposition-2.table-num
+**
+** -SOURCE-
+**  MIL-STD-40051-2
+**    E.5.3.5.3.16.1.g(2) Inspection and test of conventional and chemical
+**     ammunition or components containing radioactive materials
+**     (DS, GS, and AVIM only) <test-inspect>.
+********************************************************************************
+-->
+
+<!ENTITY maintwp.test-inspect.disposition-2.table-num '<xref tableid="INSERT_ID_APPLICABLE_TABLE"/>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Aircraft Inspection Checklist TM for PMI WP
+**
+** -INSTRUCTION-
+**  -INSERT- The aircraft inspection checklist TM number.
+**
+** -ENTITY USED IN ENTITY-
+**  pmiwp.geninfo
+**
+** -ENTITY LIST-
+**  pmiwp.geninfo.aircraft
+**
+** -SOURCE-
+**  MIL-STD-40051-1
+**    E.5.3.12.1.3 PMI General information and introduction <geninfo>
+** 
+**  MIL-STD-40051-2
+**    E.5.3.12.1.3 PMI General information and introduction <geninfo>
+********************************************************************************
+-->
+
+<!ENTITY pmiwp.geninfo.aircraft '<extref docno="REPLACE WITH APPLICABLE AIRCRAFT INSPECTION CHECKLIST TM"/>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+**        P A R T S   I N F O R M A T I O N   C H A P T E R   ( P I M )
+**
+**                        E D I T A B L E   D A T A
+********************************************************************************
+-->
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  RPSTL Introduction Lowest Maintenance Level
+**
+** -INSTRUCTION-
+**  -INSERT- Lowest maintenance level.
+**
+** -ENTITY USED IN ENTITY-
+**  introwp.intro
+**
+** -ENTITY LIST-
+**  introwp.intro.lowest-maint
+**
+** -SOURCE-
+**  MIL-STD-40051-1
+**    F.5.3.5.3 Introduction <intro>
+**
+**  MIL-STD-40051-2
+**    F.5.3.5.3 Introduction <intro>
+********************************************************************************
+-->
+
+<!ENTITY introwp.intro.lowest-maint "INSERT LOWEST MAINTENANCE LEVEL">
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  RPSTL Introduction Equipment Nomenclature
+**
+** -INSTRUCTION-
+**  -INSERT- The equipment nomenclature.
+**
+** -ENTITY USED IN ENTITY-
+**  introwp.intro
+**
+** -ENTITY LIST-
+**  introwp.intro.item
+**
+** -SOURCE-
+**  MIL-STD-40051-1
+**    F.5.3.5.3 Introduction <intro>
+**
+**  MIL-STD-40051-2
+**    F.5.3.5.3 Introduction <intro>
+********************************************************************************
+-->
+
+<!ENTITY introwp.intro.item "INSERT EQUIPMENT NOMENCLATURE">
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Maintenance Code "L" Specialized Repair Activity Designator
+**
+** -INSTRUCTION-
+**  -INSERT- The specialized repair activity designator.
+**
+** -ENTITY USED IN ENTITY-
+**  introwp.intro
+**
+** -ENTITY LIST-
+**  introwp.intro.repair-act-des
+**
+** -SOURCE-
+**  MIL-STD-40051-1
+**    F.5.3.5.3 Introduction <intro>
+**
+**  MIL-STD-40051-2
+**    F.5.3.5.3 Introduction <intro>
+********************************************************************************
+-->
+
+<!ENTITY introwp.intro.repair-act-des "INSERT SPECIALIZED REPAIR ACTIVITY DESIGNATOR">
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Referenced Fabrication Instruction TM Number
+**
+** -INSTRUCTION-
+**  -INSERT- The TM number reference where the detailed fabrication instructions
+**           for items source coded to be manufactured or fabricated.
+**
+** -ENTITY USED IN ENTITY-
+**  introwp.intro
+**
+** -ENTITY LIST-
+**  introwp.intro.fab-tm
+**
+** -SOURCE-
+**  MIL-STD-40051-1
+**    F.5.3.5.3 Introduction <intro>
+**      pg. 273-280
+**
+**  MIL-STD-40051-2
+**    F.5.3.5.3 Introduction <intro>
+**      pg. 287-295
+********************************************************************************
+-->
+
+<!ENTITY introwp.intro.fab-tm '<extref docno="INSERT FABRICATION INSTRUCTION TM NUMBER"/>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Associated Publications in Separate RPSTL TM
+**
+**  The entity is used for separate RPSTL manual and associated publications apply.
+**
+** -INSTRUCTION-
+**  -IF- Separate RPSTL TM -AND- Associated Publications
+**     -THEN-
+**      -REPLACE- The <extref> "docno" attribute content with publication number
+**                and <def><para> with short publication title.
+**      -INSERT- For each additional publication reference the following:
+**         1. <term.def id="UNIQUE.IDENTIFIER"> Unique ID suggestion is
+**            "rpstl.publication." with the document number (replace
+**            space " " with period ".").
+**         2. <term><extref docno="INSERT DOCUMENT NUMBER"/></term>
+**         3. <def><para esd="no" hcp="no">INSERT PUBLICATION SHORT TITLE</para></def>
+**         4. </term.def>
+**     -ELSE-
+**      -REPLACE- "INCLUDE" with "IGNORE"
+**
+** -ENTITY USED IN ENTITY-
+**  introwp.intro
+**
+** -ENTITY LIST-
+**  introwp.intro.assoc-pubs
+**
+** -SOURCE-
+** MIL-STD-40051-1
+**   F.5.3.5.3 Introduction <intro>
+** MIL-STD-40051-2
+**   F.5.3.5.3 Introduction <intro>
+********************************************************************************
+-->
+
+<!ENTITY introwp.intro.assoc-pubs
+'<![IGNORE[
+<para hcp="no" esd="no">Associated Publications. The publication(s) listed below pertains to the &introwp.intro.item;
+<deflist>
+<title.term.def>
+<title>Publication</title>
+<title>Short Title</title></title.term.def>
+<term.def id="rpstl.publication.DOCUMENT_NUMBER">
+<term><extref docno="INSERT DOCUMENT_NUMBER"/></term>
+<def><para esd="no" hcp="no">INSERT PUBLICATION SHORT TITLE</para></def>
+</term.def>
+</deflist></para>
+]]>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Reference TM number for Higher Maintenance Level RPSTL Data
+**
+**  -INSERT- The TM number reference where the higher maintenance level RPSTL
+**           data is located.
+**
+** -ENTITY USED IN ENTITY-
+**  introwp.intro
+**
+** -ENTITY LIST-
+**  introwp.intro.higher-maint-tm
+**
+** -SOURCE-
+**  MIL-STD-40051-1
+**    F.5.3.5.3 Introduction <intro>
+**
+**  MIL-STD-40051-2
+**    F.5.3.5.3 Introduction <intro>
+********************************************************************************
+-->
+
+<!ENTITY introwp.intro.higher-maint-tm '<extref docno="INSERT TM NUMBER FOR HIGHER MAINTENANCE LEVEL RPSTL DATA"/>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  Uncommon Abbreviations and Definitions in RPSTL
+**
+**  Include uncommon abbreviations and definitions used in the RPSTL that are not
+**  found in ASME Y14.38.
+**
+** -INSTRUCTION-
+**  -INSERT- For each uncommon abbreviations the following:
+**     1. <term.def id="UNIQUE.IDENTIFIER"> Unique ID suggestion is
+**        "uncommon-abbr." with the abbreviation (replace space " " with period ".").
+**     2. <term><extref docno="INSERT ABBREVIATION"/></term>
+**     3. <def><para esd="no" hcp="no">INSERT ABBREVIATION MEANING</para></def>
+**     4. </term.def>
+**
+** -ENTITY USED IN ENTITY-
+**  introwp.intro
+**
+** -ENTITY LIST-
+**  introwp.intro.uncommon-abbr
+**
+** MIL-STD-40051-1
+**   F.5.3.5.3 Introduction <intro>
+** MIL-STD-40051-2
+**   F.5.3.5.3 Introduction <intro>
+********************************************************************************
+-->
+
+<!ENTITY introwp.intro.uncommon-abbr '
+<term.def id="uncommon-abbr.INSERT_ABBREVIATION ">
+<term>INSERT ABBREVIATION</term>
+<def>
+<para hcp="no" esd="no">INSERT ABBREVIATION MEANING </para></def></term.def>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+**   S U P P O R T I N G   I N F O R M A T I O N   C H A P T E R   ( S I M )
+**
+**                        E D I T A B L E   D A T A
+********************************************************************************
+-->
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  UOC List
+**
+**  When UOC is necessary, enter the corresponding UOC codes and descriptions.
+**
+** -INSTRUCTION-
+**  -IF- UOC is included
+**     -THEN-
+**      -INSERT- For each UOC the following:
+**         1. <term.def id="UNIQUE.IDENTIFIER"> Unique ID suggestion is
+**            "uoc." with the UOC.
+**         2. <term><extref docno="INSERT UOC"/></term>
+**         3. <def><para esd="no" hcp="no">INSERT UOC MODEL NUMBER </para></def>
+**         4. </term.def>
+**     -ELSE-
+**      -REPLACE- "INCLUDE" with "IGNORE"
+**
+** -ENTITY USED IN ELEMENT-
+**  AAL Introduction Work Package Introduction <introwp><intro>
+**
+** -ENTITY USED IN ENTITY-
+**  intro.uoc
+**
+** -ENTITY LIST-
+**  intro.uoc-list
+**  uoc-list (see selectboil.ent)
+********************************************************************************
+-->
+
+<!ENTITY intro.uoc-list '
+<![%uoc-list;[
+<deflist>
+<title.term.def>
+<title>Code</title>
+<title>Used on</title></title.term.def>
+<term.def id="uoc.PAA">
+<term>PAA</term>
+<def><para hcp="no" esd="no">XXX</para></def></term.def>
+<term.def id="uoc.PAB">
+<term>PAB</term>
+<def><para hcp="no" esd="no">XXXX</para></def></term.def>
+<term.def id="uoc.PAC">
+<term>PAC</term>
+<def><para hcp="no" esd="no">XXXXX</para></def></term.def>
+</deflist>
+]]>'>
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+**  UOC List explaination
+**
+**  Add if applicable.
+**
+** -INSTRUCTION-
+**  -IF- UOC is included and certain AAL items contain a certain model number
+**     -THEN-
+**      -INSERT- For explaination
+**     -ELSE-
+**      -REPLACE- "INCLUDE" with "IGNORE"
+**
+** -ENTITY USED IN ELEMENT-
+**  AAL Introduction Work Package Introduction <intro>
+**
+** -ENTITY USED IN ENTITY-
+**  intro.uoc
+**
+** -ENTITY LIST-
+**  intro.uoc-list.explain
+
+********************************************************************************
+-->
+
+<!ENTITY intro.uoc-list.explain '<para hcp="no" esd="no">Model XXX uses AAL items (insert item numbers), Model XXXX use
+AAL items (insert item numbers), and Model XXXXX use AAL items (insert item numbers)</para>'>
+
+
+
+<!-- DOCUMENTATION
+********************************************************************************
+** Comment - 12-07-2007 SDH. Maintenance level was modified IAW 
+** MIL-STD-40051 -1/-1 Change 2.
+**
+** -TITLE-
+**  Expendable and Durable Maintenance Level Codes
+**
+**  Specify the maintenance levels that are applicable for the expendable and
+**  durable list.
+**
+** -INSTRUCTION-
+**  -REMOVE- Text not qualified in the maintenance level
+**
+**  -EXAMPLE-
+**   The lowest maintenance level is Field the following would be used
+**   "F = Field/ASB, H = Below Depot, D = Depot".
+**   Crew and Service/AMC would be removed.
+**
+** -TEMPLATE-
+**  C=Crew, O = AMC, F = Maintainer/ASB, H = Below Depot or TASMG, D = Depot 
+**
+** -ENTITY USED IN ELEMENT-
+**  Expendable and Durable List Work Package <explistwp>
+**
+** -SOURCE-
+**  MIL-STD-40051-1 Change 2
+**   G.5.6.3 Introduction for expendable and durable items list work package
+**           <intro>.
+**
+**  MIL-STD-40051-2 Change 2
+**   G.5.6.3 Introduction for expendable and durable items list work package
+**           <intro>.
+**
+** -ENTITY LIST-
+**  explistwp.intro.explain.level
+********************************************************************************
+-->
+
+<!ENTITY explistwp.intro.level 'C = Crew, O = AMC, F = Maintainer or ASB, H = Below Depot or TASMG, D = Depot'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+** Lubrication Order (LO) card <lubeorder>.
+**
+** -INSTRUCTION-
+**  -INSERT- lubrication.statement.gp
+**
+**  -EXAMPLE-
+**   "A copy of this lubrication order will remain with the equipment at all times; instructions contained herein are mandatory."
+**
+** -ENTITY USED IN ELEMENT-
+**  Lubrication order (LO) statement <general_purpose_notices>
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**   K.5.2.7 Lubrication order (LO) statement <general_purpose_notices>
+**  The following statement shall be included in the identification information of the LO:
+**  MIL-STD-40051-2B
+**   K.5.2.7 Lubrication order (LO) statement <general_purpose_notices>.
+**
+** -ENTITY LIST-
+**  lubrication.statement.gp
+**  oil.filter.statement
+**  aoap.statement
+**  aoap.notavail.statement
+**  warranty.hardtime.statement
+********************************************************************************
+
+-->
+<!ENTITY lubrication.statement.gp '<general_purpose_notices><title>Lubrication Order (LO)</title><text>A copy of this lubrication order will remain with the equipment at all times; instructions contained herein are mandatory.</text></general_purpose_notices>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+** Oil Filter Statement <intro><para0><subpara1><title></title><para></para><subpara2>
+**
+** -INSTRUCTION-
+**  -INSERT- oil.filter.statement
+**
+** -ENTITY USED IN ELEMENT-
+**  <intro>
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**   K.5.3.2 Oil filter statement.
+**  MIL-STD-40051-2B
+**  K.5.3.2 Oil filter statement.
+**
+** -ENTITY LIST-
+**  oil.filter.statement
+
+********************************************************************************
+
+-->
+<!ENTITY oil.filter.statement '<subpara2><title>OIL FILTERS</title><para>Oil filters shall be serviced/cleaned/changed as applicable, when:
+							<seqlist>
+								<item label="a.">They are known to be contaminated, or clogged,</item>
+								<item label="b.">Service is recommended by Army Oil Analysis Program (AOAP) laboratory analysis, or</item>
+								<item label="c.">At prescribed hardtime intervals.</item>
+							</seqlist>
+						</para>
+						</subpara2>'>
+						
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+** Army Oil Analysis Program (AOAP) statements.<intro><para0><subpara1><title></title><para></para><subpara2>
+**
+** -INSTRUCTION-
+**  -INSERT- aoap.statement
+**
+** -ENTITY USED IN ELEMENT-
+**  <intro>
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**   K.5.3.3 Army Oil Analysis Program (AOAP) statements.
+**  MIL-STD-40051-2B
+**  K.5.3.3 Army Oil Analysis Program (AOAP) statements.
+**
+** -ENTITY LIST-
+**  aoap.statement
+
+********************************************************************************
+-->	
+	<!ENTITY aoap.statement '<subpara2>
+							<title>Army Oil Analysis Program (AOAP) Sampling Interval</title>
+							<para>Engine oil/transmission oil/hydraulic fluids must be sampled at (REPLACE WITH applicable hour/mileage time frame) as prescribed
+							 by <extref docno="DA PAM 750-8"/> or <extref docno="DA PAM 738-751"/></para>
+							 </subpara2>'>
+
+<!-- DOCUMENTATION
+********************************************************************************
+** -TITLE-
+** Army Oil Analysis Program (AOAP) statements.<intro><para0><subpara1><title></title><para></para><subpara2>
+**
+** -INSTRUCTION-
+**  -INSERT- aoap.notavail.statement
+**
+** -ENTITY USED IN ELEMENT-
+**  <intro>
+**
+** -SOURCE-
+**  MIL-STD-40051-1B
+**   K.5.3.3 Army Oil Analysis Program (AOAP) statements.
+**  MIL-STD-40051-2B
+**  K.5.3.3 Army Oil Analysis Program (AOAP) statements.
+**
+** -ENTITY LIST-
+**  aoap.notavail.statement
+
+********************************************************************************
+-->								 
+	 <!ENTITY aoap.notavail.statement '<subpara2>
+			<title>Army Oil Analysis Program (AOAP) not available/non-enrolled</title>
+			<para>This (REPLACE WITH NAME OF COMPONENT/EQUIPMENT) is not enrolled in the Army Oil Analysis Program. HARDTIME INTERVALS APPLY.</para>
+							 </subpara2>'>
